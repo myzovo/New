@@ -1,0 +1,788 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+    <dialog
+        android:id="@+id/mainFragment"
+        android:name="com.noto.app.main.MainFragment"
+        android:label="MainFragment">
+        <action
+            android:id="@+id/action_mainFragment_to_folderFragment"
+            app:destination="@id/folderFragment"
+            app:popUpTo="@id/folderFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_mainFragment_to_newFolderFragment"
+            app:destination="@id/newFolderFragment"
+            app:popUpTo="@id/mainFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_mainFragment_to_folderDialogFragment"
+            app:destination="@id/folderDialogFragment"
+            app:popUpTo="@id/mainFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_mainFragment_to_mainDialogFragment"
+            app:destination="@id/mainDialogFragment"
+            app:popUpTo="@id/mainFragment"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="exit"
+            android:defaultValue="false"
+            app:argType="boolean" />
+        <action
+            android:id="@+id/action_mainFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_folderListViewDialogFragment"
+            app:destination="@id/folderListViewDialogFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_filteredFragment"
+            app:destination="@id/filteredFragment" />
+    </dialog>
+    <fragment
+        android:id="@+id/folderFragment"
+        android:name="com.noto.app.folder.FolderFragment"
+        android:label="FolderFragment">
+        <action
+            android:id="@+id/action_folderFragment_to_noteFragment"
+            app:destination="@id/noteFragment" />
+        <argument
+            android:name="folder_id"
+            android:defaultValue="-1L"
+            app:argType="long" />
+        <action
+            android:id="@+id/action_folderFragment_to_folderArchiveFragment"
+            app:destination="@id/folderArchiveFragment" />
+        <action
+            android:id="@+id/action_folderFragment_to_noteDialogFragment"
+            app:destination="@id/noteDialogFragment" />
+        <action
+            android:id="@+id/action_folderFragment_to_folderDialogFragment"
+            app:destination="@id/folderDialogFragment" />
+        <action
+            android:id="@+id/action_folderFragment_to_newLabelDialogFragment"
+            app:destination="@id/newLabelDialogFragment" />
+        <action
+            android:id="@+id/action_folderFragment_to_labelDialogFragment"
+            app:destination="@id/labelDialogFragment" />
+        <action
+            android:id="@+id/action_folderFragment_to_noteListViewDialogFragment"
+            app:destination="@id/noteListViewDialogFragment" />
+        <action
+            android:id="@+id/action_folderFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_folderFragment_to_noteSelectionDialogFragment"
+            app:destination="@id/noteSelectionDialogFragment" />
+        <action
+            android:id="@+id/action_folderFragment_to_notePagerFragment"
+            app:destination="@id/notePagerFragment" />
+        <action
+            android:id="@+id/action_folderFragment_to_noteReminderDialogFragment"
+            app:destination="@id/noteReminderDialogFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newFolderFragment"
+        android:name="com.noto.app.folder.NewFolderFragment"
+        android:label="NewFolderFragment">
+        <argument
+            android:name="folder_id"
+            android:defaultValue="0L"
+            app:argType="long" />
+        <action
+            android:id="@+id/action_newFolderFragment_to_selectFolderDialogFragment"
+            app:destination="@id/selectFolderDialogFragment" />
+        <action
+            android:id="@+id/action_newFolderFragment_to_folderFragment"
+            app:destination="@id/folderFragment"
+            app:popUpTo="@id/folderFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/noteFragment"
+        android:name="com.noto.app.note.NoteFragment"
+        android:label="NoteFragment">
+        <argument
+            android:name="folder_id"
+            app:argType="long" />
+        <argument
+            android:name="note_id"
+            android:defaultValue="0L"
+            app:argType="long" />
+        <action
+            android:id="@+id/action_noteFragment_to_noteReminderDialogFragment"
+            app:destination="@id/noteReminderDialogFragment" />
+        <action
+            android:id="@+id/action_noteFragment_to_noteDialogFragment"
+            app:destination="@id/noteDialogFragment" />
+        <argument
+            android:name="body"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_noteFragment_to_newLabelDialogFragment"
+            app:destination="@id/newLabelDialogFragment" />
+        <action
+            android:id="@+id/action_noteFragment_to_labelDialogFragment"
+            app:destination="@id/labelDialogFragment" />
+        <argument
+            android:name="labels_ids"
+            android:defaultValue="@null"
+            app:argType="long[]"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_noteFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <argument
+            android:name="scroll_position"
+            android:defaultValue="-1"
+            app:argType="integer" />
+        <argument
+            android:name="is_title_visible"
+            android:defaultValue="false"
+            app:argType="boolean" />
+        <argument
+            android:name="is_body_visible"
+            android:defaultValue="false"
+            app:argType="boolean" />
+        <action
+            android:id="@+id/action_noteFragment_to_undoRedoDialogFragment"
+            app:destination="@id/undoRedoDialogFragment" />
+        <action
+            android:id="@+id/action_noteFragment_to_notePagerFragment"
+            app:destination="@id/notePagerFragment"
+            app:popUpTo="@id/notePagerFragment"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="selected_note_ids"
+            app:argType="long[]" />
+        <argument
+            android:name="search_term"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/folderArchiveFragment"
+        android:name="com.noto.app.folder.FolderArchiveFragment"
+        android:label="FolderArchiveFragment">
+        <argument
+            android:name="folder_id"
+            android:defaultValue="0L"
+            app:argType="long" />
+        <action
+            android:id="@+id/action_folderArchiveFragment_to_noteFragment"
+            app:destination="@id/noteFragment" />
+        <action
+            android:id="@+id/action_folderArchiveFragment_to_notePagerFragment"
+            app:destination="@id/notePagerFragment" />
+        <action
+            android:id="@+id/action_folderArchiveFragment_to_confirmationDialogFragment"
+            app:destination="@id/confirmationDialogFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/noteReminderDialogFragment"
+        android:name="com.noto.app.note.NoteReminderDialogFragment"
+        android:label="NoteReminderDialogFragment">
+        <argument
+            android:name="folder_id"
+            app:argType="long" />
+        <argument
+            android:name="note_id"
+            android:defaultValue="0L"
+            app:argType="long" />
+    </dialog>
+    <dialog
+        android:id="@+id/noteDialogFragment"
+        android:name="com.noto.app.note.NoteDialogFragment"
+        android:label="NoteDialogFragment">
+        <argument
+            android:name="folder_id"
+            app:argType="long" />
+        <argument
+            android:name="note_id"
+            app:argType="long" />
+        <action
+            android:id="@+id/action_noteDialogFragment_to_noteReminderDialogFragment"
+            app:destination="@id/noteReminderDialogFragment"
+            app:popUpTo="@id/noteDialogFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_noteDialogFragment_to_confirmationDialogFragment"
+            app:destination="@id/confirmationDialogFragment" />
+        <argument
+            android:name="destination"
+            app:argType="reference" />
+        <action
+            android:id="@+id/action_noteDialogFragment_to_selectFolderDialogFragment"
+            app:destination="@id/selectFolderDialogFragment" />
+        <argument
+            android:name="is_selection_enabled"
+            android:defaultValue="false"
+            app:argType="boolean" />
+        <action
+            android:id="@+id/action_noteDialogFragment_to_notePagerFragment"
+            app:destination="@id/notePagerFragment" />
+        <argument
+            android:name="is_select_all_enabled"
+            android:defaultValue="false"
+            app:argType="boolean" />
+        <action
+            android:id="@+id/action_noteDialogFragment_to_noteFragment"
+            app:destination="@id/noteFragment" />
+        <argument
+            android:name="selected_note_ids"
+            app:argType="long[]" />
+    </dialog>
+    <dialog
+        android:id="@+id/themeDialogFragment"
+        android:name="com.noto.app.settings.general.ThemeDialogFragment"
+        android:label="ThemeDialogFragment" />
+    <dialog
+        android:id="@+id/folderDialogFragment"
+        android:name="com.noto.app.folder.FolderDialogFragment"
+        android:label="FolderDialogFragment">
+        <argument
+            android:name="folder_id"
+            android:defaultValue="0L"
+            app:argType="long" />
+        <action
+            android:id="@+id/action_folderDialogFragment_to_newFolderFragment"
+            app:destination="@id/newFolderFragment" />
+        <action
+            android:id="@+id/action_folderDialogFragment_to_confirmationDialogFragment"
+            app:destination="@id/confirmationDialogFragment" />
+        <action
+            android:id="@+id/action_folderDialogFragment_to_folderFragment"
+            app:destination="@id/folderFragment" />
+    </dialog>
+    <dialog
+        android:id="@+id/confirmationDialogFragment"
+        android:name="com.noto.app.components.ConfirmationDialogFragment"
+        android:label="ConfirmationDialogFragment">
+        <argument
+            android:name="confirmation"
+            app:argType="string" />
+        <argument
+            android:name="description"
+            app:argType="string" />
+        <argument
+            android:name="btn_text"
+            app:argType="string" />
+    </dialog>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.noto.app.settings.SettingsFragment"
+        android:label="SettingsFra gment">
+        <action
+            android:id="@+id/action_settingsFragment_to_exportImportDialogFragment"
+            app:destination="@id/exportImportDialogFragment" />
+        <action
+            android:id="@+id/action_settingsFragment_to_generalSettingsFragment"
+            app:destination="@id/generalSettingsFragment" />
+        <action
+            android:id="@+id/action_settingsFragment_to_vaultSettingsFragment"
+            app:destination="@id/vaultSettingsFragment" />
+        <action
+            android:id="@+id/action_settingsFragment_to_readingModeSettingsFragment"
+            app:destination="@id/readingModeSettingsFragment" />
+        <action
+            android:id="@+id/action_settingsFragment_to_whatsNewFragment"
+            app:destination="@id/whatsNewFragment" />
+        <action
+            android:id="@+id/action_settingsFragment_to_validateVaultPasscodeDialogFragment"
+            app:destination="@id/validateVaultPasscodeDialogFragment" />
+        <action
+            android:id="@+id/action_settingsFragment_to_vaultPasscodeDialogFragment"
+            app:destination="@id/vaultPasscodeDialogFragment" />
+        <action
+            android:id="@+id/action_settingsFragment_to_aboutSettingsFragment"
+            app:destination="@id/aboutSettingsFragment" />
+        <action
+            android:id="@+id/action_settingsFragment_to_reportIssueDialogFragment"
+            app:destination="@id/reportIssueDialogFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/selectFolderDialogFragment"
+        android:name="com.noto.app.main.SelectFolderDialogFragment"
+        android:label="SelectFolderDialogFragment">
+        <argument
+            android:name="filtered_folder_ids"
+            app:argType="long[]" />
+        <argument
+            android:name="is_dismissible"
+            android:defaultValue="true"
+            app:argType="boolean" />
+        <argument
+            android:name="selected_folder_id"
+            android:defaultValue="0L"
+            app:argType="long" />
+        <argument
+            android:name="is_none_enabled"
+            android:defaultValue="false"
+            app:argType="boolean" />
+        <argument
+            android:name="is_main_interface"
+            android:defaultValue="false"
+            app:argType="boolean" />
+        <argument
+            android:name="title"
+            app:argType="string" />
+        <argument
+            android:name="key"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
+    </dialog>
+    <dialog
+        android:id="@+id/folderListSortingDialogFragment"
+        android:name="com.noto.app.main.FolderListSortingDialogFragment"
+        android:label="FolderListSortingDialogFragment" />
+    <dialog
+        android:id="@+id/fontDialogFragment"
+        android:name="com.noto.app.settings.general.FontDialogFragment"
+        android:label="FontDialogFragment" />
+    <dialog
+        android:id="@+id/mainArchiveFragment"
+        android:name="com.noto.app.main.MainArchiveFragment"
+        android:label="MainArchiveFragment">
+        <action
+            android:id="@+id/action_mainArchiveFragment_to_folderDialogFragment"
+            app:destination="@id/folderDialogFragment"
+            app:popUpTo="@id/mainArchiveFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_mainArchiveFragment_to_folderFragment"
+            app:destination="@id/folderFragment" />
+    </dialog>
+    <dialog
+        android:id="@+id/noteListSortingDialogFragment"
+        android:name="com.noto.app.folder.NoteListSortingDialogFragment"
+        android:label="NoteListSortingDialogFragment">
+        <argument
+            android:name="folder_id"
+            app:argType="long" />
+    </dialog>
+    <dialog
+        android:id="@+id/newLabelDialogFragment"
+        android:name="com.noto.app.label.NewLabelDialogFragment"
+        android:label="NewLabelDialogFragment">
+        <argument
+            android:name="folder_id"
+            app:argType="long" />
+        <argument
+            android:name="label_id"
+            android:defaultValue="0L"
+            app:argType="long" />
+    </dialog>
+    <dialog
+        android:id="@+id/labelDialogFragment"
+        android:name="com.noto.app.label.LabelDialogFragment"
+        android:label="LabelDialogFragment">
+        <action
+            android:id="@+id/action_labelDialogFragment_to_newLabelDialogFragment"
+            app:destination="@id/newLabelDialogFragment"
+            app:popUpTo="@id/labelDialogFragment"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="folder_id"
+            app:argType="long" />
+        <argument
+            android:name="label_id"
+            android:defaultValue="0L"
+            app:argType="long" />
+        <action
+            android:id="@+id/action_labelDialogFragment_to_reorderLabelDialogFragment"
+            app:destination="@id/reorderLabelDialogFragment"
+            app:popUpTo="@id/labelDialogFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_labelDialogFragment_to_confirmationDialogFragment"
+            app:destination="@id/confirmationDialogFragment" />
+    </dialog>
+    <dialog
+        android:id="@+id/reorderLabelDialogFragment"
+        android:name="com.noto.app.label.ReorderLabelDialogFragment"
+        android:label="ReorderLabelDialogFragment">
+        <argument
+            android:name="folder_id"
+            app:argType="long" />
+        <argument
+            android:name="label_id"
+            android:defaultValue="0L"
+            app:argType="long" />
+    </dialog>
+    <dialog
+        android:id="@+id/noteListGroupingDialogFragment"
+        android:name="com.noto.app.folder.NoteListGroupingDialogFragment"
+        android:label="NoteListGroupingDialogFragment">
+        <argument
+            android:name="folder_id"
+            app:argType="long" />
+    </dialog>
+    <dialog
+        android:id="@+id/noteListViewDialogFragment"
+        android:name="com.noto.app.folder.NoteListViewDialogFragment"
+        android:label="noteListViewDialogFragment">
+        <argument
+            android:name="folder_id"
+            app:argType="long" />
+        <action
+            android:id="@+id/action_noteListViewDialogFragment_to_noteListGroupingDialogFragment"
+            app:destination="@id/noteListGroupingDialogFragment" />
+        <action
+            android:id="@+id/action_noteListViewDialogFragment_to_noteListSortingDialogFragment"
+            app:destination="@id/noteListSortingDialogFragment" />
+        <action
+            android:id="@+id/action_noteListViewDialogFragment_to_noteListFilteringDialogFragment"
+            app:destination="@id/noteListFilteringDialogFragment" />
+        <action
+            android:id="@+id/action_noteListViewDialogFragment_to_noteListOrderingDialogFragment"
+            app:destination="@id/noteListOrderingDialogFragment" />
+    </dialog>
+    <dialog
+        android:id="@+id/languageDialogFragment"
+        android:name="com.noto.app.settings.general.LanguageDialogFragment"
+        android:label="LanguageDialogFragment" />
+    <dialog
+        android:id="@+id/exportImportDialogFragment"
+        android:name="com.noto.app.settings.ExportImportDialogFragment"
+        android:label="ExportImportDialogFragment">
+        <action
+            android:id="@+id/action_exportImportDialogFragment_to_progressIndicatorDialogFragment"
+            app:destination="@id/progressIndicatorDialogFragment" />
+    </dialog>
+    <dialog
+        android:id="@+id/progressIndicatorDialogFragment"
+        android:name="com.noto.app.components.ProgressIndicatorDialogFragment"
+        android:label="ProgressIndicatorDialogFragment">
+        <argument
+            android:name="title"
+            app:argType="string" />
+    </dialog>
+    <dialog
+        android:id="@+id/mainVaultFragment"
+        android:name="com.noto.app.main.MainVaultFragment"
+        android:label="MainVaultFragment">
+        <action
+            android:id="@+id/action_mainVaultFragment_to_folderDialogFragment"
+            app:destination="@id/folderDialogFragment"
+            app:popUpTo="@id/mainVaultFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_mainVaultFragment_to_folderFragment"
+            app:destination="@id/folderFragment" />
+    </dialog>
+    <dialog
+        android:id="@+id/vaultPasscodeDialogFragment"
+        android:name="com.noto.app.vault.VaultPasscodeDialogFragment"
+        android:label="VaultPasscodeDialogFragment" />
+    <dialog
+        android:id="@+id/vaultTimeoutDialogFragment"
+        android:name="com.noto.app.settings.vault.VaultTimeoutDialogFragment"
+        android:label="VaultTimeoutDialogFragment" />
+    <dialog
+        android:id="@+id/whatsNewDialogFragment"
+        android:name="com.noto.app.settings.whatsnew.WhatsNewDialogFragment"
+        android:label="WhatsNewDialogFragment" />
+    <dialog
+        android:id="@+id/mainDialogFragment"
+        android:name="com.noto.app.main.MainDialogFragment"
+        android:label="MainDialogFragment">
+        <action
+            android:id="@+id/action_mainDialogFragment_to_mainVaultFragment"
+            app:destination="@id/mainVaultFragment"
+            app:popUpTo="@id/mainDialogFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_mainDialogFragment_to_mainArchiveFragment"
+            app:destination="@id/mainArchiveFragment"
+            app:popUpTo="@id/mainDialogFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_mainDialogFragment_to_vaultPasscodeDialogFragment"
+            app:destination="@id/vaultPasscodeDialogFragment"
+            app:popUpTo="@id/mainDialogFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_mainDialogFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment"
+            app:popUpTo="@id/mainDialogFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_mainDialogFragment_to_validateVaultPasscodeDialogFragment"
+            app:destination="@id/validateVaultPasscodeDialogFragment" />
+    </dialog>
+    <dialog
+        android:id="@+id/undoRedoDialogFragment"
+        android:name="com.noto.app.note.UndoRedoDialogFragment"
+        android:label="UndoRedoDialogFragment">
+        <argument
+            android:name="folder_id"
+            app:argType="long" />
+        <argument
+            android:name="note_id"
+            app:argType="long" />
+        <argument
+            android:name="is_undo"
+            app:argType="boolean" />
+        <argument
+            android:name="is_title"
+            app:argType="boolean" />
+        <argument
+            android:name="current_title_text"
+            app:argType="string" />
+        <argument
+            android:name="current_body_text"
+            app:argType="string" />
+        <argument
+            android:name="start_cursor_indices"
+            app:argType="integer[]" />
+        <argument
+            android:name="end_cursor_indices"
+            app:argType="integer[]" />
+        <argument
+            android:name="content"
+            app:argType="string[]" />
+    </dialog>
+    <dialog
+        android:id="@+id/iconDialogFragment"
+        android:name="com.noto.app.settings.general.IconDialogFragment"
+        android:label="IconDialogFragment" />
+    <fragment
+        android:id="@+id/generalSettingsFragment"
+        android:name="com.noto.app.settings.general.GeneralSettingsFragment"
+        android:label="GeneralSettingsFragment">
+        <action
+            android:id="@+id/action_generalSettingsFragment_to_selectFolderDialogFragment"
+            app:destination="@id/selectFolderDialogFragment" />
+        <action
+            android:id="@+id/action_generalSettingsFragment_to_fontDialogFragment"
+            app:destination="@id/fontDialogFragment" />
+        <action
+            android:id="@+id/action_generalSettingsFragment_to_iconDialogFragment"
+            app:destination="@id/iconDialogFragment" />
+        <action
+            android:id="@+id/action_generalSettingsFragment_to_themeDialogFragment"
+            app:destination="@id/themeDialogFragment" />
+        <action
+            android:id="@+id/action_generalSettingsFragment_to_languageDialogFragment"
+            app:destination="@id/languageDialogFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/vaultSettingsFragment"
+        android:name="com.noto.app.settings.vault.VaultSettingsFragment"
+        android:label="VaultSettingsFragment">
+        <action
+            android:id="@+id/action_vaultSettingsFragment_to_vaultTimeoutDialogFragment"
+            app:destination="@id/vaultTimeoutDialogFragment" />
+        <action
+            android:id="@+id/action_vaultSettingsFragment_to_vaultPasscodeDialogFragment"
+            app:destination="@id/vaultPasscodeDialogFragment" />
+        <action
+            android:id="@+id/action_vaultSettingsFragment_to_confirmationDialogFragment"
+            app:destination="@id/confirmationDialogFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/readingModeSettingsFragment"
+        android:name="com.noto.app.settings.readingmode.ReadingModeSettingsFragment"
+        android:label="ReadingModeSettingsFragment">
+        <action
+            android:id="@+id/action_readingModeSettingsFragment_to_screenBrightnessLevelDialogFragment"
+            app:destination="@id/screenBrightnessLevelDialogFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/whatsNewFragment"
+        android:name="com.noto.app.settings.whatsnew.WhatsNewFragment"
+        android:label="WhatsNewFragment">
+        <action
+            android:id="@+id/action_whatsNewFragment_to_releaseFragment"
+            app:destination="@id/releaseFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/validateVaultPasscodeDialogFragment"
+        android:name="com.noto.app.vault.ValidateVaultPasscodeDialogFragment"
+        android:label="ValidateVaultPasscodeDialogFragment" />
+    <dialog
+        android:id="@+id/noteSelectionDialogFragment"
+        android:name="com.noto.app.note.NoteSelectionDialogFragment"
+        android:label="NoteSelectionDialogFragment">
+        <argument
+            android:name="folder_id"
+            app:argType="long" />
+        <argument
+            android:name="selected_note_ids"
+            app:argType="long[]" />
+        <action
+            android:id="@+id/action_noteSelectionDialogFragment_to_confirmationDialogFragment"
+            app:destination="@id/confirmationDialogFragment" />
+        <action
+            android:id="@+id/action_noteSelectionDialogFragment_to_selectFolderDialogFragment"
+            app:destination="@id/selectFolderDialogFragment" />
+        <action
+            android:id="@+id/action_noteSelectionDialogFragment_to_notePagerFragment"
+            app:destination="@id/notePagerFragment" />
+        <action
+            android:id="@+id/action_noteSelectionDialogFragment_to_progressIndicatorDialogFragment"
+            app:destination="@id/progressIndicatorDialogFragment" />
+    </dialog>
+    <fragment
+        android:id="@+id/aboutSettingsFragment"
+        android:name="com.noto.app.settings.about.AboutSettingsFragment"
+        android:label="AboutSettingsFragment">
+        <action
+            android:id="@+id/action_aboutSettingsFragment_to_translationsSettingsFragment"
+            app:destination="@id/translationsSettingsFragment" />
+        <action
+            android:id="@+id/action_aboutSettingsFragment_to_creditsSettingsFragment"
+            app:destination="@id/creditsSettingsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/translationsSettingsFragment"
+        android:name="com.noto.app.settings.about.TranslationsSettingsFragment"
+        android:label="TranslationsSettingsFragment" />
+    <fragment
+        android:id="@+id/creditsSettingsFragment"
+        android:name="com.noto.app.settings.about.CreditsSettingsFragment"
+        android:label="CreditsSettingsFragment" />
+    <fragment
+        android:id="@+id/notePagerFragment"
+        android:name="com.noto.app.note.NotePagerFragment"
+        android:label="NotePagerFragment">
+        <argument
+            android:name="folder_id"
+            app:argType="long" />
+        <argument
+            android:name="note_id"
+            app:argType="long" />
+        <argument
+            android:name="selected_note_ids"
+            app:argType="long[]" />
+        <action
+            android:id="@+id/action_notePagerFragment_to_noteFragment"
+            app:destination="@id/noteFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/notePagerFragment"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="is_archive"
+            android:defaultValue="false"
+            app:argType="boolean" />
+        <action
+            android:id="@+id/action_notePagerFragment_to_confirmation_dialog_fragment"
+            app:destination="@id/confirmationDialogFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/screenBrightnessLevelDialogFragment"
+        android:name="com.noto.app.settings.readingmode.ScreenBrightnessLevelDialogFragment"
+        android:label="ScreenBrightnessLevelDialogFragment" />
+    <dialog
+        android:id="@+id/noteListFilteringDialogFragment"
+        android:name="com.noto.app.folder.NoteListFilteringDialogFragment"
+        android:label="NoteListFilteringDialogFragment">
+        <argument
+            android:name="folder_id"
+            app:argType="long" />
+    </dialog>
+    <dialog
+        android:id="@+id/noteListOrderingDialogFragment"
+        android:name="com.noto.app.folder.NoteListOrderingDialogFragment"
+        android:label="NoteListOrderingDialogFragment">
+        <argument
+            android:name="folder_id"
+            app:argType="long" />
+        <argument
+            android:name="is_sorting"
+            app:argType="boolean" />
+    </dialog>
+    <dialog
+        android:id="@+id/folderListViewDialogFragment"
+        android:name="com.noto.app.main.FolderListViewDialogFragment"
+        android:label="FolderListViewDialogFragment">
+        <action
+            android:id="@+id/action_folderListViewDialogFragment_to_folderListOrderingDialogFragment"
+            app:destination="@id/folderListOrderingDialogFragment" />
+        <action
+            android:id="@+id/action_folderListViewDialogFragment_to_folderListSortingDialogFragment"
+            app:destination="@id/folderListSortingDialogFragment" />
+    </dialog>
+    <dialog
+        android:id="@+id/folderListOrderingDialogFragment"
+        android:name="com.noto.app.main.FolderListOrderingDialogFragment"
+        android:label="FolderListOrderingDialogFragment" />
+    <fragment
+        android:id="@+id/filteredFragment"
+        android:name="com.noto.app.filtered.FilteredFragment"
+        android:label="FilteredFragment">
+        <argument
+            android:name="model"
+            app:argType="com.noto.app.filtered.FilteredItemModel" />
+        <action
+            android:id="@+id/action_filteredFragment_to_selectFolderDialogFragment"
+            app:destination="@id/selectFolderDialogFragment" />
+        <action
+            android:id="@+id/action_filteredFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_filteredFragment_to_noteFragment"
+            app:destination="@id/noteFragment" />
+        <action
+            android:id="@+id/action_filteredFragment_to_noteDialogFragment"
+            app:destination="@id/noteDialogFragment" />
+        <action
+            android:id="@+id/action_filteredFragment_to_folderFragment"
+            app:destination="@id/folderFragment" />
+        <action
+            android:id="@+id/action_filteredFragment_to_confirmationDialogFragment"
+            app:destination="@id/confirmationDialogFragment" />
+        <action
+            android:id="@+id/action_filteredFragment_to_notePagerFragment"
+            app:destination="@id/notePagerFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/reportIssueDialogFragment"
+        android:name="com.noto.app.settings.ReportIssueDialogFragment"
+        android:label="ReportIssueDialogFragment" />
+    <fragment
+        android:id="@+id/releaseFragment"
+        android:name="com.noto.app.settings.whatsnew.ReleaseFragment"
+        android:label="ReleaseFragment">
+        <argument
+            android:name="release"
+            app:argType="string" />
+    </fragment>
+    <action
+        android:id="@+id/action_global_noteFragment"
+        app:destination="@id/noteFragment" />
+    <action
+        android:id="@+id/action_global_folderFragment"
+        app:destination="@id/folderFragment" />
+    <action
+        android:id="@+id/action_global_newFolderFragment"
+        app:destination="@id/newFolderFragment" />
+    <action
+        android:id="@+id/action_global_settingsFragment"
+        app:destination="@id/settingsFragment" />
+    <action
+        android:id="@+id/action_global_selectFolderDialogFragment"
+        app:destination="@id/selectFolderDialogFragment" />
+    <action
+        android:id="@+id/action_global_whatsNewDialogFragment"
+        app:destination="@id/whatsNewDialogFragment" />
+    <action
+        android:id="@+id/action_global_mainFragment"
+        app:destination="@id/mainFragment" />
+    <action
+        android:id="@+id/action_global_mainVaultFragment"
+        app:destination="@id/mainVaultFragment" />
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.noto.app.ai.ChatFragment"
+        android:label="AI助手" />
+    <action
+        android:id="@+id/action_global_chatFragment"
+        app:destination="@id/chatFragment" />
+</navigation>

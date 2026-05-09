@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cool"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="?attr/notoBackgroundColor">
+
+    <com.airbnb.epoxy.EpoxyRecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:paddingTop="@dimen/spacing_small"
+        android:paddingHorizontal="@dimen/spacing_small"
+        android:paddingBottom="@dimen/padding_bottom"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        tools:listitem="@layout/note_item" />
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/abl"
+        style="@style/AppBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/tb"
+            style="@style/ToolbarWithSubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:navigationContentDescription="@string/back"
+            app:navigationIcon="@drawable/ic_round_back_24">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_folder_title"
+                    style="@style/ToolbarTitleTextAppearance"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="@string/title"
+                    tools:textColor="@color/colorAccentTeal" />
+
+                <com.robinhood.ticker.TickerView
+                    android:id="@+id/tv_folder_notes_count"
+                    style="@style/SubtitleTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:ticker_animationDuration="@integer/animation_duration"
+                    app:ticker_defaultCharacterList="number"
+                    tools:text="7 notes" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_folder_notes_count_rtl"
+                    style="@style/SubtitleTextView"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:fontFamily="@font/nunito_semibold"
+                    tools:text="7 notes" />
+
+            </LinearLayout>
+        </com.google.android.material.appbar.MaterialToolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bab"
+        android:layout_gravity="bottom"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:paddingStart="0dp"
+        android:paddingEnd="0dp"
+        app:addElevationShadow="true"
+        app:backgroundTint="?attr/notoBackgroundColor"
+        app:contentInsetEnd="0dp"
+        app:contentInsetEndWithActions="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetStartWithNavigation="0dp"
+        app:elevation="@dimen/elevation_large">
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:paddingHorizontal="@dimen/spacing_normal"
+            android:gravity="center">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_unarchive"
+                android:src="@drawable/ic_round_unarchive_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/unarchive"
+                app:backgroundTint="?attr/notoSurfaceColor"
+                app:elevation="0dp"
+                app:rippleColor="?attr/notoSecondaryColor"
+                app:shapeAppearanceOverlay="@style/FabShapeAppearanceOverlay"
+                app:tint="?attr/notoPrimaryColor" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_delete"
+                android:src="@drawable/ic_round_delete_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/delete"
+                app:backgroundTint="?attr/notoSurfaceColor"
+                app:elevation="0dp"
+                app:rippleColor="?attr/notoSecondaryColor"
+                app:shapeAppearanceOverlay="@style/FabShapeAppearanceOverlay"
+                app:tint="?attr/notoPrimaryColor" />
+        </LinearLayout>
+
+    </com.google.android.material.bottomappbar.BottomAppBar>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

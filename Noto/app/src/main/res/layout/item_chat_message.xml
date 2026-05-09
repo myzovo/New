@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingVertical="@dimen/spacing_small">
+
+    <!-- 用户消息 -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_user_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginStart="@dimen/spacing_large"
+        android:visibility="gone"
+        app:cardBackgroundColor="@color/colorPrimary"
+        app:cardCornerRadius="@dimen/spacing_normal"
+        app:cardElevation="0dp">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_user_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/spacing_normal"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/size_normal" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- AI消息 -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_ai_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginEnd="@dimen/spacing_large"
+        android:visibility="gone"
+        app:cardBackgroundColor="?attr/notoSurfaceColor"
+        app:cardCornerRadius="@dimen/spacing_normal"
+        app:cardElevation="1dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_ai_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/spacing_normal"
+                android:textColor="?attr/notoPrimaryColor"
+                android:textSize="@dimen/size_normal" />
+
+            <!-- 来源信息 -->
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_sources"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="@dimen/spacing_normal"
+                android:paddingBottom="@dimen/spacing_small"
+                android:textColor="?attr/notoSecondaryColor"
+                android:textSize="@dimen/size_extra_small"
+                android:visibility="gone" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

@@ -1,0 +1,36 @@
+# Android
+*.iml
+.gradle
+local.properties
+.idea
+.DS_Store
+/build
+*/build
+*/release
+.externalNativeBuild
+.cxx
+captures
+crowdin.properties
+*.jks
+*.keystore
+*.apk
+*.aab
+fastlane/Key.json
+
+# Java/Spring Boot
+target/
+*.class
+*.jar
+*.war
+
+# Env
+.env
+*.env.local
+
+# Docker
+docker-compose.override.yml
+
+# IDE
+.vscode/
+*.iws
+*.ipr

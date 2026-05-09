@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layoutDirection="ltr"
+    android:layout_gravity="bottom"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/v_label"
+            layout="@layout/label_item"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/spacing_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/ll"
+            style="@style/BaseDialogFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/tb"
+                layout="@layout/dialog_fragment_toolbar" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:paddingHorizontal="@dimen/spacing_normal"
+                android:layout_marginBottom="@dimen/spacing_small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_edit_label"
+                    style="@style/DialogItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/edit"
+                    app:drawableTopCompat="@drawable/ic_round_edit_24" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:paddingHorizontal="@dimen/spacing_normal"
+                android:layout_marginTop="@dimen/spacing_small"
+                android:layout_marginBottom="@dimen/spacing_normal"
+                android:divider="@drawable/spacing_normal_divider"
+                android:showDividers="middle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_reorder_label"
+                    style="@style/DialogItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/reorder_label"
+                    app:drawableTopCompat="@drawable/ic_round_reorder_24" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_delete_label"
+                    style="@style/DialogItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/delete"
+                    app:drawableTopCompat="@drawable/ic_round_delete_24" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

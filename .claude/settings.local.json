@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(grep -E \"\\\\.env$|key\\\\.md\")",
+      "Bash(rm -rf .git)",
+      "Bash(git init *)"
+    ]
+  }
+}

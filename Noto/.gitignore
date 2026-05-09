@@ -1,0 +1,21 @@
+*.iml
+.gradle
+/local.properties
+/.idea/*
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+*/build
+*/release
+crowdin.properties
+fastlane/Key.json
+
+# Signing
+*.jks
+*.keystore
+
+# Build outputs
+*.apk
+*.aab

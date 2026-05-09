@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App -->
+    <string name="app_name">Noto</string>
+    <!-- Button text for sorting/ordering/filtering notes options. -->
+    <string name="apply">Applica</string>
+    <string name="okay">Okay</string>
+    <string name="search">Cerca</string>
+    <!-- An option in the note layout for searching for text inside a note. -->
+    <string name="find_in_note">Cerca nella nota</string>
+    <!-- A settings option to support the project. -->
+    <string name="support_noto">Sostieni Noto</string>
+    <!-- Description of the Support Noto settings options. -->
+    <string name="support_noto_description">Se vuoi assicurarti che Noto rimanga mantenuto dallo sviluppatore.</string>
+    <!-- More options for folder, note, etc... -->
+    <string name="more_options">Altre opzioni</string>
+    <!-- Options for multi-selected notes. -->
+    <string name="options">Opzioni</string>
+    <string name="back">Indietro</string>
+    <!-- Replacements for "Label filtering type". -->
+    <string name="filtering">Filtro</string>
+    <string name="layout">Disposizione</string>
+    <string name="list">Lista</string>
+    <!-- Label filtering mode -->
+    <string name="inclusive">Inclusivo</string>
+    <!-- Inclusive filtering mode description -->
+    <string name="inclusive_description">Filtra note che hanno <b>una qualsiasi</b> delle etichette selezionate.</string>
+    <!-- Label filtering mode -->
+    <string name="exclusive">Esclusivo</string>
+    <!-- Exclusive filtering mode description -->
+    <string name="exclusive_description">Filtra note che hanno <b>tutte</b> le etichette selezionate.</string>
+    <!-- Label filtering mode -->
+    <string name="strict">Preciso</string>
+    <!-- Strict filtering mode description -->
+    <string name="strict_description">Filtra note che hanno <b>solo</b> le etichette selezionate, nulla di più, nulla di meno.</string>
+    <string name="grid">Griglia</string>
+    <string name="created">Creato il %s</string>
+    <string name="accessed">Ultimo accesso %s</string>
+    <string name="alphabetical">Alfabetico</string>
+    <!-- Sorting/Grouping notes by access date. -->
+    <string name="access_date">Data di accesso</string>
+    <string name="creation_date">Data di creazione</string>
+    <string name="manual">Manuale</string>
+    <string name="none">Nessuno</string>
+    <string name="descending">Discendente</string>
+    <string name="ascending">Ascendente</string>
+    <string name="settings">Impostazioni</string>
+    <!-- The link of the source code of the project. -->
+    <string name="source_code">Codice sorgente</string>
+    <!-- Description of the "Source code" settings option. -->
+    <string name="source_code_description">Noto è un\'applicazione open-source e il codice sorgente è su GitHub.</string>
+    <!-- The link of the Telegram community of Noto. -->
+    <string name="telegram_community">Community Telegram</string>
+    <!-- Description of the "Telegram community" settings option. -->
+    <string name="telegram_community_description">Unisciti alla community per interagire con altri utenti di Noto ed essere aggiornato sulle ultime notizie.</string>
+    <!-- Text for Telegram banner in Settings & What's new dialog. -->
+    <string name="join_telegram">Unisciti alla community Telegram!</string>
+    <!-- The font used in notes, such as Monospace, or Nunito. -->
+    <string name="notes_font">Carattere delle note</string>
+    <string name="share_app_with_others">Condividi Noto</string>
+    <string name="rate_app_on_play_store">Valuta Noto sul Play Store</string>
+    <string name="report_issue">Segnala un problema</string>
+    <string name="email">Email</string>
+    <string name="about">Informazioni</string>
+    <string name="whats_new">Novità</string>
+    <string name="whats_new_in">Cosa c\'è di nuovo nella %s</string>
+    <string name="learn_more">Per saperne di più…</string>
+    <!--    <string name="share_with">Share with</string>-->
+    <string name="export_import_data">Esporta / Importa</string>
+    <string name="exporting_failed">Errore nell\'esportazione dei dati.</string>
+    <string name="importing_failed">Errore nell\'importazione dei dati.</string>
+    <string name="data_is_exported">I dati sono stati esportati con successo in %s</string>
+    <string name="data_is_imported">I dati sono stati importati con successo.</string>
+    <string name="export_data">Esporta dati</string>
+    <string name="import_data">Importa dati</string>
+    <string name="importing_data">Importazione dei dati…</string>
+    <string name="exporting_data">Esportazione dei dati…</string>
+    <string name="create_file_failed">Creazione del file fallita.</string>
+    <string name="no_folder_is_selected">Nessuna cartella è stata selezionata.</string>
+    <string name="no_file_is_selected">Nessun file è stato selezionato.</string>
+    <!-- Open with an app such as Signal -->
+    <string name="open_with">Apri con</string>
+    <string name="invite_text">Dai un\'occhiata a Noto, un\'applicazione per scrivere note minimale e a sorgente libera.</string>
+    <string name="version">Versione</string>
+    <!-- A message shown when clicking on the app version. -->
+    <string name="version_is_copied">Versione copiata negli appunti.</string>
+    <!-- Me -->
+    <string name="developer">Sviluppatore</string>
+    <!-- Creator of app icons. -->
+    <string name="creator">Autore</string>
+    <!-- Translator of a language. -->
+    <!-- Proofreader of a language. -->
+    <string name="app_icons">Icone dell\'app</string>
+    <string name="privacy_policy">Informativa sulla privacy</string>
+    <!-- Description of the "Privacy policy" settings option. -->
+    <string name="privacy_policy_description">Ultimo aggiornamento del 25 agosto 2022.</string>
+    <!-- License of the project, or app icons. Example: Apache 2.0. -->
+    <string name="license">Licenza</string>
+    <string name="date">Data</string>
+    <string name="time">Ora</string>
+    <string name="drag">Trascina</string>
+    <string name="nunito">Nunito (predefinito)</string>
+    <string name="monospace">Monospace</string>
+    <string name="folders_archive">Archivio cartelle</string>
+    <!-- The first screen user sees when opening the app. -->
+    <string name="main_interface">Interfaccia principale</string>
+    <!-- Description of the "Main interface" settings option. -->
+    <string name="main_interface_description">La prima schermata visualizzata all\'avvio dell\'app.</string>
+    <!-- The default folder of "Save to Noto" text selection option. -->
+    <string name="quick_note_folder">Cartella delle note rapide</string>
+    <!-- AKA "Save to Noto". -->
+    <string name="quick_note">Nota rapida</string>
+    <!-- Description of the "Quick note folder" settings option. -->
+    <string name="quick_note_folder_description">La cartella predefinita quando salvi una nota con l\'opzione \"Nota rapida\" nella selezione del testo.</string>
+    <string name="general">Generale</string>
+    <string name="all_notes">Tutte le note</string>
+    <string name="all_folders">Tutte le cartelle</string>
+    <string name="clear">Pulisci</string>
+    <!-- Replacement for Recent Notes filtered view. -->
+    <string name="recent">Recenti</string>
+    <string name="collapse">Comprimi</string>
+    <string name="expand">Espandi</string>
+    <string name="parent_folder">Cartella superiore</string>
+    <string name="new_note_cursor_position">Posizione del cursore in una nuova nota</string>
+    <!-- Opening notes in Reading Mode, or Editor, when clicking on them by default. -->
+    <string name="open_notes_in">Apri note in</string>
+    <string name="archive">Archivia</string>
+    <!-- Similar to Recent Notes filtered view but for archived notes. -->
+    <string name="archived">Archiviate</string>
+    <!-- Similar to Recent Notes filtered view but for notes that have reminders set. -->
+    <string name="scheduled">Pianificate</string>
+    <!-- The name of the folder archive, which contains folder's archived notes. E.g. Recipes archive. -->
+    <string name="folder_archive">Archivio %s</string>
+    <string name="unarchive">Rimuovi dall\'archivio</string>
+    <string name="edit">Modifica</string>
+    <!-- An option in Reading Mode, to move to the next note. -->
+    <string name="next">Successiva</string>
+    <!-- An option in Reading Mode, to move to the previous note. -->
+    <string name="previous">Precedente</string>
+    <string name="pin">Fissa</string>
+    <!-- Merge multiple notes into a new note. -->
+    <string name="merge">Unisci</string>
+    <string name="unpin">Sblocca</string>
+    <string name="delete">Elimina</string>
+    <string name="just_now">adesso</string>
+    <!--Select a note. -->
+    <string name="select">Seleziona</string>
+    <!--Select all notes. -->
+    <string name="select_all">Seleziona tutto</string>
+    <!-- List of translations. -->
+    <string name="translations">Traduzioni</string>
+    <!-- Description of the "Translations" settings option. -->
+    <string name="translations_description">Un ringraziamento speciale a tutti i traduttori che hanno contribuito a rendere Noto disponibile in diverse lingue.</string>
+    <!-- List of credits. -->
+    <string name="credits">Riconoscimenti</string>
+    <!-- Folder -->
+    <string name="folders">Cartelle</string>
+    <plurals name="folders_count">
+        <item quantity="one">%d Cartella</item>
+        <item quantity="other">%d Cartelle</item>
+    </plurals>
+    <string name="create_folder">Crea cartella</string>
+    <string name="update_folder">Aggiorna cartella</string>
+    <string name="archive_folder">Archivia cartella</string>
+    <string name="new_folder">Nuova cartella</string>
+    <string name="edit_folder">Modifica cartella</string>
+    <string name="folder_options">Opzioni cartella</string>
+    <string name="add_new_note_shortcut">Scorciatoia nuova nota</string>
+    <string name="delete_folder_description">Questa azione non può essere annullata ed eliminerà la cartella con tutti i suoi contenuti permanentemente.</string>
+    <string name="folder_title">Titolo cartella</string>
+    <!-- Folder color -->
+    <string name="color">Colore</string>
+    <string name="delete_folder">Elimina</string>
+    <string name="delete_folder_confirmation">Sei sicuro di voler eliminare questa cartella?</string>
+    <string name="empty_title">Il titolo non può essere vuoto.</string>
+    <string name="folder_is_deleted">La cartella è stata eliminata.</string>
+    <string name="folder_is_archived">La cartella è stata archiviata.</string>
+    <string name="folder_is_unarchived">La cartella è stata spostata dall\'archivio.</string>
+    <string name="folder_is_pinned">La cartella è stata fissata.</string>
+    <string name="folder_is_unpinned">La cartella è stata sbloccata.</string>
+    <string name="no_folders_found">Nessuna cartella trovata.</string>
+    <!-- Text displayed when there are no folders suitable for a given action like moving/copying/etc... -->
+    <string name="no_relevant_folders_found">Nessuna cartella idonea trovata.</string>
+    <string name="select_folder">Seleziona cartella</string>
+    <string name="folder">Cartella</string>
+    <string name="select_folder_archive">Seleziona cartella di archivio</string>
+    <string name="pinned">Fissati</string>
+    <!-- Vault -->
+    <string name="folders_vault">Cassaforte</string>
+    <string name="update_passcode">Aggiorna codice</string>
+    <string name="enable_vault">Abilita cassaforte</string>
+    <string name="enter_vault_passcode">Inserisci codice cassaforte</string>
+    <string name="add_to_vault">Aggiungi alla cassaforte</string>
+    <string name="remove_from_vault">Rimuovi dalla cassaforte</string>
+    <string name="folder_is_vaulted">La cartella è stata spostata nella cassaforte.</string>
+    <string name="folder_is_unvaulted">La cartella è stata rimossa dalla cassaforte.</string>
+    <string name="vault_is_empty">La cassaforte è vuota.</string>
+    <string name="archive_vaulted_folder_confirmation">Sei sicuro di voler archiviare questa cartella?</string>
+    <string name="archive_vaulted_folder_description">Archiviare questa cartella la rimuoverà dalla cassaforte.</string>
+    <string name="passcode">Codice di accesso</string>
+    <string name="new_vault_passcode">Nuovo codice della cassaforte</string>
+    <string name="new_passcode">Nuovo codice di accesso</string>
+    <string name="current_passcode">Codice di accesso attuale</string>
+    <string name="vault_setup">Configurazione cassaforte</string>
+    <string name="current_vault_passcode">Attuale codice della cassaforte</string>
+    <!-- Change vault passcode option. -->
+    <string name="change_passcode">Cambia codice della cassaforte</string>
+    <!-- Vault timeout. -->
+    <string name="timeout">Timeout</string>
+    <!-- Description of the "Timeout" settings option. -->
+    <string name="timeout_description">Il tempo necessario per chiudere la cassaforte dopo essere stata aperta.</string>
+    <string name="vault_timeout">Timeout cassaforte</string>
+    <string name="invalid_passcode">Codice non valido</string>
+    <string name="passcode_length_message">Il codice deve contenere almeno 6 numeri</string>
+    <string name="passcode_empty_message">Il codice non può essere vuoto</string>
+    <string name="passcode_doesnt_match">Il codice non corrisponde con quello attuale</string>
+    <string name="vault_passcode_has_changed">Il codice della cassaforte è stato aggiornato.</string>
+    <string name="enable_vault_message">Per abilitare la cassaforte, fornisci un codice di accesso.</string>
+    <string name="vault_passcode_message">Il codice di accesso di una cassaforte non può essere cambiato se lo perdi, assicurati di salvarlo in un luogo sicuro.</string>
+    <string name="use_bio">Usa dati biometrici</string>
+    <string name="validate">Convalida</string>
+    <string name="vault">Cassaforte</string>
+    <!-- An option to disable the vault in vault settings. -->
+    <string name="disable_vault">Disabilita cassaforte</string>
+    <!-- A message shown when "Disable vault" is being clicked. -->
+    <string name="vault_is_disabled">Cassaforte disabilitata.</string>
+    <string name="vault_is_enabled">La cassaforte è stata abilitata.</string>
+    <!-- An option to disable the vault in vault settings. -->
+    <string name="disable">Disabilita</string>
+    <!-- A confirmation message shown when disabling the vault in vault settings. -->
+    <string name="disable_vault_confirmation">Sei sicuro di voler disabilitare la cassaforte?</string>
+    <!-- A description message shown when disabling the vault in vault settings. -->
+    <string name="disable_vault_description">Questa azione non può essere annullata, disabiliterà la cassaforte e sposterà tutte le cartelle fuori da essa.</string>
+    <string name="vault_is_open">La cassaforte è aperta</string>
+    <string name="immediately">Immediatamente</string>
+    <string name="on_app_close">Alla chiusura dell\'app</string>
+    <string name="after_1_hour">Dopo 1 ora</string>
+    <string name="after_4_hours">Dopo 4 ore</string>
+    <string name="after_12_hours">Dopo 12 ore</string>
+    <string name="close_vault">Chiudi cassaforte</string>
+    <!-- Enabling biometric authentication for the app. -->
+    <string name="bio_auth">Abilita autenticazione biometrica</string>
+    <!-- Description of the "Enable biometric authentication" settings option. -->
+    <string name="bio_auth_description">Scegli se vuoi consentire l\'accesso alla cassaforte con l\'autenticazione biometrica, come il riconoscimento facciale o l\'impronta digitale.</string>
+    <string name="use_passcode">Usa codice</string>
+    <!-- Note -->
+    <string name="all">Tutto</string>
+    <string name="set_reminder">Imposta promemoria</string>
+    <string name="update_reminder">Aggiorna promemoria</string>
+    <string name="archive_is_empty">L\'archivio è vuoto.</string>
+    <!-- Notes count in Reading Mode with indicator of the current selected displayed note.
+     Such as "2/11 Notes".
+    -->
+    <plurals name="reading_mode_notes_count">
+        <item quantity="one">Nota %1$d di %2$d</item>
+        <item quantity="other">Nota %1$d di %2$d</item>
+    </plurals>
+    <plurals name="notes_count">
+        <item quantity="one">%d Nota</item>
+        <item quantity="other">%d Note</item>
+    </plurals>
+    <!-- Filtered notes count is shown when a label is selected, or text is searched.
+         Such as "30 Notes • 5 Filtered".
+     -->
+    <plurals name="notes_filtered_count">
+        <item quantity="one">%1$d Nota • %2$d Filtrata</item>
+        <item quantity="other">%1$d Note • %2$d Filtrate</item>
+    </plurals>
+    <!-- Selected notes count is shown when a note or multiple notes are selected.
+         Such as "30 Notes • 5 Selected".
+     -->
+    <plurals name="notes_selected_count">
+        <item quantity="one">%1$d Nota • %2$d Selezionata</item>
+        <item quantity="other">%1$d Note • %2$d Selezionate</item>
+    </plurals>
+    <!--  Filtered notes count is shown when a label is selected, or text is searched. Selected notes count is shown when a note or multiple notes are selected.
+          Such as, "30 Notes • 3 Filtered • 8 Selected".
+     -->
+    <plurals name="notes_filtered_selected_count">
+        <item quantity="one">%1$d Nota • %2$d Filtrata • %3$d Selezionata</item>
+        <item quantity="other">%1$d Note • %2$d Filtrate • %3$d Selezionate</item>
+    </plurals>
+    <plurals name="words_count">
+        <item quantity="one">%d Parola</item>
+        <item quantity="other">%d Parole</item>
+    </plurals>
+    <!-- Selected words count is shown when text is selected in a note. -->
+    <plurals name="words_selected_count">
+        <item quantity="one">%1$d Parola • %2$d Selezionata</item>
+        <item quantity="other">%1$d Parole • %2$d Selezionate</item>
+    </plurals>
+    <!-- Text displaying how many occurrences of a word has been found using "Find in note" feature. Such as "2/11 Found".
+        The First number is for the current displayed word, and the other number is the total count of words that have been found. -->
+    <plurals name="words_found_count">
+        <item quantity="one">%1$d Parola • %2$d di %3$d trovate</item>
+        <item quantity="other">%1$d Parole • %2$d di %3$d trovate</item>
+    </plurals>
+    <string name="body">Contenuto</string>
+    <string name="title">Titolo</string>
+    <!-- Note's editor, opposite of Reading Mode. -->
+    <string name="editor">Editor</string>
+    <string name="create_note">Crea nota</string>
+    <plurals name="delete_note">
+        <item quantity="one">Elimina nota</item>
+        <item quantity="other">Elimina note</item>
+    </plurals>
+    <string name="duplicate">Duplica</string>
+    <string name="undo">Annulla</string>
+    <string name="undo_history">Annulla storico</string>
+    <string name="redo">Ripeti</string>
+    <string name="redo_history">Ripeti storico</string>
+    <plurals name="share_note">
+        <item quantity="one">Condividi la nota</item>
+        <item quantity="other">Condividi %d note</item>
+    </plurals>
+    <!-- Sorting for notes/folders -->
+    <string name="sorting">Ordinamento</string>
+    <!-- Ordering for sorting/grouping of notes/folders -->
+    <string name="ordering">Ordinamento</string>
+    <string name="notes_view">Visualizzazione note</string>
+    <!-- Dialog for how folders sorted. -->
+    <string name="folders_view">Vista cartelle</string>
+    <!-- Grouping for notes/folders -->
+    <string name="grouping">Raggruppamento</string>
+    <string name="save_to_noto">Salva su Noto</string>
+    <!-- When selecting text, and then doing "Save to Noto", this message is shown in the notification. -->
+    <string name="note_is_saved">Nota salvata in %s.</string>
+    <string name="no_notes_found">Nessuna nota trovata.</string>
+    <!-- Text displayed when there are no notes found when search is applied, and labels are selected. -->
+    <string name="no_relevant_notes_found">Nessuna nota trovata.</string>
+    <!-- Text displayed when there are no notes found in the Recent view. -->
+    <string name="no_recent_notes_found">Nessuna nota recente trovata.</string>
+    <!-- Text displayed when there are no notes found in the Archived view. -->
+    <string name="no_archived_notes_found">Nessuna nota archiviata trovata.</string>
+    <!-- Text displayed when there are no notes found in the Scheduled view. -->
+    <string name="no_scheduled_notes_found">Nessuna nota programmata trovata.</string>
+    <!-- Text displayed when there are no notes found when search is applied. -->
+    <string name="no_notes_found_search">Nessuna nota trovata contenente i termini di ricerca.</string>
+    <!-- Text displayed when there are no notes found when labels are selected. -->
+    <string name="no_notes_found_labels">Nessuna nota trovata contenente le etichette selezionate.</string>
+    <!-- Text displayed when folder is empty, and containing 0 notes. Replacement for "No notes found". -->
+    <string name="folder_is_empty">La cartella è vuota.</string>
+    <string name="notes">Note</string>
+    <!-- The count of the selected notes that have been merged. -->
+    <string name="notes_are_merged">%d note sono state unite in una nuova nota.</string>
+    <plurals name="note_is_archived">
+        <item quantity="one">Nota archiviata.</item>
+        <item quantity="other">%d Note archiviate.</item>
+    </plurals>
+    <plurals name="note_is_unarchived">
+        <item quantity="one">Nota spostata dall\'archivio.</item>
+        <item quantity="other">%d Note spostate dall\'archivio.</item>
+    </plurals>
+    <!-- The count of the selected notes that have been pinned. -->
+    <plurals name="note_is_pinned">
+        <item quantity="one">Nota fissata.</item>
+        <item quantity="other">%d Note fissate.</item>
+    </plurals>
+    <!-- The count of the selected notes that have been unpinned. -->
+    <plurals name="note_is_unpinned">
+        <item quantity="one">Nota non più fissata.</item>
+        <item quantity="other">%d Note non più fissate.</item>
+    </plurals>
+    <string name="cancel_reminder">Annulla promemoria</string>
+    <string name="note_is_unarchived">La nota è stata spostata dall\'archivio.</string>
+    <string name="reminder">Promemoria</string>
+    <string name="reminder_date">Data promemoria</string>
+    <string name="reminder_time">Ora promemoria</string>
+    <string name="reminder_is_set">Il promemoria è stato impostato il %1$s alle %2$s.</string>
+    <string name="reminder_is_cancelled">Il promemoria è stato annullato.</string>
+    <string name="reminders">Promemoria</string>
+    <string name="new_note_reminder">Nuovo promemoria</string>
+    <string name="copy">Copia</string>
+    <string name="copy_to">Copia in…</string>
+    <!-- Text displayed when copying notes between folders along with a progress indicator. -->
+    <string name="copying_notes">Copia delle note in %s</string>
+    <!-- The count of the selected notes that have been copied to a folder. -->
+    <plurals name="note_is_copied">
+        <item quantity="one">Nota copiata in %s.</item>
+        <item quantity="other">%d Note copiate in %s.</item>
+    </plurals>
+    <!-- The count of the selected notes that have been copied to clipboard. -->
+    <plurals name="note_copied_to_clipboard">
+        <item quantity="one">Nota copiata negli appunti.</item>
+        <item quantity="other">%d Note copiate negli appunti.</item>
+    </plurals>
+    <string name="text_copied">Il testo è stato copiato negli appunti.</string>
+    <plurals name="delete_note_confirmation">
+        <item quantity="one">Sei sicuro di voler eliminare questa nota?</item>
+        <item quantity="other">Sei sicuro di voler eliminare queste note?</item>
+    </plurals>
+    <string name="share_with">Condividi con…</string>
+    <string name="add_note_reminder">Aggiungi promemoria</string>
+    <plurals name="delete_note_description">
+        <item quantity="one">Questa azione non può essere annullata ed eliminerà la nota e il suo promemoria permanentemente.</item>
+        <item quantity="other">Questa azione non può essere annullata ed eliminerà le note e i loro promemoria permanentemente.</item>
+    </plurals>
+    <string name="reading_mode">Modalità lettura</string>
+    <string name="edit_note_reminder">Modifica promemoria</string>
+    <string name="note_options">Opzioni note</string>
+    <!-- The count of the selected notes that have been deleted. -->
+    <plurals name="note_is_deleted">
+        <item quantity="one">Nota eliminata.</item>
+        <item quantity="other">%d Note eliminate.</item>
+    </plurals>
+    <!-- The count of the selected notes that have been duplicated. -->
+    <plurals name="note_is_duplicated">
+        <item quantity="one">Nota duplicata.</item>
+        <item quantity="other">%d Note duplicate.</item>
+    </plurals>
+    <string name="move_to">Sposta in…</string>
+    <!-- Text displayed when moving notes between folders along with a progress indicator. -->
+    <string name="moving_notes">Spostamento delle note in %s</string>
+    <!-- The count of the selected notes that have been moved to a folder. -->
+    <plurals name="note_is_moved">
+        <item quantity="one">Nota spostata in %s.</item>
+        <item quantity="other">%d Note spostate in %s.</item>
+    </plurals>
+    <string name="note_preview_size">Dimensioni anteprima note</string>
+    <string name="show_note_creation_date">Mostra data di creazione della nota</string>
+    <!-- Whether to show notes count in "All Folders" view. -->
+    <string name="show_notes_count">Mostra il numero di note</string>
+    <!-- Description of the "Show notes count" settings option. -->
+    <string name="show_notes_count_description">Scegli se vuoi mostrare il numero di note nella finestra di dialogo delle cartelle.</string>
+    <!-- Whether to exit app immediately without showing folders dialog -->
+    <string name="quick_exit">Uscita rapida</string>
+    <!-- Description of the "Quick exit" settings option. -->
+    <string name="quick_exit_description">Indica se l\'app deve chiudersi subito quando usi il tasto indietro.</string>
+    <!-- Whether to pass the search term to the note screen. -->
+    <string name="continuous_search">Ricerca continua</string>
+    <!-- Description of the "Continuous Search" settings option. -->
+    <string name="continuous_search_description">Indica se passare il termine di ricerca allo schermo della nota.</string>
+    <!-- Whether to enable auto-scroll for notes in preview mode. -->
+    <string name="preview_auto_scroll">Anteprima scorrimento automatico</string>
+    <!-- Description of the "Preview auto-scroll" settings option. -->
+    <string name="preview_auto_scroll_description">Indica se abilitare lo scorrimento automatico delle note in modalità anteprima.</string>
+    <string name="remember_scrolling_position">Ricorda posizione dello scorrimento</string>
+    <!-- Description of the "Remember scrolling position" settings option. -->
+    <string name="remember_scrolling_position_description">Scegli se vuoi memorizzare la posizione di scorrimento nelle cartelle e nelle note.</string>
+    <string name="do_not_disturb">Non disturbare</string>
+    <!-- Description of the "Do Not Disturb" settings option. -->
+    <string name="do_not_disturb_description">Scegli se abilitare la modalità Non Disturbare durante la modalità lettura.</string>
+    <!-- An option for Reading Mode settings to keep screen on while in Reading Mode. -->
+    <string name="keep_screen_on">Mantieni lo schermo acceso</string>
+    <!-- Description of the "Keep screen on" settings option. -->
+    <string name="keep_screen_on_description">Scegli se impedire lo spegnimento dello schermo durante la modalità lettura.</string>
+    <string name="full_screen_mode">Modalità schermo intero</string>
+    <!-- Description of the "Go full screen" settings option. -->
+    <string name="full_screen_description">Scegli se nascondere la barra di stato e di navigazione durante la modalità lettura.</string>
+    <!-- An option for Reading Mode settings to set a custom screen brightness level while in Reading Mode. -->
+    <string name="screen_brightness_level">Luminosità dello schermo</string>
+    <!-- Description of the "Screen brightness level" settings option. -->
+    <string name="screen_brightness_level_description">Livello di luminosità dello schermo durante la modalità lettura.</string>
+    <!-- "Screen brightness level" option. -->
+    <string name="min">Minima</string>
+    <!-- "Screen brightness level" option. -->
+    <string name="very_low">Molto bassa</string>
+    <!-- "Screen brightness level" option. -->
+    <string name="low">Bassa</string>
+    <!-- "Screen brightness level" option. -->
+    <string name="medium">Media</string>
+    <!-- "Screen brightness level" option. -->
+    <string name="high">Alta</string>
+    <!-- "Screen brightness level" option. -->
+    <string name="very_high">Molto alta</string>
+    <!-- "Screen brightness level" option. -->
+    <string name="max">Massima</string>
+    <!--  Reading Mode progress  -->
+    <string name="progress">Progresso</string>
+    <string name="show">Mostra</string>
+    <string name="hide">Nascondi</string>
+    <string name="permission_not_granted">L\'autorizzazione non è stata concessa</string>
+    <string name="current">Attuale</string>
+    <!-- Label -->
+    <string name="reorder_label">Riordina</string>
+    <string name="update_label">Aggiorna etichetta</string>
+    <string name="create_label">Crea etichetta</string>
+    <string name="label">Etichetta</string>
+    <string name="without_label">Senza etichetta</string>
+    <string name="label_options">Opzioni etichetta</string>
+    <string name="delete_label">Elimina etichetta</string>
+    <string name="new_label">Nuova etichetta</string>
+    <string name="edit_label">Modifica etichetta</string>
+    <string name="labels_order">Ordine delle etichette</string>
+    <string name="delete_label_confirmation">Sei sicuro di voler eliminare quest\'etichetta?</string>
+    <string name="label_is_deleted">L\'etichetta è stata eliminata.</string>
+    <string name="delete_label_description">Questa azione non può essere annullata. Eliminerà l\'etichetta e rimuoverà l\'etichetta dalle note associate in modo permanente.</string>
+    <!-- Theme -->
+    <string name="theme">Tema</string>
+    <string name="system_dark_theme">Segui sistema + Scuro</string>
+    <string name="system_black_theme">Segui sistema + Nero</string>
+    <string name="light_theme">Chiaro</string>
+    <string name="dark_theme">Scuro</string>
+    <string name="black_theme">Nero</string>
+    <!-- Language -->
+    <string name="language">Lingua</string>
+    <!-- A text next to the non-finished language. -->
+    <string name="not_finished">Non completo</string>
+    <!-- An option in settings to invite users to translate Noto. -->
+    <string name="translate_noto">Traduci Noto</string>
+    <!-- Description of the "Translate Noto" settings option. -->
+    <string name="translate_noto_description">Le traduzione sono fatte su Crowdin.</string>
+    <!-- Replacement for "System language" in settings. -->
+    <string name="follow_system">Segui sistema</string>
+    <string name="english">Inglese</string>
+    <string name="turkish">Turco</string>
+    <string name="arabic">Arabo</string>
+    <string name="indonesian">Indonesiano</string>
+    <string name="russian">Russo</string>
+    <string name="spanish">Spagnolo</string>
+    <string name="french">Francese</string>
+    <string name="german">Tedesco</string>
+    <string name="italian">Italiano</string>
+    <string name="tamil">Tamil</string>
+    <string name="czech">Ceco</string>
+    <string name="lithuanian">Lituano</string>
+    <string name="simplified_chinese">Cinese Semplificato</string>
+    <string name="portuguese">Portoghese</string>
+    <string name="korean">Korean</string>
+    <!-- Icon -->
+    <string name="icon">Icona</string>
+    <!-- Widget -->
+    <string name="create_widget">Crea widget</string>
+    <string name="update_widget">Aggiorna widget</string>
+    <string name="new_notes_widget">Widget di nuove note</string>
+    <string name="edit_notes_widget">Widget di modifica note</string>
+    <string name="new_folders_widget">Widget di nuove cartelle</string>
+    <string name="edit_folders_widget">Widget di modifica cartelle</string>
+    <string name="new_folder_button">Pulsante nuova cartella</string>
+    <string name="new_note_button">Pulsante nuova nota</string>
+    <string name="widget_header">Intestazione del widget</string>
+    <string name="app_icon">Icona app</string>
+    <string name="widget_radius">Raggio del widget</string>
+    <string name="edit_widget">Modifica widget</string>
+    <string name="edit_widget_button">Modifica tasto widget</string>
+    <string name="folders_notes_count">Contatore note delle cartelle</string>
+    <string name="loading_content">Caricamento contenuti</string>
+    <!-- Releases -->
+    <string name="release_bug_fixes_and_design_improvements">Correzione bug e miglioramento dell\'interfaccia.</string>
+    <string name="release_bug_fixes">Correzione bug.</string>
+    <string name="release_1_8_0_vault">Aggiunto supporto per librerie della cassaforte protette da passcode.</string>
+    <string name="release_1_8_0_vault_timeout">Aggiunte opzioni per la chiusura automatica della cassaforte.</string>
+    <string name="release_1_8_0_vault_bio">Aggiunto supporto per autenticazione della cassaforte tramite dati biometrici per i dispositivi supportati.</string>
+    <string name="release_1_8_0_language">Aggiunta lingua Spagnola.</string>
+    <string name="release_1_8_0_reddit">Aggiunto link per la nuova community di <a href="https://www.reddit.com/r/notoapp">Reddit</a>.</string>
+    <string name="release_2_0_0_new_look">Nuovo anno, nuovo look!</string>
+    <string name="release_2_0_0_folders">Le librerie sono sparite. Benvenute cartelle!</string>
+    <string name="release_2_0_0_animations">Migliorate le animazioni in tutta l\'app.</string>
+    <string name="release_2_0_0_nested_folders">Supporto sperimentale per cartelle nidificate.</string>
+    <string name="release_2_0_0_swipe_folder">Supporto sperimentale per nidificare una cartella con swipe orizzontale quando l\'ordinamento è manuale.</string>
+    <string name="release_2_0_0_general">Aggiunto una cartella predefinita \"Generale\" per le note generiche.</string>
+    <string name="release_2_0_0_all_recent">Supporto per vedere tutte le note e le note recenti con la possibilità di ricercare tra esse.</string>
+    <string name="release_2_0_0_highlight_search">Evidenzia contenuti delle note quando fai una ricerca.</string>
+    <string name="release_2_0_0_collapsing_toolbar">Implementata toolbar che può essere nascosta per un migliore utilizzo e accesso alla mano.</string>
+    <string name="release_2_0_0_language">Aggiunto supporto per la lingua Francese.</string>
+    <string name="release_2_0_0_swipe_bottom_app_bar">Aggiunto supporto per swipe verso l\'alto dalla bottom app bar per vedere le cartelle.</string>
+    <string name="release_2_0_0_navigation">Entra nella cassaforte quando si preme sulla notifica \'La cassaforte è aperta\'.</string>
+    <string name="release_2_0_0_settings_main_folder">Aggiunta opzione per scegliere la cartella principale di destinazione.</string>
+    <string name="release_2_0_0_settings_toolbar">Aggiunta opzione per nascondere la toolbar in maniera predefinita.</string>
+    <string name="release_2_0_0_shortcuts">Risolto problema con le icone delle scorciatoie statiche su dispositivi Android più vecchi.</string>
+    <string name="release_2_1_0_undo_redo">Aggiunto undo/redo con la corrispettiva cronologia.</string>
+    <string name="release_2_1_0_labels">Redesign delle etichette.</string>
+    <string name="release_2_1_0_app_bars">Redesign delle bottom and top app bar in tutti i layouts.</string>
+    <string name="release_2_1_0_menu">Redesign di diversi menu.</string>
+    <string name="release_2_1_0_new_folder">Redesign layout della creazione/modifica di cartelle.</string>
+    <string name="release_2_1_0_grouping_order">Aggiunto ordine di raggruppamento per le note.</string>
+    <string name="release_2_1_0_drag_elevation">Aggiunta elevazione quando si trascinano note o etichette.</string>
+    <string name="release_2_1_0_preview">Includi preview nei menu di cartelle, note ed etichette.</string>
+    <string name="release_2_1_0_dates">Miglioramento formato delle date.</string>
+    <string name="release_2_1_0_highlight">Cambia colore di selezione nelle note.</string>
+    <string name="release_2_1_0_navigation">Vai al layout delle cartelle prima di uscire dall\'app.</string>
+    <string name="release_2_1_0_material_you">Supporto per Material You (Material 3).</string>
+    <string name="release_2_1_0_splash_screen">Redesign splash screen.</string>
+    <string name="release_2_1_0_reading_mode">Miglioramenti della modalità di lettura.</string>
+    <string name="release_2_1_0_scroll_position">Supporto per memorizzare la posizione dello scroll nelle cartelle e nelle note.</string>
+    <string name="release_2_1_0_disable_animations">Disabilità animazioni per i colori delle cartelle e delle etichette.</string>
+    <string name="release_2_1_0_import_data">Fix importazione dati.</string>
+    <string name="release_2_1_0_vault_crash">Risolto bug che faceva crashare l\'app quando si apriva la cassaforte su Android 11+.</string>
+    <string name="release_2_1_0_undo_redo_swipe">Implementate le swiping gestures per effettuare undo/redo.</string>
+    <string name="release_2_1_0_label_filtering">Aggiunto supporto per filtrare etichette in maniera inclusiva o esclusiva.</string>
+    <string name="release_2_1_0_app_icon">Redesign icona app.</string>
+    <string name="release_2_1_0_change_app_icon">Supporto per cambio icona dell\'app.</string>
+    <string name="release_2_1_0_language">Aggiunta lingua Tedesca.</string>
+    <string name="release_2_1_4_shortcuts">Risolto problema con le scorciatoie che non funzionavano quando si usava un\'icona diversa.</string>
+    <string name="release_2_1_4_labels">Le etichette selezionate adesso appaiono per prima nella struttura della nota.</string>
+    <string name="release_2_2_0_languages">Sono adesso disponibili le traduzioni in Ceco ed Italiano.</string>
+    <string name="release_2_2_0_multi_selection">Adesso possono essere selezionate più note contemporaneamente.</string>
+    <string name="release_2_2_0_reading_mode">Aggiunta opzione per aprire le note direttamente in modalità lettura.</string>
+    <string name="release_2_2_0_settings">Rinnovato il menù delle impostazioni.</string>
+    <string name="release_2_2_0_paging">Implementata la paginazione delle note in modalità lettura.</string>
+    <string name="release_2_2_0_app_speed">Migliorati i tempi di avvio dell\'app.</string>
+    <string name="release_2_2_0_import_json">Risolti i problemi legati all\'importazione dei file JSON.</string>
+    <string name="release_2_2_0_black_theme">Risolto problema con il tema scuro in dispositivi con Android 12+.</string>
+    <string name="release_2_2_1_languages">Aggiunte le traduzioni per Lituano e Cinese Semplificato.</string>
+    <string name="release_2_2_1_design">Miglioramenti nel design.</string>
+    <string name="release_2_2_1_undo_redo">Rifatta la funzionalità annulla/ripeti per essere più efficace.</string>
+    <string name="release_2_2_1_filtered_view">Supporto per vedere le note Archiviate &amp; Pianificate.</string>
+    <string name="release_2_2_1_quick_exit">Aggiunta l\'opzione per l\'uscita rapida(esci dall\'app senza andare nel menù principale) nelle impostazioni.</string>
+    <string name="release_2_2_1_quick_note_tile">Implementato un metodo più veloce per creare delle note mentre sei in altre app usando la funzione Nota Rapida dal centro notifiche.</string>
+    <string name="release_2_2_1_system_app_language">Implementata la possibilità di cambiare lingua dell\'app dalle impostazioni di sistema per Android 13 o superiore.</string>
+    <string name="release_2_3_0_new_languages">Supporto russo &amp; portoghese.</string>
+    <string name="release_2_3_0_reminder">Nuovo design per i promemoria, selezionatori di data e ora abbinati con il tema Noto.</string>
+    <string name="release_2_3_0_selection">Revisionato come la selezione e il trascinamento delle note è gestito usando solo click lunghi.</string>
+    <string name="release_2_3_0_find_in_note">Aggiunta funzionalità di ricerca nelle note, e scorrimento automatico del testo trovato nelle note.</string>
+    <string name="release_2_3_0_archive">Aggiunta selezione delle note e azioni rapide per le schermate dell\'Archivio.</string>
+    <string name="release_2_3_0_sorting">Entità ordinate rispettando le lettere diacritiche della lingua.</string>
+    <string name="release_2_3_0_reading_mode">Mostra contatore e indicatore progresso quando si hanno più note aperte in modalità lettura.</string>
+    <string name="release_2_3_0_whats_new">Nuovo design per le finestre e la schermata delle novità.</string>
+    <string name="release_2_3_0_report_issues">Aggiuntà possibilità di segnalare problemi tramite email nelle impostazioni.</string>
+    <string name="release_2_3_0_quick_note">Risolto problema in cui molteplici finestre venivano aperte quando si cercava di creare una nota rapida.</string>
+    <string name="release_2_3_1_languages">Supported Korean.</string>
+    <string name="release_2_3_1_auto_scroll">Improved auto-scroll when writing notes.</string>
+</resources>

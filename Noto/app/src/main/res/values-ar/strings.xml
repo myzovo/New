@@ -1,0 +1,701 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App -->
+    <string name="app_name">Noto</string>
+    <!-- Button text for sorting/ordering/filtering notes options. -->
+    <string name="apply">طبّق</string>
+    <string name="okay">حسنا</string>
+    <string name="search">البحث</string>
+    <!-- An option in the note layout for searching for text inside a note. -->
+    <string name="find_in_note">ابحث في الملاحظة</string>
+    <!-- A settings option to support the project. -->
+    <string name="support_noto">دعم Noto</string>
+    <!-- Description of the Support Noto settings options. -->
+    <string name="support_noto_description">إذا كنت ترغب في التأكد من أن Noto يبقى قائما.</string>
+    <!-- More options for folder, note, etc... -->
+    <string name="more_options">المزيد من الخيارات</string>
+    <!-- Options for multi-selected notes. -->
+    <string name="options">خيارات</string>
+    <string name="back">رجوع</string>
+    <!-- Replacements for "Label filtering type". -->
+    <string name="filtering">التصفية</string>
+    <string name="layout">التخطيط</string>
+    <string name="list">قائمة</string>
+    <!-- Label filtering mode -->
+    <string name="inclusive">شامل</string>
+    <!-- Inclusive filtering mode description -->
+    <string name="inclusive_description">تصفية الملاحظات التي تحتوي على <b>أي</b> من الملصقات المحددة.</string>
+    <!-- Label filtering mode -->
+    <string name="exclusive">محدود</string>
+    <!-- Exclusive filtering mode description -->
+    <string name="exclusive_description">تصفية الملاحظات التي تحتوي على <b>كل</b> الملصقات المحددة، لا أقل من ذلك.</string>
+    <!-- Label filtering mode -->
+    <string name="strict">صارم</string>
+    <!-- Strict filtering mode description -->
+    <string name="strict_description">تصفية الملاحظات التي تحتوي على الملصقات المحددة <b>فقط</b>، لا أقل، لا أكثر من ذلك.</string>
+    <string name="grid">شبكة</string>
+    <string name="created">أنشئت %s</string>
+    <string name="accessed">تم الوصول %s</string>
+    <string name="alphabetical">أبجدي</string>
+    <!-- Sorting/Grouping notes by access date. -->
+    <string name="access_date">تاريخ الوصول</string>
+    <string name="creation_date">تاريخ الإنشاء</string>
+    <string name="manual">يدوي</string>
+    <string name="none">بدون</string>
+    <string name="descending">تنازلي</string>
+    <string name="ascending">تصاعدي</string>
+    <string name="settings">الإعدادات</string>
+    <!-- The link of the source code of the project. -->
+    <string name="source_code">رمز المصدر</string>
+    <!-- Description of the "Source code" settings option. -->
+    <string name="source_code_description">Noto هو تطبيق مفتوح المصدر، والرمز منشور على GitHub.</string>
+    <!-- The link of the Telegram community of Noto. -->
+    <string name="telegram_community">مجموعة تيليجرام</string>
+    <!-- Description of the "Telegram community" settings option. -->
+    <string name="telegram_community_description">انضم إلى المجموعة للمشاركة مع مستخدمي Noto الآخرين، والحصول على آخر الأخبار.</string>
+    <!-- Text for Telegram banner in Settings & What's new dialog. -->
+    <string name="join_telegram">انضم إلى مجموعة تيليجرام!</string>
+    <!-- The font used in notes, such as Monospace, or Nunito. -->
+    <string name="notes_font">خط الملاحظات</string>
+    <string name="share_app_with_others">شارك Noto مع الآخرين</string>
+    <string name="rate_app_on_play_store">قيم Noto على متجر بلي</string>
+    <string name="report_issue">الإبلاغ عن مشكلة</string>
+    <string name="email">البريد الإلكتروني</string>
+    <string name="about">حول</string>
+    <string name="whats_new">ما هو الجديد</string>
+    <string name="whats_new_in">ما هو الجديد في %s</string>
+    <string name="learn_more">اعرف المزيد…</string>
+    <!--    <string name="share_with">Share with</string>-->
+    <string name="export_import_data">تصدير/استيراد البيانات</string>
+    <string name="exporting_failed">فشل في تصدير البيانات.</string>
+    <string name="importing_failed">فشل في استيراد البيانات.</string>
+    <string name="data_is_exported">تم تصدير البيانات إلى %s</string>
+    <string name="data_is_imported">تم استيراد البيانات.</string>
+    <string name="export_data">تصدير البيانات</string>
+    <string name="import_data">استيراد البيانات</string>
+    <string name="importing_data">استيراد البيانات…</string>
+    <string name="exporting_data">تصدير البيانات…</string>
+    <string name="create_file_failed">فشل في إنشاء ملف.</string>
+    <string name="no_folder_is_selected">لم يتم اختيار أي مجلد.</string>
+    <string name="no_file_is_selected">لم يتم اختيار أي ملف.</string>
+    <!-- Open with an app such as Signal -->
+    <string name="open_with">فتح باستخدام</string>
+    <string name="invite_text">تحقق من Noto، وهو تطبيق مفتوح المصدر لأخذ الملاحظات.</string>
+    <string name="version">الإصدار</string>
+    <!-- A message shown when clicking on the app version. -->
+    <string name="version_is_copied">تم نسخ الإصدار إلى الحافظة.</string>
+    <!-- Me -->
+    <string name="developer">المطور</string>
+    <!-- Creator of app icons. -->
+    <string name="creator">المُنشئ</string>
+    <!-- Translator of a language. -->
+    <!-- Proofreader of a language. -->
+    <string name="app_icons">أيقونات التطبيق</string>
+    <string name="privacy_policy">سياسة الخصوصية</string>
+    <!-- Description of the "Privacy policy" settings option. -->
+    <string name="privacy_policy_description">آخر تحديث في ٢٥ أغسطس ٢٠٢٢.</string>
+    <!-- License of the project, or app icons. Example: Apache 2.0. -->
+    <string name="license">الرخصة</string>
+    <string name="date">التاريخ</string>
+    <string name="time">الوقت</string>
+    <string name="drag">أسحب</string>
+    <string name="nunito">Nunito (الافتراضي)</string>
+    <string name="monospace">Monospace</string>
+    <string name="folders_archive">أرشيف المجلدات</string>
+    <!-- The first screen user sees when opening the app. -->
+    <string name="main_interface">الواجهة الرئيسية</string>
+    <!-- Description of the "Main interface" settings option. -->
+    <string name="main_interface_description">الشاشة الأولى المعروضة عند فتح التطبيق.</string>
+    <!-- The default folder of "Save to Noto" text selection option. -->
+    <string name="quick_note_folder">مجلد الملاحظة السريعة</string>
+    <!-- AKA "Save to Noto". -->
+    <string name="quick_note">ملاحظة سريعة</string>
+    <!-- Description of the "Quick note folder" settings option. -->
+    <string name="quick_note_folder_description">المجلد الافتراضي عند حفظ الملاحظة باستخدام خيار اختيار النص \"ملاحظة سريعة\".</string>
+    <string name="general">عام</string>
+    <string name="all_notes">جميع الملاحظات</string>
+    <string name="all_folders">جميع المجلدات</string>
+    <string name="clear">محو</string>
+    <!-- Replacement for Recent Notes filtered view. -->
+    <string name="recent">الحديثة</string>
+    <string name="collapse">تصغير</string>
+    <string name="expand">إظهار</string>
+    <string name="parent_folder">المجلد الأصلي</string>
+    <string name="new_note_cursor_position">موضع مؤشر الملاحظة الجديدة</string>
+    <!-- Opening notes in Reading Mode, or Editor, when clicking on them by default. -->
+    <string name="open_notes_in">فتح الملاحظات في</string>
+    <string name="archive">أرشف</string>
+    <!-- Similar to Recent Notes filtered view but for archived notes. -->
+    <string name="archived">المؤرشفة</string>
+    <!-- Similar to Recent Notes filtered view but for notes that have reminders set. -->
+    <string name="scheduled">المجدولة</string>
+    <!-- The name of the folder archive, which contains folder's archived notes. E.g. Recipes archive. -->
+    <string name="folder_archive">أرشيف %s</string>
+    <string name="unarchive">إلغاء الأرشفة</string>
+    <string name="edit">تعديل</string>
+    <!-- An option in Reading Mode, to move to the next note. -->
+    <string name="next">التالي</string>
+    <!-- An option in Reading Mode, to move to the previous note. -->
+    <string name="previous">السابق</string>
+    <string name="pin">تثبيت</string>
+    <!-- Merge multiple notes into a new note. -->
+    <string name="merge">دمج</string>
+    <string name="unpin">إلغاء التثبيت</string>
+    <string name="delete">حذف</string>
+    <string name="just_now">قبل لحظات</string>
+    <!--Select a note. -->
+    <string name="select">تحديد</string>
+    <!--Select all notes. -->
+    <string name="select_all">تحديد الكل</string>
+    <!-- List of translations. -->
+    <string name="translations">الترجمة</string>
+    <!-- Description of the "Translations" settings option. -->
+    <string name="translations_description">شكر خاص لجميع المترجمين الذين ساعدوا في جعل Noto موجود في لغات مختلفة.</string>
+    <!-- List of credits. -->
+    <string name="credits">الاعتمادات</string>
+    <!-- Folder -->
+    <string name="folders">المجلدات</string>
+    <plurals name="folders_count">
+        <item quantity="zero">%d مجلدات</item>
+        <item quantity="one">مجلد واحد</item>
+        <item quantity="two">مجلدين</item>
+        <item quantity="few">%d مجلدات</item>
+        <item quantity="many">%d مجلد</item>
+        <item quantity="other">%d مجلد</item>
+    </plurals>
+    <string name="create_folder">إنشاء مجلد</string>
+    <string name="update_folder">تحديث المجلد</string>
+    <string name="archive_folder">أرشيف المجلد</string>
+    <string name="new_folder">مجلد جديد</string>
+    <string name="edit_folder">تعديل المجلد</string>
+    <string name="folder_options">خيارات المجلد</string>
+    <string name="add_new_note_shortcut">اختصار ملاحظة جديدة</string>
+    <string name="delete_folder_description">لا يمكن التراجع عن هذا الإجراء وسيتم حذف المجلد وجميع محتوياته بشكل دائم.</string>
+    <string name="folder_title">عنوان المجلد</string>
+    <!-- Folder color -->
+    <string name="color">اللون</string>
+    <string name="delete_folder">حذف</string>
+    <string name="delete_folder_confirmation">هل أنت متأكد من حذف هذا المجلد؟</string>
+    <string name="empty_title">العنوان لا يمكن أن يكون فارغاً.</string>
+    <string name="folder_is_deleted">تم حذف المجلد.</string>
+    <string name="folder_is_archived">تم أرشفة المجلد.</string>
+    <string name="folder_is_unarchived">تم إلغاء أرشفة المجلد.</string>
+    <string name="folder_is_pinned">تم تثبيت المجلد.</string>
+    <string name="folder_is_unpinned">تم إلغاء تثبيت المجلد.</string>
+    <string name="no_folders_found">لم يتم العثور على أي مجلدات.</string>
+    <!-- Text displayed when there are no folders suitable for a given action like moving/copying/etc... -->
+    <string name="no_relevant_folders_found">لم يتم العثور على المجلدات ذات الصلة.</string>
+    <string name="select_folder">اختر مجلدا</string>
+    <string name="folder">المجلد</string>
+    <string name="select_folder_archive">اختر أرشيف المجلد</string>
+    <string name="pinned">مثبت</string>
+    <!-- Vault -->
+    <string name="folders_vault">مخزن المجلدات</string>
+    <string name="update_passcode">تحديث رمز المرور</string>
+    <string name="enable_vault">تفعيل المخزن</string>
+    <string name="enter_vault_passcode">أدخل رمز المرور</string>
+    <string name="add_to_vault">أضف إلى المخزن</string>
+    <string name="remove_from_vault">إزالة من المخزن</string>
+    <string name="folder_is_vaulted">تم إضافة المجلد إلى المخزن.</string>
+    <string name="folder_is_unvaulted">تم إزالة المجلد من المخزن.</string>
+    <string name="vault_is_empty">الخزينة فارغة.</string>
+    <string name="archive_vaulted_folder_confirmation">هل أنت متأكد من أنك تريد أرشفة هذا المجلد؟</string>
+    <string name="archive_vaulted_folder_description">أرشفة هذا المجلد سيؤدي أيضا إلى إزالته من الخزانة.</string>
+    <string name="passcode">رمز المرور</string>
+    <string name="new_vault_passcode">رمز مرور الخزينة الجديد</string>
+    <string name="new_passcode">رمز المرور الجديد</string>
+    <string name="current_passcode">رمز المرور الحالي</string>
+    <string name="vault_setup">إعداد المخزن</string>
+    <string name="current_vault_passcode">رمز مرور الخزينة الحالي</string>
+    <!-- Change vault passcode option. -->
+    <string name="change_passcode">تغيير رمز المرور</string>
+    <!-- Vault timeout. -->
+    <string name="timeout">المُهلة</string>
+    <!-- Description of the "Timeout" settings option. -->
+    <string name="timeout_description">الوقت الذي يستغرقه لإغلاق المخزن بعد فتحه.</string>
+    <string name="vault_timeout">مهلة المخزن</string>
+    <string name="invalid_passcode">رمز مرور غير صالح</string>
+    <string name="passcode_length_message">يجب أن يحتوي رمز المرور على 6 أرقام على الأقل</string>
+    <string name="passcode_empty_message">رمز المرور لا يمكن أن يكون فارغاً</string>
+    <string name="passcode_doesnt_match">رمز المرور لا يتطابق مع الرمز الحالي</string>
+    <string name="vault_passcode_has_changed">تم تحديث رمز مرور الخزينة.</string>
+    <string name="enable_vault_message">لتمكين المخزن، يرجى توفير رمز المرور.</string>
+    <string name="vault_passcode_message">لا يمكن تغيير رمز مرور المخزن إذا فقدته، تأكد من تخزينه في مكان آمن.</string>
+    <string name="use_bio">استخدام المقاييس الحيوية</string>
+    <string name="validate">تحقق</string>
+    <string name="vault">الخزينة</string>
+    <!-- An option to disable the vault in vault settings. -->
+    <string name="disable_vault">تعطيل المخزن</string>
+    <!-- A message shown when "Disable vault" is being clicked. -->
+    <string name="vault_is_disabled">تم تعطيل المخزن.</string>
+    <string name="vault_is_enabled">تم تفعيل المخزن.</string>
+    <!-- An option to disable the vault in vault settings. -->
+    <string name="disable">تعطيل</string>
+    <!-- A confirmation message shown when disabling the vault in vault settings. -->
+    <string name="disable_vault_confirmation">هل أنت متأكد من أنك تريد تعطل المخزن؟</string>
+    <!-- A description message shown when disabling the vault in vault settings. -->
+    <string name="disable_vault_description">لا يمكن التراجع عن هذا الإجراء وسيتم تعطيل المخزن ونقل جميع المجلدات خارج المخزن.</string>
+    <string name="vault_is_open">الخزينة مفتوحة</string>
+    <string name="immediately">على الفور</string>
+    <string name="on_app_close">عند إغلاق التطبيق</string>
+    <string name="after_1_hour">بعد 1 ساعة</string>
+    <string name="after_4_hours">بعد 4 ساعات</string>
+    <string name="after_12_hours">بعد 12 ساعة</string>
+    <string name="close_vault">إغلاق الخزينة</string>
+    <!-- Enabling biometric authentication for the app. -->
+    <string name="bio_auth">تفعيل توثيق البصمة</string>
+    <!-- Description of the "Enable biometric authentication" settings option. -->
+    <string name="bio_auth_description">ما إذا كان ينبغي السماح بالوصول إلى الخزانة باستخدام أساليب التوثيق الحيوي مثل التعرف على الوجه أو البصمة.</string>
+    <string name="use_passcode">استخدام رمز مرور</string>
+    <!-- Note -->
+    <string name="all">الكل</string>
+    <string name="set_reminder">ﺿﺒﻂ التنبيه</string>
+    <string name="update_reminder">تحديث التنبيه</string>
+    <string name="archive_is_empty">الأرشيف فارغ.</string>
+    <!-- Notes count in Reading Mode with indicator of the current selected displayed note.
+     Such as "2/11 Notes".
+    -->
+    <plurals name="reading_mode_notes_count">
+        <item quantity="zero">%1$d / %2$d ملاحظة</item>
+        <item quantity="one">ملاحظة واحدة</item>
+        <item quantity="two">ملاحظتين</item>
+        <item quantity="few">%1$d / %2$d ملاحظات</item>
+        <item quantity="many">%1$d / %2$d ملاحظات</item>
+        <item quantity="other">%1$d / %2$d ملاحظات</item>
+    </plurals>
+    <plurals name="notes_count">
+        <item quantity="zero">%d ملاحظات</item>
+        <item quantity="one">ملاحظة واحدة</item>
+        <item quantity="two">ملاحظتين</item>
+        <item quantity="few">%d ملاحظات</item>
+        <item quantity="many">%d ملاحظة</item>
+        <item quantity="other">%d ملاحظة</item>
+    </plurals>
+    <!-- Filtered notes count is shown when a label is selected, or text is searched.
+         Such as "30 Notes • 5 Filtered".
+     -->
+    <plurals name="notes_filtered_count">
+        <item quantity="zero">٠ ملاحظات</item>
+        <item quantity="one">ملاحظة واحدة • %2$d مصفاة</item>
+        <item quantity="two">ملاحظتين • %2$d مصفاة</item>
+        <item quantity="few">%1$d ملاحظات • %2$d مصفاة</item>
+        <item quantity="many">%1$d ملاحظات • %2$d مصفاة</item>
+        <item quantity="other">%1$d ملاحظات • %2$d مصفاة</item>
+    </plurals>
+    <!-- Selected notes count is shown when a note or multiple notes are selected.
+         Such as "30 Notes • 5 Selected".
+     -->
+    <plurals name="notes_selected_count">
+        <item quantity="zero">٠ ملاحظات</item>
+        <item quantity="one">ملاحظة واحدة • %2$d محددة</item>
+        <item quantity="two">ملاحظتين • %2$d محددة</item>
+        <item quantity="few">%1$d ملاحظات • %2$d محددة</item>
+        <item quantity="many">%1$d ملاحظات • %2$d محددة</item>
+        <item quantity="other">%1$d ملاحظات • %2$d محددة</item>
+    </plurals>
+    <!--  Filtered notes count is shown when a label is selected, or text is searched. Selected notes count is shown when a note or multiple notes are selected.
+          Such as, "30 Notes • 3 Filtered • 8 Selected".
+     -->
+    <plurals name="notes_filtered_selected_count">
+        <item quantity="zero">٠ ملاحظات</item>
+        <item quantity="one">ملاحظة واحدة • %2$d مصفاة • %3$d محددة</item>
+        <item quantity="two">ملاحظتين • %2$d مصفاة • %3$d محددة</item>
+        <item quantity="few">%1$d ملاحظات • %2$d مصفاة • %3$d محددة</item>
+        <item quantity="many">%1$d ملاحظات • %2$d مصفاة • %3$d محددة</item>
+        <item quantity="other">%1$d ملاحظات • %2$d مصفاة • %3$d محددة</item>
+    </plurals>
+    <plurals name="words_count">
+        <item quantity="zero">%d كلمات</item>
+        <item quantity="one">كلمة واحدة</item>
+        <item quantity="two">كلمتين</item>
+        <item quantity="few">%d كلمات</item>
+        <item quantity="many">%d كلمة</item>
+        <item quantity="other">%d كلمة</item>
+    </plurals>
+    <!-- Selected words count is shown when text is selected in a note. -->
+    <plurals name="words_selected_count">
+        <item quantity="zero">٠ كلامات</item>
+        <item quantity="one">كلمة واحدة • %2$d محددة</item>
+        <item quantity="two">كلمتين • %2$d محددة</item>
+        <item quantity="few">%1$d كلامات • %2$d محددة</item>
+        <item quantity="many">%1$d كلامات • %2$d محددة</item>
+        <item quantity="other">%1$d كلامات • %2$d محددة</item>
+    </plurals>
+    <!-- Text displaying how many occurrences of a word has been found using "Find in note" feature. Such as "2/11 Found".
+        The First number is for the current displayed word, and the other number is the total count of words that have been found. -->
+    <plurals name="words_found_count">
+        <item quantity="zero">%1$d كلمة • %2$d / %3$d وجدت</item>
+        <item quantity="one">كلمة واحدة وجدت</item>
+        <item quantity="two">كلمتين وجدت</item>
+        <item quantity="few">%1$d كلمة • %2$d / %3$d وجدت</item>
+        <item quantity="many">%1$d كلمة • %2$d / %3$d وجدت</item>
+        <item quantity="other">%1$d كلمات • %2$d / %3$d وجدت</item>
+    </plurals>
+    <string name="body">النص</string>
+    <string name="title">العنوان</string>
+    <!-- Note's editor, opposite of Reading Mode. -->
+    <string name="editor">المحرّر</string>
+    <string name="create_note">إنشاء ملاحظة</string>
+    <plurals name="delete_note">
+        <item quantity="zero">حذف الملاحظة</item>
+        <item quantity="one">حذف الملاحظة</item>
+        <item quantity="two">حذف الملاحظات</item>
+        <item quantity="few">حذف الملاحظات</item>
+        <item quantity="many">حذف الملاحظات</item>
+        <item quantity="other">حذف الملاحظات</item>
+    </plurals>
+    <string name="duplicate">كرر</string>
+    <string name="undo">تراجع</string>
+    <string name="undo_history">تاريخ التراجع</string>
+    <string name="redo">إعادة</string>
+    <string name="redo_history">تاريخ الإعادة</string>
+    <plurals name="share_note">
+        <item quantity="zero">شارك الملاحظة</item>
+        <item quantity="one">شارك الملاحظة</item>
+        <item quantity="two">شارك الملاحظتين</item>
+        <item quantity="few">شارك %d الملاحظات</item>
+        <item quantity="many">شارك %d الملاحظات</item>
+        <item quantity="other">شارك %d الملاحظات</item>
+    </plurals>
+    <!-- Sorting for notes/folders -->
+    <string name="sorting">الفرز</string>
+    <!-- Ordering for sorting/grouping of notes/folders -->
+    <string name="ordering">الترتيب</string>
+    <string name="notes_view">عرض الملاحظات</string>
+    <!-- Dialog for how folders sorted. -->
+    <string name="folders_view">عرض المجلدات</string>
+    <!-- Grouping for notes/folders -->
+    <string name="grouping">التجميع</string>
+    <string name="save_to_noto">حفظ في Noto</string>
+    <!-- When selecting text, and then doing "Save to Noto", this message is shown in the notification. -->
+    <string name="note_is_saved">تم حفظ الملاحظة إلى %s.</string>
+    <string name="no_notes_found">لا توجد أي ملاحظات.</string>
+    <!-- Text displayed when there are no notes found when search is applied, and labels are selected. -->
+    <string name="no_relevant_notes_found">لم يتم العثور على ملاحظات ذات صلة.</string>
+    <!-- Text displayed when there are no notes found in the Recent view. -->
+    <string name="no_recent_notes_found">لم يتم العثور على ملاحظات حديثة.</string>
+    <!-- Text displayed when there are no notes found in the Archived view. -->
+    <string name="no_archived_notes_found">لم يتم العثور على ملاحظات مؤرشفة.</string>
+    <!-- Text displayed when there are no notes found in the Scheduled view. -->
+    <string name="no_scheduled_notes_found">لم يتم العثور على ملاحظات مجدولة.</string>
+    <!-- Text displayed when there are no notes found when search is applied. -->
+    <string name="no_notes_found_search">لم يتم العثور على ملاحظات تحتوي على مصطلح البحث.</string>
+    <!-- Text displayed when there are no notes found when labels are selected. -->
+    <string name="no_notes_found_labels">لم يتم العثور على ملاحظات تحتوي على الملصقات المحددة.</string>
+    <!-- Text displayed when folder is empty, and containing 0 notes. Replacement for "No notes found". -->
+    <string name="folder_is_empty">المجلد فارغ.</string>
+    <string name="notes">الملاحظات</string>
+    <!-- The count of the selected notes that have been merged. -->
+    <string name="notes_are_merged">%d ملاحظات تم دمجها في ملاحظة جديدة.</string>
+    <plurals name="note_is_archived">
+        <item quantity="zero">تم إرشاف الملاحظة.</item>
+        <item quantity="one">تم إرشاف الملاحظة.</item>
+        <item quantity="two">تم إرشاف ملاحظتين.</item>
+        <item quantity="few">%d ملاحظات تم إرشافها.</item>
+        <item quantity="many">%d ملاحظات تم إرشافها.</item>
+        <item quantity="other">%d ملاحظات تم إرشافها.</item>
+    </plurals>
+    <plurals name="note_is_unarchived">
+        <item quantity="zero">تم إلغاء أرشفة %d ملاحظات.</item>
+        <item quantity="one">تم إلغاء أرشفة ملاحظة واحدة.</item>
+        <item quantity="two">تم إلغاء أرشفة ملاحظتين.</item>
+        <item quantity="few">تم إلغاء أرشفة %d ملاحظات.</item>
+        <item quantity="many">تم إلغاء أرشفة %d ملاحظات.</item>
+        <item quantity="other">تم إلغاء أرشفة %d ملاحظات.</item>
+    </plurals>
+    <!-- The count of the selected notes that have been pinned. -->
+    <plurals name="note_is_pinned">
+        <item quantity="zero">تم تثبيت الملاحظة.</item>
+        <item quantity="one">تم تثبيت الملاحظة.</item>
+        <item quantity="two">تم تثبيت ملاحظتين.</item>
+        <item quantity="few">%d ملاحظات تم تثبيتها.</item>
+        <item quantity="many">%d ملاحظات تم تثبيتها.</item>
+        <item quantity="other">%d ملاحظات تم تثبيتها.</item>
+    </plurals>
+    <!-- The count of the selected notes that have been unpinned. -->
+    <plurals name="note_is_unpinned">
+        <item quantity="zero">تم إلغاء تثبيت الملاحظة.</item>
+        <item quantity="one">تم إلغاء تثبيت الملاحظة.</item>
+        <item quantity="two">تم إلغاء تثبيت ملاحظتين.</item>
+        <item quantity="few">%d ملاحظات تم إلغاء تثبيتها.</item>
+        <item quantity="many">%d ملاحظات تم إلغاء تثبيتها.</item>
+        <item quantity="other">%d ملاحظات تم إلغاء تثبيتها.</item>
+    </plurals>
+    <string name="cancel_reminder">إلغاء التنبيه</string>
+    <string name="note_is_unarchived">تم إلغاء إرشاف الملاحظة.</string>
+    <string name="reminder">تنبيه</string>
+    <string name="reminder_date">تاريخ التنبيه</string>
+    <string name="reminder_time">وقت التنبيه</string>
+    <string name="reminder_is_set">تم ضبط التنبيه لتشغيل %1$s في %2$s.</string>
+    <string name="reminder_is_cancelled">تم إلغاء التنبيه.</string>
+    <string name="reminders">التنبيهات</string>
+    <string name="new_note_reminder">تنبيه جديد</string>
+    <string name="copy">نسخ</string>
+    <string name="copy_to">نسخ إلى…</string>
+    <!-- Text displayed when copying notes between folders along with a progress indicator. -->
+    <string name="copying_notes">نسخ الملاحظات إلى %s</string>
+    <!-- The count of the selected notes that have been copied to a folder. -->
+    <plurals name="note_is_copied">
+        <item quantity="zero">تم نسخ الملاحظة إلى %s.</item>
+        <item quantity="one">تم نسخ الملاحظة إلى %s.</item>
+        <item quantity="two">تم نقل ملاحظتين إلى %s.</item>
+        <item quantity="few">%d ملاحظات تم نسخها إلى %s.</item>
+        <item quantity="many">%d ملاحظات تم نسخها إلى %s.</item>
+        <item quantity="other">%d ملاحظات تم نسخها إلى %s.</item>
+    </plurals>
+    <!-- The count of the selected notes that have been copied to clipboard. -->
+    <plurals name="note_copied_to_clipboard">
+        <item quantity="zero">تم نسخ الملاحظة إلى الحافظة.</item>
+        <item quantity="one">تم نسخ الملاحظة إلى الحافظة.</item>
+        <item quantity="two">تم نسخ ملاحظتين إلى الحافظة.</item>
+        <item quantity="few">%d ملاحظات تم نسخها إلى الحافظة.</item>
+        <item quantity="many">%d ملاحظات تم نسخها إلى الحافظة.</item>
+        <item quantity="other">%d ملاحظات تم نسخها إلى الحافظة.</item>
+    </plurals>
+    <string name="text_copied">تم نسخ النص إلى الحافظة.</string>
+    <plurals name="delete_note_confirmation">
+        <item quantity="zero">هل أنت متأكد من أنك تريد حذف هذه الملاحظة؟</item>
+        <item quantity="one">هل أنت متأكد من أنك تريد حذف هذه الملاحظة؟</item>
+        <item quantity="two">هل أنت متأكد من أنك تريد حذف هذه الملاحظتين؟</item>
+        <item quantity="few">هل أنت متأكد من أنك تريد حذف هذه الملاحظات؟</item>
+        <item quantity="many">هل أنت متأكد من أنك تريد حذف هذه الملاحظات؟</item>
+        <item quantity="other">هل أنت متأكد من أنك تريد حذف هذه الملاحظات؟</item>
+    </plurals>
+    <string name="share_with">شارك مع…</string>
+    <string name="add_note_reminder">إضافة منبه</string>
+    <plurals name="delete_note_description">
+        <item quantity="zero">لا يمكن التراجع عن هذا الإجراء وسيتم حذف الملاحظة وتذكيرها بشكل دائم.</item>
+        <item quantity="one">لا يمكن التراجع عن هذا الإجراء وسيتم حذف الملاحظة وتذكيرها بشكل دائم.</item>
+        <item quantity="two">لا يمكن التراجع عن هذا الإجراء وسيتم حذف الملاحظتين وتذكيرهما بشكل دائم.</item>
+        <item quantity="few">لا يمكن التراجع عن هذا الإجراء وسيتم حذف الملاحظات وتذكيرها بشكل دائم.</item>
+        <item quantity="many">لا يمكن التراجع عن هذا الإجراء وسيتم حذف الملاحظات وتذكيرها بشكل دائم.</item>
+        <item quantity="other">لا يمكن التراجع عن هذا الإجراء وسيتم حذف الملاحظات وتذكيرها بشكل دائم.</item>
+    </plurals>
+    <string name="reading_mode">وضع القراءة</string>
+    <string name="edit_note_reminder">تعديل المنبه</string>
+    <string name="note_options">خيارات الملاحظة</string>
+    <!-- The count of the selected notes that have been deleted. -->
+    <plurals name="note_is_deleted">
+        <item quantity="zero">تم حذف الملاحظة.</item>
+        <item quantity="one">تم حذف الملاحظة.</item>
+        <item quantity="two">تم حذف الملاحظتين.</item>
+        <item quantity="few">%d ملاحظات تم حذفها.</item>
+        <item quantity="many">%d ملاحظات تم حذفها.</item>
+        <item quantity="other">%d ملاحظات تم حذفها.</item>
+    </plurals>
+    <!-- The count of the selected notes that have been duplicated. -->
+    <plurals name="note_is_duplicated">
+        <item quantity="zero">تم تكرار الملاحظة.</item>
+        <item quantity="one">تم تكرار الملاحظة.</item>
+        <item quantity="two">تم تكرار الملاحظتين.</item>
+        <item quantity="few">%d ملاحظات تم تكرارها.</item>
+        <item quantity="many">%d ملاحظات تم تكرارها.</item>
+        <item quantity="other">%d ملاحظات تم تكرارها.</item>
+    </plurals>
+    <string name="move_to">نقل إلى…</string>
+    <!-- Text displayed when moving notes between folders along with a progress indicator. -->
+    <string name="moving_notes">نقل الملاحظات إلى %s</string>
+    <!-- The count of the selected notes that have been moved to a folder. -->
+    <plurals name="note_is_moved">
+        <item quantity="zero">تم نقل الملاحظة إلى %s.</item>
+        <item quantity="one">تم نقل الملاحظة إلى %s.</item>
+        <item quantity="two">تم نقل ملاحظتين إلى %s.</item>
+        <item quantity="few">%d ملاحظات تم نقلها إلى %s.</item>
+        <item quantity="many">%d ملاحظات تم نقلها إلى %s.</item>
+        <item quantity="other">%d ملاحظات تم نقلها إلى %s.</item>
+    </plurals>
+    <string name="note_preview_size">حجم معاينة الملاحظة</string>
+    <string name="show_note_creation_date">عرض تاريخ إنشاء الملاحظة</string>
+    <!-- Whether to show notes count in "All Folders" view. -->
+    <string name="show_notes_count">عرض عدد الملاحظات</string>
+    <!-- Description of the "Show notes count" settings option. -->
+    <string name="show_notes_count_description">ما إذا كان سيتم عرض عدد الملاحظات في حوار المجلدات.</string>
+    <!-- Whether to exit app immediately without showing folders dialog -->
+    <string name="quick_exit">الخروج السريع</string>
+    <!-- Description of the "Quick exit" settings option. -->
+    <string name="quick_exit_description">إذا كان سيتم الخروج من التطبيق فورا عند الضغط على زر الرجوع.</string>
+    <!-- Whether to pass the search term to the note screen. -->
+    <string name="continuous_search">البحث المستمر</string>
+    <!-- Description of the "Continuous Search" settings option. -->
+    <string name="continuous_search_description">ما إذا كان سيتم تمرير مصطلح البحث إلى شاشة الملاحظة.</string>
+    <!-- Whether to enable auto-scroll for notes in preview mode. -->
+    <string name="preview_auto_scroll">معاينة التمرير التلقائي</string>
+    <!-- Description of the "Preview auto-scroll" settings option. -->
+    <string name="preview_auto_scroll_description">ما إذا كان لتمكين التمرير التلقائي للملاحظات في وضع المعاينة.</string>
+    <string name="remember_scrolling_position">تذكر موضع التمرير</string>
+    <!-- Description of the "Remember scrolling position" settings option. -->
+    <string name="remember_scrolling_position_description">ما إذا كان سيتم تخزين موضع التمرير في المجلدات والملاحظات.</string>
+    <string name="do_not_disturb">وضع عدم الإزعاج</string>
+    <!-- Description of the "Do Not Disturb" settings option. -->
+    <string name="do_not_disturb_description">ما إذا كان لتمكين وضع عدم الإزعاج أثناء وضع القراءة.</string>
+    <!-- An option for Reading Mode settings to keep screen on while in Reading Mode. -->
+    <string name="keep_screen_on">إبقاء الشاشة قيد التشغيل</string>
+    <!-- Description of the "Keep screen on" settings option. -->
+    <string name="keep_screen_on_description">ما إذا كان سيتم منع إيقاف تشغيل الشاشة أثناء وضع القراءة.</string>
+    <string name="full_screen_mode">وضع الشاشة الكاملة</string>
+    <!-- Description of the "Go full screen" settings option. -->
+    <string name="full_screen_description">ما إذا كان سيتم إخفاء الحالة وأشرطة التنقل أثناء وضع القراءة.</string>
+    <!-- An option for Reading Mode settings to set a custom screen brightness level while in Reading Mode. -->
+    <string name="screen_brightness_level">مستوى سطوع الشاشة</string>
+    <!-- Description of the "Screen brightness level" settings option. -->
+    <string name="screen_brightness_level_description">مستوى سطوع الشاشة أثناء وضع القراءة.</string>
+    <!-- "Screen brightness level" option. -->
+    <string name="min">الحد الأدنى</string>
+    <!-- "Screen brightness level" option. -->
+    <string name="very_low">منخفض جدًا</string>
+    <!-- "Screen brightness level" option. -->
+    <string name="low">منخفض</string>
+    <!-- "Screen brightness level" option. -->
+    <string name="medium">متوسط</string>
+    <!-- "Screen brightness level" option. -->
+    <string name="high">مرتفع</string>
+    <!-- "Screen brightness level" option. -->
+    <string name="very_high">مرتفع جدًا</string>
+    <!-- "Screen brightness level" option. -->
+    <string name="max">الحد الأقصى</string>
+    <!--  Reading Mode progress  -->
+    <string name="progress">التقدّم</string>
+    <string name="show">إظهار</string>
+    <string name="hide">إخفاء</string>
+    <string name="permission_not_granted">لم يتم منح الإذن</string>
+    <string name="current">الحالي</string>
+    <!-- Label -->
+    <string name="reorder_label">اعادة ترتيب</string>
+    <string name="update_label">تحديث الملصق</string>
+    <string name="create_label">إنشاء ملصق</string>
+    <string name="label">ملصق</string>
+    <string name="without_label">بدون ملصق</string>
+    <string name="label_options">خيارات الملصق</string>
+    <string name="delete_label">حذف الملصق</string>
+    <string name="new_label">ملصق جديد</string>
+    <string name="edit_label">تعديل الملصق</string>
+    <string name="labels_order">ترتيب الملصقات</string>
+    <string name="delete_label_confirmation">هل أنت متأكد من أنك تريد حذف هذا الملصق؟</string>
+    <string name="label_is_deleted">تم حذف الملصق.</string>
+    <string name="delete_label_description">لا يمكن التراجع عن هذا الإجراء وسيتم حذف الملصق وإزالة الملصق من الملاحظات المرتبطة به بشكل دائم.</string>
+    <!-- Theme -->
+    <string name="theme">المظهر</string>
+    <string name="system_dark_theme">اتبع النظام + داكن</string>
+    <string name="system_black_theme">اتبع النظام + أسود</string>
+    <string name="light_theme">فاتح</string>
+    <string name="dark_theme">داكن</string>
+    <string name="black_theme">أسود</string>
+    <!-- Language -->
+    <string name="language">اللغة</string>
+    <!-- A text next to the non-finished language. -->
+    <string name="not_finished">غير منتهي</string>
+    <!-- An option in settings to invite users to translate Noto. -->
+    <string name="translate_noto">ترجم Noto</string>
+    <!-- Description of the "Translate Noto" settings option. -->
+    <string name="translate_noto_description">تتم الترجمة في Crowdin.</string>
+    <!-- Replacement for "System language" in settings. -->
+    <string name="follow_system">اتبع النظام</string>
+    <string name="english">الإنجليزية</string>
+    <string name="turkish">التركية</string>
+    <string name="arabic">العربية</string>
+    <string name="indonesian">الأندونيسية</string>
+    <string name="russian">الروسية</string>
+    <string name="spanish">الإسبانية</string>
+    <string name="french">الفرنسية</string>
+    <string name="german">الألمانية</string>
+    <string name="italian">الإيطالية</string>
+    <string name="tamil">التاميلية</string>
+    <string name="czech">التشيكية</string>
+    <string name="lithuanian">الليتوانية</string>
+    <string name="simplified_chinese">الصينية المبسطة</string>
+    <string name="portuguese">البرتغالية</string>
+    <string name="korean">الكورية</string>
+    <!-- Icon -->
+    <string name="icon">الأيقونة</string>
+    <!-- Widget -->
+    <string name="create_widget">إنشاء قطعة</string>
+    <string name="update_widget">تحديث القطعة</string>
+    <string name="new_notes_widget">ملاحظات ملصق جديد</string>
+    <string name="edit_notes_widget">تعديل قطعة الملاحظات</string>
+    <string name="new_folders_widget">واجهة مجلدات جديدة</string>
+    <string name="edit_folders_widget">تعديل واجهة مجلدات</string>
+    <string name="new_folder_button">زر مجلد جديد</string>
+    <string name="new_note_button">زر ملاحظة جديد</string>
+    <string name="widget_header">رأس القطعة</string>
+    <string name="app_icon">أيقونة التطبيق</string>
+    <string name="widget_radius">قطعة نصف القطر</string>
+    <string name="edit_widget">تعديل القطعة</string>
+    <string name="edit_widget_button">زر تعديل القطعة</string>
+    <string name="folders_notes_count">عدد ملاحظات المجلدات</string>
+    <string name="loading_content">جاري تحميل المحتوى</string>
+    <!-- Releases -->
+    <string name="release_bug_fixes_and_design_improvements">إصلاح الأخطاء وتحسين التصميم.</string>
+    <string name="release_bug_fixes">إصلاح الأخطاء.</string>
+    <string name="release_1_8_0_vault">دعم خزينة الدفاتر المحمية برمز المرور.</string>
+    <string name="release_1_8_0_vault_timeout">دعم خيارات مهلة الخزينة.</string>
+    <string name="release_1_8_0_vault_bio">دعم تفعيل توثيق البصمة على الأجهزة المدعومة.</string>
+    <string name="release_1_8_0_language">دعم اللغة الإسبانية.</string>
+    <string name="release_1_8_0_reddit">إضافة رابط للمجموعة الجديدة <a href="https://www.reddit.com/r/notoapp">Reddit</a>.</string>
+    <string name="release_2_0_0_new_look">سنة جديدة، تصميم جديد!</string>
+    <string name="release_2_0_0_folders">رحب بالمجلدات!</string>
+    <string name="release_2_0_0_animations">تحسين الرسوم المتحركة عبر التطبيق بأكمله.</string>
+    <string name="release_2_0_0_nested_folders">الدعم التجريبي للمجلدات المتداخلة.</string>
+    <string name="release_2_0_0_swipe_folder">الدعم التجريبي للسحب أفقيا لتغيير اصل المجلد عندما يكون الفرز يدويا.</string>
+    <string name="release_2_0_0_general">إضافة مجلد افتراضي \"عام\" للملاحظات العامة.</string>
+    <string name="release_2_0_0_all_recent">دعم مشاهدة جميع الملاحظات والملاحظات الأخيرة والقدرة على البحث من خلالها.</string>
+    <string name="release_2_0_0_highlight_search">إبراز محتوى الملاحظة عند البحث.</string>
+    <string name="release_2_0_0_collapsing_toolbar">تطبيق شريط الأدوات الواسع من أجل تحسين إمكانية الاستخدام والاستعانة باليد.</string>
+    <string name="release_2_0_0_language">دعم اللغة الفرنسية.</string>
+    <string name="release_2_0_0_swipe_bottom_app_bar">دعم السحب شريط الادوات التحتي للأعلى لعرض المجلدات.</string>
+    <string name="release_2_0_0_navigation">الانتقال إلى المخزن عند النقر على \'المخزن مفتوح\' الإشعار.</string>
+    <string name="release_2_0_0_settings_main_folder">إضافة إعدادات لاختيار المجلد الرئيسي.</string>
+    <string name="release_2_0_0_settings_toolbar">إضافة خيار إعدادات لغلق شريط الأدوات بشكل افتراضي.</string>
+    <string name="release_2_0_0_shortcuts">إصلاح أيقونات الاختصارات الثابتة على أجهزة الأندرويد القديمة.</string>
+    <string name="release_2_1_0_undo_redo">دعم التراجع/إعادة عرض السجل الخاص بهم.</string>
+    <string name="release_2_1_0_labels">إعادة تصميم الملصقات.</string>
+    <string name="release_2_1_0_app_bars">إعادة تصميم شريط التطبيقات أسفل وأعلى.</string>
+    <string name="release_2_1_0_menu">إعادة تصميم الكثير من القوائم.</string>
+    <string name="release_2_1_0_new_folder">إعادة تصميم تعديل المجلد.</string>
+    <string name="release_2_1_0_grouping_order">إضافة ترتيب تجميع للمذكرات.</string>
+    <string name="release_2_1_0_drag_elevation">إضافة ارتفاع عند سحب العلامات أو الملاحظات.</string>
+    <string name="release_2_1_0_preview">تضمين المعاينة في قوائم المجلدات والمذكرات والملصقات.</string>
+    <string name="release_2_1_0_dates">إظهار التواريخ بطريقة أفضل.</string>
+    <string name="release_2_1_0_highlight">تغيير اللون الأبرز في الملاحظات.</string>
+    <string name="release_2_1_0_navigation">الانتقال إلى المجلدات قبل الخروج من التطبيق.</string>
+    <string name="release_2_1_0_material_you">دعم Material You (Material 3).</string>
+    <string name="release_2_1_0_splash_screen">إعادة تصميم الشاشة البدائية.</string>
+    <string name="release_2_1_0_reading_mode">تحسين وضع القراءة.</string>
+    <string name="release_2_1_0_scroll_position">دعم تذكر مواقف التمرير للمجلدات والملاحظات.</string>
+    <string name="release_2_1_0_disable_animations">تعطيل الرسوم المتحركة للتسميات.</string>
+    <string name="release_2_1_0_import_data">إصلاح استيراد البيانات.</string>
+    <string name="release_2_1_0_vault_crash">إصلاح خلل عند فتح مخزن يعطل على أندرويد 11 وما فوق.</string>
+    <string name="release_2_1_0_undo_redo_swipe">تنفيذ إيماءات السحب للتراجع / للتقدم.</string>
+    <string name="release_2_1_0_label_filtering">دعم فرز الملصقات بشكل شامل أو حصري.</string>
+    <string name="release_2_1_0_app_icon">إعادة تصميم أيقونة التطبيق.</string>
+    <string name="release_2_1_0_change_app_icon">دعم تغيير أيقونة التطبيق.</string>
+    <string name="release_2_1_0_language">دعم الألمانية.</string>
+    <string name="release_2_1_4_shortcuts">تم أصلاح الاختصارات لا تعمل عند استخدام أيقونة مختلفة.</string>
+    <string name="release_2_1_4_labels">التسميات المحددة تظهر الآن أولا في تخطيط الملاحظة.</string>
+    <string name="release_2_2_0_languages">دعم لغات التشيكية والإيطالية.</string>
+    <string name="release_2_2_0_multi_selection">دعم تحديد الملاحظات.</string>
+    <string name="release_2_2_0_reading_mode">دعم خيار لفتح الملاحظات في وضع القراءة افتراضيا.</string>
+    <string name="release_2_2_0_settings">إعادة تصميم إعدادات البرنامج.</string>
+    <string name="release_2_2_0_paging">دعم تصفح الملاحظات في وضع القراءة.</string>
+    <string name="release_2_2_0_app_speed">تحسين سرعة فتح التطبيق.</string>
+    <string name="release_2_2_0_import_json">إصلاح استيراد ملفات JSON.</string>
+    <string name="release_2_2_0_black_theme">إصلاح المظهر الاسود في أندرويد 12 والأحدث.</string>
+    <string name="release_2_2_1_languages">دعم الليتوانية والصينية المبسطة.</string>
+    <string name="release_2_2_1_design">تحسينات التصميم هنا وهناك.</string>
+    <string name="release_2_2_1_undo_redo">تحسينات في الأداء بخصوص استعادة/إعادة الكلمات في الملاحظات لتكون أكثر فعالية.</string>
+    <string name="release_2_2_1_filtered_view">دعمت عرض الملاحظات المؤرشفة &amp; المجدولة.</string>
+    <string name="release_2_2_1_quick_exit">دعمت إعدادات الخروج السريع (الخروج من التطبيق دون الانتقال إلى القائمة الرئيسية).</string>
+    <string name="release_2_2_1_quick_note_tile">نفذت طريقة أسرع لإنشاء الملاحظات من خلال تطبيقات أخرى باستخدام مربع الملاحظة السريعة في مركز الإشعارات.</string>
+    <string name="release_2_2_1_system_app_language">دعمت تغغير لغة التطبيق من خلال إعدادات النظام الأندرويد 13 وما فوق.</string>
+    <string name="release_2_3_0_new_languages">دعم لغات الروسية &amp; البرتغالية.</string>
+    <string name="release_2_3_0_reminder">إعادة تصميم واجهة استخدام التنبيه، التاريخ &amp; الوقت للتطابق مع سمة Noto.</string>
+    <string name="release_2_3_0_selection">مراجعة كيفية تحديد الملاحظات &amp; التعامل مع السحب باستخدام النقرات الطويلة فقط.</string>
+    <string name="release_2_3_0_find_in_note">دعم عملية البحث في الملاحظة، والتمرير التلقائي للنص الذي تم البحث عنه في الملاحظات.</string>
+    <string name="release_2_3_0_archive">دعم اختيار ملاحظات متعددة &amp; إجراءات سريعة لشاشات الأرشيف.</string>
+    <string name="release_2_3_0_sorting">ترتيب الكيانات فيما يتعلق بالحروف الساكنة اللغوية.</string>
+    <string name="release_2_3_0_reading_mode">عرض العداد، ومؤشر التقدم عند فتح ملاحظات متعددة في وضع القراءة.</string>
+    <string name="release_2_3_0_whats_new">إعادة تصميم حوار &amp; واجهه استخدام ما هو الجديد.</string>
+    <string name="release_2_3_0_report_issues">دعم الإبلاغ عن الأخطاء من خلال البريد الإلكتروني في الإعدادات.</string>
+    <string name="release_2_3_0_quick_note">إصلاح حوارات متعددة يتم فتحها عند إنشاء ملاحظة سريعة.</string>
+    <string name="release_2_3_1_languages">دعم الكورية.</string>
+    <string name="release_2_3_1_auto_scroll">تحسين السحب التلقائي عند كتابة الملاحظات.</string>
+</resources>

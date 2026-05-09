@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name=".NotoApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_futuristic"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_futuristic_round"
+        android:supportsRtl="true"
+        android:theme="@style/SplashScreen"
+        tools:targetApi="tiramisu">
+        <activity
+            android:name=".AppActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter android:label="@string/save_to_noto">
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/*" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcuts" />
+
+        </activity>
+
+        <activity
+            android:name=".components.TransparentActivity"
+            android:exported="true"
+            android:theme="@style/TransparentTheme">
+
+            <intent-filter android:label="@string/quick_note">
+                <action android:name="android.intent.action.PROCESS_TEXT" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/*" />
+            </intent-filter>
+
+        </activity>
+
+        <activity-alias
+            android:name=".Futuristic"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_futuristic"
+            android:roundIcon="@mipmap/ic_launcher_futuristic_round"
+            android:targetActivity=".AppActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter android:label="@string/save_to_noto">
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/*" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcuts_futuristic" />
+
+        </activity-alias>
+
+        <activity-alias
+            android:name=".DarkRain"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_dark_rain"
+            android:roundIcon="@mipmap/ic_launcher_dark_rain_round"
+            android:targetActivity=".AppActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter android:label="@string/save_to_noto">
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/*" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcuts_dark_rain" />
+
+        </activity-alias>
+
+        <activity-alias
+            android:name=".Airplane"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_airplane"
+            android:roundIcon="@mipmap/ic_launcher_airplane_round"
+            android:targetActivity=".AppActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter android:label="@string/save_to_noto">
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/*" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcuts_airplane" />
+
+        </activity-alias>
+
+        <activity-alias
+            android:name=".BlossomIce"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_blossom_ice"
+            android:roundIcon="@mipmap/ic_launcher_blossom_ice_round"
+            android:targetActivity=".AppActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter android:label="@string/save_to_noto">
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/*" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcuts_blossom_ice" />
+
+        </activity-alias>
+
+        <activity-alias
+            android:name=".DarkAlpine"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_dark_alpine"
+            android:roundIcon="@mipmap/ic_launcher_dark_alpine_round"
+            android:targetActivity=".AppActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter android:label="@string/save_to_noto">
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/*" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcuts_dark_alpine" />
+
+        </activity-alias>
+
+        <activity-alias
+            android:name=".DarkSide"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_dark_side"
+            android:roundIcon="@mipmap/ic_launcher_dark_side_round"
+            android:targetActivity=".AppActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter android:label="@string/save_to_noto">
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/*" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcuts_dark_side" />
+
+        </activity-alias>
+
+        <activity-alias
+            android:name=".Earth"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_earth"
+            android:roundIcon="@mipmap/ic_launcher_earth_round"
+            android:targetActivity=".AppActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter android:label="@string/save_to_noto">
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/*" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcuts_earth" />
+
+        </activity-alias>
+
+        <activity-alias
+            android:name=".Fire"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_fire"
+            android:roundIcon="@mipmap/ic_launcher_fire_round"
+            android:targetActivity=".AppActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter android:label="@string/save_to_noto">
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/*" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcuts_fire" />
+
+        </activity-alias>
+
+        <activity-alias
+            android:name=".Purpleberry"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_purpleberry"
+            android:roundIcon="@mipmap/ic_launcher_purpleberry_round"
+            android:targetActivity=".AppActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter android:label="@string/save_to_noto">
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/*" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcuts_purpleberry" />
+
+        </activity-alias>
+
+        <activity-alias
+            android:name=".SanguineSun"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_sanguine_sun"
+            android:roundIcon="@mipmap/ic_launcher_sanguine_sun_round"
+            android:targetActivity=".AppActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter android:label="@string/save_to_noto">
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/*" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcuts_sanguine_sun" />
+
+        </activity-alias>
+
+        <activity
+            android:name=".widget.FolderListWidgetConfigActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".widget.NoteListWidgetConfigActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".note.NoteReminderReceiver"
+            android:enabled="true"
+            android:exported="false" />
+
+        <receiver
+            android:name=".widget.FolderListWidgetProvider"
+            android:exported="true"
+            android:label="@string/folders">
+
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/folder_list_widget_provider" />
+        </receiver>
+
+        <service
+            android:name=".widget.FolderListWidgetService"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
+
+        <receiver
+            android:name=".widget.NoteListWidgetProvider"
+            android:exported="true"
+            android:label="@string/notes">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/note_list_widget_provider" />
+        </receiver>
+
+        <service
+            android:name=".widget.NoteListWidgetService"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
+
+        <receiver
+            android:name=".vault.VaultReceiver"
+            android:enabled="true"
+            android:exported="false" />
+
+        <service
+            android:name=".note.QuickNoteTileService"
+            android:exported="true"
+            android:icon="@drawable/ic_round_edit_24"
+            android:label="@string/quick_note"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE"
+            android:roundIcon="@drawable/ic_round_edit_24">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="androidx.appcompat.app.AppLocalesMetadataHolderService"
+            android:enabled="false"
+            android:exported="false">
+            <meta-data
+                android:name="autoStoreLocales"
+                android:value="true" />
+        </service>
+    </application>
+
+</manifest>

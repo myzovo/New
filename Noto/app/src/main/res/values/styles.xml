@@ -1,0 +1,748 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="SplashScreen" parent="Theme.SplashScreen">
+        <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
+        <item name="android:navigationBarColor">#000000</item>
+
+        <item name="windowSplashScreenBackground">@color/colorBackground</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_splash_screen</item>
+        <item name="postSplashScreenTheme">@style/BaseTheme</item>
+    </style>
+
+    <style name="BaseTheme" parent="Theme.Material3.Light.NoActionBar">
+        <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
+        <item name="android:navigationBarColor">#000000</item>
+        <item name="android:statusBarColor">?attr/notoBackgroundColor</item>
+
+        <item name="android:windowBackground">?attr/notoBackgroundColor</item>
+
+        <item name="android:colorControlActivated">?attr/notoPrimaryColor</item>
+        <item name="android:colorControlHighlight">?attr/notoSurfaceColor</item>
+        <item name="android:textColorHighlight">@color/colorTextHighlight</item>
+        <item name="android:colorControlNormal">?attr/notoPrimaryColor</item>
+        <item name="android:textColorHint">?attr/notoSecondaryColor</item>
+        <item name="hintTextColor">?attr/notoSecondaryColor</item>
+
+        <item name="android:fontFamily">@font/nunito_medium</item>
+        <item name="fontFamily">@font/nunito_medium</item>
+
+        <item name="notoPrimaryColor">@color/colorPrimary</item>
+        <item name="notoSecondaryColor">@color/colorSecondary</item>
+        <item name="notoBackgroundColor">@color/colorBackground</item>
+        <item name="notoSurfaceColor">@color/colorSurface</item>
+
+        <item name="appBarLayoutStyle">@style/Widget.MaterialComponents.AppBarLayout.Primary</item>
+        <item name="snackbarStyle">@style/Snackbar</item>
+        <item name="snackbarTextViewStyle">@style/SnackbarTextView</item>
+
+        <item name="materialCalendarTheme">@style/DatePickerDialog</item>
+        <item name="materialTimePickerTheme">@style/TimePickerDialog</item>
+    </style>
+
+    <style name="BottomSheetDialog" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="android:navigationBarColor">#000000</item>
+
+        <item name="android:colorBackground">@android:color/transparent</item>
+
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+    </style>
+
+    <style name="LightDarkTheme" parent="BaseTheme">
+        <item name="notoBackgroundColor">@color/colorBackground</item>
+        <item name="notoSurfaceColor">@color/colorSurface</item>
+    </style>
+
+    <style name="LightBlackTheme" parent="BaseTheme">
+        <item name="notoBackgroundColor">@color/colorBackgroundVariant</item>
+        <item name="notoSurfaceColor">@color/colorSurfaceVariant</item>
+    </style>
+
+    <style name="TransparentTheme" parent="BaseTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="AppBarLayout" parent="Widget.MaterialComponents.AppBarLayout.Primary">
+        <item name="android:background">?attr/notoBackgroundColor</item>
+        <item name="liftOnScroll">true</item>
+        <item name="android:elevation">@dimen/elevation_normal</item>
+        <item name="android:animateLayoutChanges">true</item>
+    </style>
+
+    <style name="Toolbar" parent="Widget.Material3.Toolbar">
+        <item name="contentInsetStartWithNavigation">0dp</item>
+        <item name="titleMarginEnd">@dimen/spacing_normal</item>
+        <item name="titleTextAppearance">@style/ToolbarTitleTextAppearance</item>
+        <item name="layout_collapseMode">pin</item>
+        <item name="titleTextColor">?attr/notoPrimaryColor</item>
+    </style>
+
+    <style name="ToolbarWithSubtitle" parent="Toolbar">
+        <item name="android:padding">@dimen/spacing_small</item>
+    </style>
+
+    <style name="ToolbarTitleTextAppearance" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="android:maxLines">1</item>
+        <item name="android:textSize">@dimen/size_extra_large</item>
+        <item name="fontFamily">@font/nunito_bold</item>
+        <item name="android:textColor">?attr/notoPrimaryColor</item>
+    </style>
+
+    <style name="SubtitleTextView" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textSize">@dimen/size_extra_small</item>
+        <item name="android:textColor">?attr/notoSecondaryColor</item>
+        <item name="fontFamily">@font/nunito_semibold</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="BaseDialogFragment">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/dialog_shape</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:elevation">@dimen/elevation_extra_large</item>
+    </style>
+
+    <style name="DialogTitle" parent="Widget.MaterialComponents.TextView">
+        <item name="fontFamily">@font/nunito_bold</item>
+        <item name="android:textColor">?attr/notoPrimaryColor</item>
+        <item name="android:textSize">@dimen/size_large</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textDirection">anyRtl</item>
+    </style>
+
+    <style name="WidgetTitle" parent="Widget.MaterialComponents.TextView">
+        <item name="fontFamily">@font/nunito_bold</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/size_large</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textDirection">anyRtl</item>
+    </style>
+
+    <style name="ListDialogItem" parent="Widget.MaterialComponents.TextView">
+        <item name="fontFamily">@font/nunito_semibold</item>
+        <item name="android:textSize">@dimen/size_small</item>
+        <item name="android:textColor">?attr/notoPrimaryColor</item>
+        <item name="android:padding">@dimen/spacing_normal</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:drawablePadding">@dimen/spacing_normal</item>
+    </style>
+
+    <style name="ListDialogItemValue" parent="ListDialogItem">
+        <item name="android:textColor">?attr/notoSecondaryColor</item>
+        <item name="drawableTint">?attr/notoSecondaryColor</item>
+    </style>
+
+    <style name="DialogItem" parent="Widget.MaterialComponents.TextView">
+        <item name="fontFamily">@font/nunito_semibold</item>
+        <item name="android:textSize">@dimen/size_extra_small</item>
+        <item name="android:textColor">?attr/notoPrimaryColor</item>
+        <item name="android:background">@drawable/dialog_item_shape</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/spacing_small</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:drawablePadding">@dimen/spacing_small</item>
+    </style>
+
+    <style name="DialogSectionItem" parent="Widget.MaterialComponents.TextView">
+        <item name="fontFamily">@font/nunito_semibold</item>
+        <item name="android:textSize">@dimen/size_small</item>
+        <item name="android:textColor">?attr/notoPrimaryColor</item>
+    </style>
+
+    <style name="TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxBackgroundColor">?attr/notoSurfaceColor</item>
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="boxStrokeWidthFocused">0dp</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/spacing_small</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/spacing_small</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/spacing_small</item>
+        <item name="boxCornerRadiusTopStart">@dimen/spacing_small</item>
+        <item name="hintEnabled">false</item>
+        <item name="android:textColorHint">?attr/notoSecondaryColor</item>
+        <item name="android:textColorHighlight">@color/colorTextHighlight</item>
+        <item name="android:colorControlActivated">?attr/notoPrimaryColor</item>
+    </style>
+
+    <style name="SearchTextInputLayout" parent="TextInputLayout">
+        <item name="boxBackgroundColor">?attr/notoSurfaceColor</item>
+        <item name="endIconContentDescription">@string/clear</item>
+        <item name="endIconMode">clear_text</item>
+        <item name="endIconTint">?attr/notoSecondaryColor</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_marginTop">@dimen/spacing_small</item>
+        <item name="android:layout_marginBottom">@dimen/spacing_normal</item>
+        <item name="android:layout_marginStart">@dimen/spacing_normal</item>
+        <item name="android:layout_marginEnd">@dimen/spacing_normal</item>
+    </style>
+
+    <style name="TextInputEditText" parent="Widget.AppCompat.EditText">
+        <item name="fontFamily">@font/nunito_medium</item>
+        <item name="android:textSize">@dimen/size_small</item>
+        <item name="android:textColor">?attr/notoPrimaryColor</item>
+        <item name="android:textCursorDrawable">@drawable/cursor_shape</item>
+        <item name="android:textDirection">anyRtl</item>
+    </style>
+
+    <style name="MaterialButton" parent="Widget.Material3.Button">
+        <item name="android:backgroundTint">?attr/notoPrimaryColor</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">?attr/notoBackgroundColor</item>
+        <item name="android:textSize">@dimen/size_large</item>
+        <item name="cornerRadius">@dimen/spacing_small</item>
+        <item name="fontFamily">@font/nunito_bold</item>
+    </style>
+
+    <style name="MaterialSecondaryButton" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:backgroundTint">?attr/notoBackgroundColor</item>
+        <item name="strokeColor">?attr/notoPrimaryColor</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">?attr/notoPrimaryColor</item>
+        <item name="android:textSize">20sp</item>
+        <item name="cornerRadius">@dimen/spacing_small</item>
+        <item name="fontFamily">@font/nunito_bold</item>
+    </style>
+
+    <style name="FolderTitleTextView" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textColor">?attr/notoPrimaryColor</item>
+        <item name="android:textSize">@dimen/size_normal</item>
+        <item name="fontFamily">@font/nunito_semibold</item>
+        <item name="android:textDirection">anyRtl</item>
+    </style>
+
+    <style name="WidgetFolderTitleTextView" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/size_normal</item>
+        <item name="fontFamily">@font/nunito_semibold</item>
+        <item name="android:textDirection">anyRtl</item>
+    </style>
+
+    <style name="FolderNotesCountTextView" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textColor">?attr/notoPrimaryColor</item>
+        <item name="android:textSize">@dimen/size_extra_small</item>
+        <item name="fontFamily">@font/nunito_medium</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textDirection">anyRtl</item>
+    </style>
+
+    <style name="WidgetFolderNotesCountTextView" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/size_extra_small</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textDirection">anyRtl</item>
+    </style>
+
+    <style name="NoteTitleEditText" parent="Widget.AppCompat.EditText">
+        <item name="fontFamily">@font/nunito_semibold</item>
+        <item name="android:textSize">@dimen/size_huge</item>
+        <item name="android:textColor">?attr/notoPrimaryColor</item>
+        <item name="android:textColorHint">?attr/notoSecondaryColor</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textCursorDrawable">@drawable/cursor_shape</item>
+        <item name="android:textDirection">anyRtl</item>
+    </style>
+
+    <style name="NoteBodyEditText" parent="Widget.AppCompat.EditText">
+        <item name="fontFamily">@font/nunito_medium</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textSize">@dimen/size_small</item>
+        <item name="android:gravity">top</item>
+        <item name="android:textColor">?attr/notoPrimaryColor</item>
+        <item name="android:textColorHint">?attr/notoSecondaryColor</item>
+        <item name="android:lineSpacingMultiplier">1.3</item>
+        <item name="android:textCursorDrawable">@drawable/cursor_shape</item>
+        <item name="android:textDirection">anyRtl</item>
+    </style>
+
+    <style name="NoteTitleTextView" parent="Widget.MaterialComponents.TextView">
+        <item name="fontFamily">@font/nunito_semibold</item>
+        <item name="android:textSize">@dimen/size_normal</item>
+        <item name="android:textColor">?attr/notoPrimaryColor</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textDirection">anyRtl</item>
+    </style>
+
+    <style name="WidgetNoteTitleTextView" parent="Widget.MaterialComponents.TextView">
+        <item name="fontFamily">@font/nunito_semibold</item>
+        <item name="android:textSize">@dimen/size_normal</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textDirection">anyRtl</item>
+    </style>
+
+    <style name="NoteBodyTextView" parent="Widget.MaterialComponents.TextView">
+        <item name="fontFamily">@font/nunito_medium</item>
+        <item name="android:textSize">@dimen/size_extra_small</item>
+        <item name="android:lineSpacingMultiplier">1</item>
+        <item name="android:textColor">?attr/notoPrimaryColor</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textDirection">anyRtl</item>
+    </style>
+
+    <style name="WidgetNoteBodyTextView" parent="Widget.MaterialComponents.TextView">
+        <item name="fontFamily">@font/nunito_medium</item>
+        <item name="android:textSize">@dimen/size_extra_small</item>
+        <item name="android:lineSpacingMultiplier">1</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textDirection">anyRtl</item>
+    </style>
+
+    <style name="NoteDateTextView" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textColor">?attr/notoSecondaryColor</item>
+        <item name="android:textSize">@dimen/size_extra_tiny</item>
+        <item name="fontFamily">@font/nunito_regular_italic</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="WidgetNoteDateTextView" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textColor">@color/colorSecondary</item>
+        <item name="android:textSize">@dimen/size_extra_tiny</item>
+        <item name="fontFamily">@font/nunito_regular_italic</item>
+    </style>
+
+    <style name="PlaceholderTextView" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textSize">@dimen/size_extra_huge</item>
+        <item name="android:textColor">?attr/notoSecondaryColor</item>
+        <item name="fontFamily">@font/nunito_semibold</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="WidgetPlaceholderTextView" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textSize">@dimen/size_extra_huge</item>
+        <item name="android:textColor">@color/colorSecondary</item>
+        <item name="fontFamily">@font/nunito_semibold</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="SliderLabel" parent="Widget.Material3.Tooltip">
+        <item name="android:textAppearance">@style/SliderLabelTextAppearance</item>
+        <item name="shapeAppearance">@style/SliderLabelShapeAppearance</item>
+        <item name="backgroundTint">?attr/notoPrimaryColor</item>
+        <item name="fontFamily">@font/nunito_semibold</item>
+        <item name="android:textColor">?attr/notoBackgroundColor</item>
+        <item name="android:textSize">@dimen/size_small</item>
+    </style>
+
+    <style name="SliderLabelTextAppearance" parent="TextAppearance.MaterialComponents.Tooltip">
+        <item name="fontFamily">@font/nunito_semibold</item>
+        <item name="android:textColor">?attr/notoBackgroundColor</item>
+        <item name="android:textSize">@dimen/size_small</item>
+    </style>
+
+    <style name="SliderLabelShapeAppearance" parent="ShapeAppearance.Material3.Tooltip">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/spacing_small</item>
+    </style>
+
+    <style name="SettingsItem" parent="Widget.MaterialComponents.TextView">
+        <item name="fontFamily">@font/nunito_semibold</item>
+        <item name="android:textSize">@dimen/size_small</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">?attr/notoPrimaryColor</item>
+        <item name="android:background">@drawable/settings_item_shape</item>
+        <item name="android:backgroundTint">@android:color/transparent</item>
+        <item name="android:padding">@dimen/spacing_normal</item>
+        <item name="android:drawablePadding">@dimen/spacing_normal</item>
+    </style>
+
+    <style name="LabelItem" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textSize">@dimen/size_normal</item>
+        <item name="android:background">@drawable/label_item_shape</item>
+        <item name="android:textColor">?attr/notoPrimaryColor</item>
+        <item name="fontFamily">@font/nunito_semibold</item>
+        <item name="android:textDirection">anyRtl</item>
+    </style>
+
+    <style name="TabItemTextAppearance" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="fontFamily">@font/nunito_medium</item>
+        <item name="android:textSize">@dimen/size_small</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="ProgressIndicator" parent="Widget.Material3.CircularProgressIndicator">
+        <item name="android:indeterminate">true</item>
+        <item name="android:contentDescription">@string/loading_content</item>
+        <item name="indicatorColor">?attr/notoPrimaryColor</item>
+        <item name="indicatorSize">50dp</item>
+        <item name="trackColor">?attr/notoBackgroundColor</item>
+        <item name="trackCornerRadius">@dimen/spacing_extra_large</item>
+        <item name="trackThickness">5dp</item>
+    </style>
+
+    <style name="TabLayout" parent="Widget.MaterialComponents.TabLayout">
+        <item name="android:background">@drawable/generic_shape</item>
+        <item name="tabIconTint">@color/tab_icon_color_selector</item>
+        <item name="tabIndicator">@drawable/tab_indicator_shape</item>
+        <item name="tabIndicatorAnimationMode">elastic</item>
+        <item name="tabIndicatorColor">?attr/notoPrimaryColor</item>
+        <item name="tabIndicatorGravity">stretch</item>
+        <item name="tabInlineLabel">true</item>
+        <item name="tabSelectedTextColor">?attr/notoBackgroundColor</item>
+        <item name="tabTextAppearance">@style/TabItemTextAppearance</item>
+        <item name="tabTextColor">?attr/notoPrimaryColor</item>
+        <item name="tabIndicatorAnimationDuration">500</item>
+        <item name="tabMode">fixed</item>
+        <item name="tabGravity">fill</item>
+        <item name="tabMaxWidth">0dp</item>
+        <item name="tabIndicatorFullWidth">true</item>
+    </style>
+
+    <style name="Snackbar" parent="Widget.Material3.Snackbar">
+        <item name="android:layout_margin">@dimen/spacing_normal</item>
+    </style>
+
+    <style name="SnackbarTextView" parent="Widget.Material3.Snackbar.TextView">
+        <item name="fontFamily">@font/nunito_medium</item>
+        <item name="android:textDirection">anyRtl</item>
+    </style>
+
+    <style name="ClickableView" parent="Widget.Material3.MaterialTimePicker.ImageButton">
+        <item name="android:background">@drawable/generic_ripple_shape</item>
+        <item name="android:backgroundTint">?attr/notoBackgroundColor</item>
+        <item name="fontFamily">@font/nunito_medium</item>
+        <item name="android:textSize">@dimen/size_extra_small</item>
+        <item name="android:textColor">?attr/notoPrimaryColor</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/spacing_normal</item>
+    </style>
+
+    <style name="ExtendedFab" parent="Widget.Material3.ExtendedFloatingActionButton.Primary">
+        <item name="android:layout_gravity">bottom|end</item>
+        <item name="android:layout_margin">@dimen/spacing_normal</item>
+        <item name="android:textColor">?attr/notoBackgroundColor</item>
+        <item name="backgroundTint">?attr/notoPrimaryColor</item>
+        <item name="fontFamily">@font/nunito_semibold</item>
+    </style>
+
+    <style name="Slider" parent="Widget.Material3.Slider">
+        <item name="haloColor">?attr/notoSurfaceColor</item>
+        <item name="labelStyle">@style/SliderLabel</item>
+        <item name="thumbColor">?attr/notoPrimaryColor</item>
+        <item name="thumbRadius">12dp</item>
+        <item name="thumbStrokeColor">?attr/notoPrimaryColor</item>
+        <item name="thumbStrokeWidth">0dp</item>
+        <item name="tickColorActive">?attr/notoBackgroundColor</item>
+        <item name="tickColorInactive">?attr/notoPrimaryColor</item>
+        <item name="trackColorActive">?attr/notoPrimaryColor</item>
+        <item name="trackColorInactive">?attr/notoSurfaceColor</item>
+        <item name="trackHeight">@dimen/spacing_normal</item>
+    </style>
+
+    <style name="FabShapeAppearanceOverlay">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/spacing_small</item>
+    </style>
+
+    <style name="DatePickerDialog" parent="ThemeOverlay.Material3.MaterialCalendar">
+        <item name="colorPrimary">?attr/notoPrimaryColor</item>
+        <!-- Content background color -->
+        <item name="colorSurface">?attr/notoBackgroundColor</item>
+        <!-- Day number color -->
+        <item name="colorOnSurface">?attr/notoSecondaryColor</item>
+        <!-- Year selector & Month pagination icons & Day name color -->
+        <item name="colorOnSurfaceVariant">?attr/notoSecondaryColor</item>
+        <!-- Tint applies to background if not disabled -->
+        <item name="elevationOverlayEnabled">false</item>
+        <!-- Header background color -->
+        <item name="materialCalendarHeaderLayout">@style/DatePickerDialog.HeaderLayout</item>
+        <!-- Header title color -->
+        <item name="materialCalendarHeaderTitle">@style/DatePickerDialog.HeaderTitle</item>
+        <!-- Header selected date color -->
+        <item name="materialCalendarHeaderSelection">@style/DatePickerDialog.HeaderSelection</item>
+        <!-- Header toggle button color -->
+        <item name="materialCalendarHeaderToggleButton">@style/DatePickerDialog.HeaderToggleButton</item>
+        <!-- Header divider style & visibility -->
+        <item name="materialCalendarHeaderDivider">@style/DatePickerDialog.HeaderDivider</item>
+        <!-- Day shape -->
+        <item name="itemShapeAppearanceOverlay">@style/DatePickerDialog.DayShape</item>
+        <!-- Dialog shape -->
+        <item name="shapeAppearanceCornerExtraLarge">@style/DateTimePickerDialog.DialogShape</item>
+        <!-- Date Input -->
+        <item name="textInputStyle">@style/DatePickerDialog.TextInputLayout</item>
+    </style>
+
+    <style name="DatePickerDialog.HeaderLayout" parent="Widget.Material3.MaterialCalendar.HeaderLayout">
+        <item name="android:background">?attr/notoSurfaceColor</item>
+    </style>
+
+    <style name="DatePickerDialog.HeaderTitle" parent="Widget.Material3.MaterialCalendar.HeaderTitle">
+        <item name="android:textColor">?attr/colorPrimary</item>
+        <item name="android:textSize">@dimen/size_small</item>
+        <item name="fontFamily">@font/nunito_bold</item>
+        <item name="autoSizeTextType">none</item>
+    </style>
+
+    <style name="DatePickerDialog.HeaderSelection" parent="Widget.Material3.MaterialCalendar.HeaderSelection">
+        <item name="android:textColor">?attr/colorPrimary</item>
+    </style>
+
+    <style name="DatePickerDialog.HeaderToggleButton" parent="Widget.Material3.MaterialCalendar.HeaderToggleButton">
+        <item name="android:tint">?attr/colorPrimary</item>
+    </style>
+
+    <style name="DatePickerDialog.HeaderDivider" parent="Widget.Material3.MaterialCalendar.HeaderDivider">
+        <item name="android:visibility">visible</item>
+        <item name="android:background">?attr/colorPrimary</item>
+    </style>
+
+    <style name="DatePickerDialog.DayShape" parent="ShapeAppearanceOverlay.MaterialComponents.MaterialCalendar.Day">
+        <item name="cornerSize">@dimen/spacing_small</item>
+    </style>
+
+    <style name="DateTimePickerDialog.DialogShape" parent="ShapeAppearance.Material3.Corner.ExtraLarge">
+        <item name="cornerSize">@dimen/spacing_small</item>
+    </style>
+
+    <style name="DatePickerDialog.TextInputLayout" parent="TextInputLayout">
+        <item name="hintEnabled">true</item>
+        <item name="hintTextColor">#00FFFFFF</item>
+    </style>
+
+    <style name="TimePickerDialog" parent="ThemeOverlay.Material3.MaterialTimePicker">
+        <item name="colorPrimary">?attr/notoPrimaryColor</item>
+        <!-- Content background color -->
+        <item name="colorSurface">?attr/notoBackgroundColor</item>
+        <!-- Hour ":" Minute separator color -->
+        <item name="colorOnSurface">?attr/notoSecondaryColor</item>
+        <!-- Clock background color -->
+        <item name="colorSurfaceVariant">?attr/notoSurfaceColor</item>
+        <!-- Keyboard icon & Hour/Minute text in keyboard mode & Title color -->
+        <item name="colorOnSurfaceVariant">?attr/notoSecondaryColor</item>
+        <!-- Tint applies to background if not disabled -->
+        <item name="elevationOverlayEnabled">false</item>
+        <!-- Day night toggle - AM/PM -->
+        <item name="materialButtonOutlinedStyle">@style/TimePickerDialog.DayNightToggle</item>
+        <!-- Manual number input style -->
+        <item name="chipStyle">@style/TimePickerDialog.Chip</item>
+        <!-- Circle clock style -->
+        <item name="materialClockStyle">@style/TimePickerDialog.Clock</item>
+        <!-- Dialog shape -->
+        <item name="shapeAppearanceCornerExtraLarge">@style/DateTimePickerDialog.DialogShape</item>
+        <item name="textInputStyle">@style/TimePickerDialog.TextInputLayout</item>
+        <item name="materialTimePickerTitleStyle">@style/TimePickerDialog.TitleTextAppearance</item>
+    </style>
+
+    <style name="TimePickerDialog.DayNightToggle" parent="Widget.Material3.MaterialTimePicker.Button">
+        <item name="android:backgroundTint">?attr/notoSurfaceColor</item>
+        <item name="android:textColor">@color/day_night_toggle_text_color_selector</item>
+        <item name="rippleColor">?attr/colorPrimary</item>
+        <item name="strokeColor">?attr/colorPrimary</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="shapeAppearance">@style/TimePickerDialog.ShapeAppearance</item>
+    </style>
+
+    <style name="TimePickerDialog.Chip" parent="Widget.Material3.MaterialTimePicker.Display">
+        <item name="chipBackgroundColor">?attr/notoSurfaceColor</item>
+        <item name="android:textColor">?attr/colorPrimary</item>
+        <item name="rippleColor">?attr/colorPrimary</item>
+        <item name="chipStrokeColor">@color/chip_stroke_color_selector</item>
+        <item name="chipStrokeWidth">1dp</item>
+        <item name="shapeAppearance">@style/TimePickerDialog.ShapeAppearance</item>
+        <item name="android:textAppearance">@style/TimePickerDialog.ChipTextAppearance</item>
+    </style>
+
+    <style name="TimePickerDialog.Clock" parent="Widget.Material3.MaterialTimePicker.Clock">
+        <item name="clockNumberTextColor">@color/clock_number_color_selector</item>
+    </style>
+
+    <style name="TimePickerDialog.ShapeAppearance" parent="ShapeAppearance.Material3.Corner.Small">
+        <item name="cornerSize">@dimen/spacing_small</item>
+    </style>
+
+    <style name="TimePickerDialog.TextInputLayout" parent="Widget.Material3.MaterialTimePicker.Display.TextInputLayout">
+        <item name="materialThemeOverlay">@style/TimePickerDialog.TextInputEditTextOverlay</item>
+        <item name="boxBackgroundColor">?attr/notoSurfaceColor</item>
+        <item name="boxStrokeWidthFocused">1dp</item>
+    </style>
+
+    <style name="TimePickerDialog.TextInputEditTextOverlay" parent="ThemeOverlay.Material3.MaterialTimePicker.Display.TextInputEditText">
+        <item name="editTextStyle">@style/TimePickerDialog.TextInputEditText</item>
+    </style>
+
+    <style name="TimePickerDialog.TextInputEditText" parent="Widget.Material3.MaterialTimePicker.Display.TextInputEditText">
+        <item name="android:textColor">?attr/colorPrimary</item>
+    </style>
+
+    <style name="TimePickerDialog.ChipTextAppearance" parent="TextAppearance.Material3.BodyLarge">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/nunito_semibold</item>
+    </style>
+
+    <style name="TimePickerDialog.TitleTextAppearance" parent="TextAppearance.Material3.MaterialTimePicker.Title">
+        <item name="android:textColor">?attr/colorPrimary</item>
+        <item name="android:textSize">@dimen/size_small</item>
+        <item name="fontFamily">@font/nunito_bold</item>
+    </style>
+
+    <style name="DatePickerDialog.Gray" parent="DatePickerDialog">
+        <item name="colorPrimary">@color/colorAccentGray</item>
+    </style>
+
+    <style name="DatePickerDialog.Blue" parent="DatePickerDialog">
+        <item name="colorPrimary">@color/colorAccentBlue</item>
+    </style>
+
+    <style name="DatePickerDialog.Pink" parent="DatePickerDialog">
+        <item name="colorPrimary">@color/colorAccentPink</item>
+    </style>
+
+    <style name="DatePickerDialog.Cyan" parent="DatePickerDialog">
+        <item name="colorPrimary">@color/colorAccentCyan</item>
+    </style>
+
+    <style name="DatePickerDialog.Purple" parent="DatePickerDialog">
+        <item name="colorPrimary">@color/colorAccentPurple</item>
+    </style>
+
+    <style name="DatePickerDialog.Red" parent="DatePickerDialog">
+        <item name="colorPrimary">@color/colorAccentRed</item>
+    </style>
+
+    <style name="DatePickerDialog.Yellow" parent="DatePickerDialog">
+        <item name="colorPrimary">@color/colorAccentYellow</item>
+    </style>
+
+    <style name="DatePickerDialog.Orange" parent="DatePickerDialog">
+        <item name="colorPrimary">@color/colorAccentOrange</item>
+    </style>
+
+    <style name="DatePickerDialog.Green" parent="DatePickerDialog">
+        <item name="colorPrimary">@color/colorAccentGreen</item>
+    </style>
+
+    <style name="DatePickerDialog.Brown" parent="DatePickerDialog">
+        <item name="colorPrimary">@color/colorAccentBrown</item>
+    </style>
+
+    <style name="DatePickerDialog.BlueGray" parent="DatePickerDialog">
+        <item name="colorPrimary">@color/colorAccentBlueGray</item>
+    </style>
+
+    <style name="DatePickerDialog.Teal" parent="DatePickerDialog">
+        <item name="colorPrimary">@color/colorAccentTeal</item>
+    </style>
+
+    <style name="DatePickerDialog.Indigo" parent="DatePickerDialog">
+        <item name="colorPrimary">@color/colorAccentIndigo</item>
+    </style>
+
+    <style name="DatePickerDialog.DeepPurple" parent="DatePickerDialog">
+        <item name="colorPrimary">@color/colorAccentDeepPurple</item>
+    </style>
+
+    <style name="DatePickerDialog.DeepOrange" parent="DatePickerDialog">
+        <item name="colorPrimary">@color/colorAccentDeepOrange</item>
+    </style>
+
+    <style name="DatePickerDialog.DeepGreen" parent="DatePickerDialog">
+        <item name="colorPrimary">@color/colorAccentDeepGreen</item>
+    </style>
+
+    <style name="DatePickerDialog.LightBlue" parent="DatePickerDialog">
+        <item name="colorPrimary">@color/colorAccentLightBlue</item>
+    </style>
+
+    <style name="DatePickerDialog.LightGreen" parent="DatePickerDialog">
+        <item name="colorPrimary">@color/colorAccentLightGreen</item>
+    </style>
+
+    <style name="DatePickerDialog.LightRed" parent="DatePickerDialog">
+        <item name="colorPrimary">@color/colorAccentLightRed</item>
+    </style>
+
+    <style name="DatePickerDialog.LightPink" parent="DatePickerDialog">
+        <item name="colorPrimary">@color/colorAccentLightPink</item>
+    </style>
+
+    <style name="TimePickerDialog.Gray" parent="TimePickerDialog">
+        <item name="colorPrimary">@color/colorAccentGray</item>
+    </style>
+
+    <style name="TimePickerDialog.Blue" parent="TimePickerDialog">
+        <item name="colorPrimary">@color/colorAccentBlue</item>
+    </style>
+
+    <style name="TimePickerDialog.Pink" parent="TimePickerDialog">
+        <item name="colorPrimary">@color/colorAccentPink</item>
+    </style>
+
+    <style name="TimePickerDialog.Cyan" parent="TimePickerDialog">
+        <item name="colorPrimary">@color/colorAccentCyan</item>
+    </style>
+
+    <style name="TimePickerDialog.Purple" parent="TimePickerDialog">
+        <item name="colorPrimary">@color/colorAccentPurple</item>
+    </style>
+
+    <style name="TimePickerDialog.Red" parent="TimePickerDialog">
+        <item name="colorPrimary">@color/colorAccentRed</item>
+    </style>
+
+    <style name="TimePickerDialog.Yellow" parent="TimePickerDialog">
+        <item name="colorPrimary">@color/colorAccentYellow</item>
+    </style>
+
+    <style name="TimePickerDialog.Orange" parent="TimePickerDialog">
+        <item name="colorPrimary">@color/colorAccentOrange</item>
+    </style>
+
+    <style name="TimePickerDialog.Green" parent="TimePickerDialog">
+        <item name="colorPrimary">@color/colorAccentGreen</item>
+    </style>
+
+    <style name="TimePickerDialog.Brown" parent="TimePickerDialog">
+        <item name="colorPrimary">@color/colorAccentBrown</item>
+    </style>
+
+    <style name="TimePickerDialog.BlueGray" parent="TimePickerDialog">
+        <item name="colorPrimary">@color/colorAccentBlueGray</item>
+    </style>
+
+    <style name="TimePickerDialog.Teal" parent="TimePickerDialog">
+        <item name="colorPrimary">@color/colorAccentTeal</item>
+    </style>
+
+    <style name="TimePickerDialog.Indigo" parent="TimePickerDialog">
+        <item name="colorPrimary">@color/colorAccentIndigo</item>
+    </style>
+
+    <style name="TimePickerDialog.DeepPurple" parent="TimePickerDialog">
+        <item name="colorPrimary">@color/colorAccentDeepPurple</item>
+    </style>
+
+    <style name="TimePickerDialog.DeepOrange" parent="TimePickerDialog">
+        <item name="colorPrimary">@color/colorAccentDeepOrange</item>
+    </style>
+
+    <style name="TimePickerDialog.DeepGreen" parent="TimePickerDialog">
+        <item name="colorPrimary">@color/colorAccentDeepGreen</item>
+    </style>
+
+    <style name="TimePickerDialog.LightBlue" parent="TimePickerDialog">
+        <item name="colorPrimary">@color/colorAccentLightBlue</item>
+    </style>
+
+    <style name="TimePickerDialog.LightGreen" parent="TimePickerDialog">
+        <item name="colorPrimary">@color/colorAccentLightGreen</item>
+    </style>
+
+    <style name="TimePickerDialog.LightRed" parent="TimePickerDialog">
+        <item name="colorPrimary">@color/colorAccentLightRed</item>
+    </style>
+
+    <style name="TimePickerDialog.LightPink" parent="TimePickerDialog">
+        <item name="colorPrimary">@color/colorAccentLightPink</item>
+    </style>
+
+</resources>

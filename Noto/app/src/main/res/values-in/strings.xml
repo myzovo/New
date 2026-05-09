@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App -->
+    <string name="app_name">Noto</string>
+    <!-- Button text for sorting/ordering/filtering notes options. -->
+    <string name="apply">Terapkan</string>
+    <string name="okay">Baik</string>
+    <string name="search">Cari</string>
+    <!-- An option in the note layout for searching for text inside a note. -->
+    <string name="find_in_note">Temukan di catatan</string>
+    <!-- A settings option to support the project. -->
+    <string name="support_noto">Dukung Noto</string>
+    <!-- Description of the Support Noto settings options. -->
+    <string name="support_noto_description">Jika kamu ingin memastikan Noto tetap terawat.</string>
+    <!-- More options for folder, note, etc... -->
+    <string name="more_options">Pilihan lain</string>
+    <!-- Options for multi-selected notes. -->
+    <string name="options">Opsi</string>
+    <string name="back">Kembali</string>
+    <!-- Replacements for "Label filtering type". -->
+    <string name="filtering">Penyaringan</string>
+    <string name="layout">Tata letak</string>
+    <string name="list">Daftar</string>
+    <!-- Label filtering mode -->
+    <string name="inclusive">Inklusif</string>
+    <!-- Inclusive filtering mode description -->
+    <string name="inclusive_description">Saring catatan yang memiliki <b>salah satu</b> dari label yang dipilih.</string>
+    <!-- Label filtering mode -->
+    <string name="exclusive">Ekslusif</string>
+    <!-- Exclusive filtering mode description -->
+    <string name="exclusive_description">Saring catatan yang memiliki <b>semua</b> label yang dipilih, tidak kurang.</string>
+    <!-- Label filtering mode -->
+    <string name="strict">Ketat</string>
+    <!-- Strict filtering mode description -->
+    <string name="strict_description">Saring catatan yang memiliki <b>hanya</b> label yang dipilih, tidak kurang, tidak lebih.</string>
+    <string name="grid">Kisi</string>
+    <string name="created">Dibuat %s</string>
+    <string name="accessed">Diakses %s</string>
+    <string name="alphabetical">Alfabetis</string>
+    <!-- Sorting/Grouping notes by access date. -->
+    <string name="access_date">Tanggal akses</string>
+    <string name="creation_date">Tanggal dibuat</string>
+    <string name="manual">Manual</string>
+    <string name="none">Tidak ada</string>
+    <string name="descending">Menurun</string>
+    <string name="ascending">Menaik</string>
+    <string name="settings">Pengaturan</string>
+    <!-- The link of the source code of the project. -->
+    <string name="source_code">Kode Sumber</string>
+    <!-- Description of the "Source code" settings option. -->
+    <string name="source_code_description">Noto adalah aplikasi sumber terbuka, dan kodenya dipublikasikan di GitHub.</string>
+    <!-- The link of the Telegram community of Noto. -->
+    <string name="telegram_community">Komunitas Telegram</string>
+    <!-- Description of the "Telegram community" settings option. -->
+    <string name="telegram_community_description">Bergabunglah dengan komunitas untuk berinteraksi dengan pengguna Noto lainnya, dan dapatkan berita terbaru.</string>
+    <!-- Text for Telegram banner in Settings & What's new dialog. -->
+    <string name="join_telegram">Bergabung dengan Komunitas Telegram kami!</string>
+    <!-- The font used in notes, such as Monospace, or Nunito. -->
+    <string name="notes_font">Fon catatan</string>
+    <string name="share_app_with_others">Bagikan Noto dengan yang lain</string>
+    <string name="rate_app_on_play_store">Beri nilai Noto di Play Store</string>
+    <string name="report_issue">Laporkan masalah</string>
+    <string name="email">Email</string>
+    <string name="about">Tentang</string>
+    <string name="whats_new">Apa yang baru</string>
+    <string name="whats_new_in">Apa yang baru di %s</string>
+    <string name="learn_more">Pelajari lebih lanjut…</string>
+    <!--    <string name="share_with">Share with</string>-->
+    <string name="export_import_data">Cadangkan/Pulihkan data</string>
+    <string name="exporting_failed">Gagal mencadangkan data.</string>
+    <string name="importing_failed">Gagal memulihkan data.</string>
+    <string name="data_is_exported">Data telah dicadangkan ke %s</string>
+    <string name="data_is_imported">Data berhasil dipulihkan.</string>
+    <string name="export_data">Cadangkan data</string>
+    <string name="import_data">Pulihkan data</string>
+    <string name="importing_data">Memulihkan data…</string>
+    <string name="exporting_data">Mencadangkan data…</string>
+    <string name="create_file_failed">Gagal membuat berkas.</string>
+    <string name="no_folder_is_selected">Tidak ada map yang dipilih.</string>
+    <string name="no_file_is_selected">Tidak ada berkas yang dipilih.</string>
+    <!-- Open with an app such as Signal -->
+    <string name="open_with">Buka dengan</string>
+    <string name="invite_text">Periksa Noto, aplikasi pencatat minimal sumber terbuka.</string>
+    <string name="version">Versi</string>
+    <!-- A message shown when clicking on the app version. -->
+    <string name="version_is_copied">Versi telah disalin ke papan klip.</string>
+    <!-- Me -->
+    <string name="developer">Pengembang</string>
+    <!-- Creator of app icons. -->
+    <string name="creator">Pembuat</string>
+    <!-- Translator of a language. -->
+    <!-- Proofreader of a language. -->
+    <string name="app_icons">Ikon Aplikasi</string>
+    <string name="privacy_policy">Kebijakan privasi</string>
+    <!-- Description of the "Privacy policy" settings option. -->
+    <string name="privacy_policy_description">Pembaharuan terakhir pada Agustus 25, 2022.</string>
+    <!-- License of the project, or app icons. Example: Apache 2.0. -->
+    <string name="license">Lisensi</string>
+    <string name="date">Tanggal</string>
+    <string name="time">Waktu</string>
+    <string name="drag">Tarik</string>
+    <string name="nunito">Nunito (bawaan)</string>
+    <string name="monospace">Monospace</string>
+    <string name="folders_archive">Arsip map</string>
+    <!-- The first screen user sees when opening the app. -->
+    <string name="main_interface">Antarmuka utama</string>
+    <!-- Description of the "Main interface" settings option. -->
+    <string name="main_interface_description">Layar pertama yang ditampilkan saat meluncurkan aplikasi.</string>
+    <!-- The default folder of "Save to Noto" text selection option. -->
+    <string name="quick_note_folder">Folder catatan cepat</string>
+    <!-- AKA "Save to Noto". -->
+    <string name="quick_note">Catatan cepat</string>
+    <!-- Description of the "Quick note folder" settings option. -->
+    <string name="quick_note_folder_description">Map default saat menyimpan catatan menggunakan opsi pemilihan teks \"Catatan cepat\".</string>
+    <string name="general">Umum</string>
+    <string name="all_notes">Semua catatan</string>
+    <string name="all_folders">Semua map</string>
+    <string name="clear">Bersihkan</string>
+    <!-- Replacement for Recent Notes filtered view. -->
+    <string name="recent">Terbaru</string>
+    <string name="collapse">Ciutkan</string>
+    <string name="expand">Perluas</string>
+    <string name="parent_folder">Map induk</string>
+    <string name="new_note_cursor_position">Posisi kursor catatan baru</string>
+    <!-- Opening notes in Reading Mode, or Editor, when clicking on them by default. -->
+    <string name="open_notes_in">Buka catatan pada</string>
+    <string name="archive">Arsip</string>
+    <!-- Similar to Recent Notes filtered view but for archived notes. -->
+    <string name="archived">Diarsipkan</string>
+    <!-- Similar to Recent Notes filtered view but for notes that have reminders set. -->
+    <string name="scheduled">Dijadwalkan</string>
+    <!-- The name of the folder archive, which contains folder's archived notes. E.g. Recipes archive. -->
+    <string name="folder_archive">Arsip %s</string>
+    <string name="unarchive">Batalkan arsip</string>
+    <string name="edit">Sunting</string>
+    <!-- An option in Reading Mode, to move to the next note. -->
+    <string name="next">Berikutnya</string>
+    <!-- An option in Reading Mode, to move to the previous note. -->
+    <string name="previous">Sebelumnya</string>
+    <string name="pin">Sematkan</string>
+    <!-- Merge multiple notes into a new note. -->
+    <string name="merge">Gabungkan</string>
+    <string name="unpin">Lepas sematan</string>
+    <string name="delete">Hapus</string>
+    <string name="just_now">baru saja</string>
+    <!--Select a note. -->
+    <string name="select">Pilih</string>
+    <!--Select all notes. -->
+    <string name="select_all">Pilih semua</string>
+    <!-- List of translations. -->
+    <string name="translations">Terjemahan</string>
+    <!-- Description of the "Translations" settings option. -->
+    <string name="translations_description">Terima kasih khusus kepada semua penerjemah yang membantu membuat Noto tersedia di berbagai lokalisasi.</string>
+    <!-- List of credits. -->
+    <string name="credits">Kredit</string>
+    <!-- Folder -->
+    <string name="folders">Map</string>
+    <plurals name="folders_count">
+        <item quantity="other">%d Map</item>
+    </plurals>
+    <string name="create_folder">Buat map</string>
+    <string name="update_folder">Perbaharui map</string>
+    <string name="archive_folder">Arsipkan map</string>
+    <string name="new_folder">Map baru</string>
+    <string name="edit_folder">Sunting map</string>
+    <string name="folder_options">Opsi map</string>
+    <string name="add_new_note_shortcut">Tambah pintasan catatan</string>
+    <string name="delete_folder_description">Tindakan ini tidak dapat diurungkan dan akan menghapus map dan semua kontennya secara permanen.</string>
+    <string name="folder_title">Judul map</string>
+    <!-- Folder color -->
+    <string name="color">Warna</string>
+    <string name="delete_folder">Hapus</string>
+    <string name="delete_folder_confirmation">Apakah Anda yakin ingin menghapus map ini?</string>
+    <string name="empty_title">Judul tidak boleh kosong.</string>
+    <string name="folder_is_deleted">Map telah dihapus.</string>
+    <string name="folder_is_archived">Map telah diarsipkan.</string>
+    <string name="folder_is_unarchived">Map telah dikeluarkan dari arsip.</string>
+    <string name="folder_is_pinned">Map telah disematkan.</string>
+    <string name="folder_is_unpinned">Penyemat map telah dilepas.</string>
+    <string name="no_folders_found">Tidak ada map yang ditemukan.</string>
+    <!-- Text displayed when there are no folders suitable for a given action like moving/copying/etc... -->
+    <string name="no_relevant_folders_found">Folder relevan tidak ditemukan.</string>
+    <string name="select_folder">Pilih map</string>
+    <string name="folder">Folder</string>
+    <string name="select_folder_archive">Pilih map arsip</string>
+    <string name="pinned">Disematkan</string>
+    <!-- Vault -->
+    <string name="folders_vault">Brankas map</string>
+    <string name="update_passcode">Perbarui kode akses</string>
+    <string name="enable_vault">Aktifkan brankas</string>
+    <string name="enter_vault_passcode">Masukkan kode akses brankas</string>
+    <string name="add_to_vault">Tambah ke brankas</string>
+    <string name="remove_from_vault">Keluarkan dari brankas</string>
+    <string name="folder_is_vaulted">Map telah ditambahkan ke brankas.</string>
+    <string name="folder_is_unvaulted">Map telah dikeluarkan dari brankas.</string>
+    <string name="vault_is_empty">Brankas kosong.</string>
+    <string name="archive_vaulted_folder_confirmation">Apakah Anda yakin ingin menghapus map ini?</string>
+    <string name="archive_vaulted_folder_description">Mengarsipkan map ini juga akan menghapusnya dari brankas.</string>
+    <string name="passcode">Kode akses</string>
+    <string name="new_vault_passcode">Kode akses brankas baru</string>
+    <string name="new_passcode">Kode akses baru</string>
+    <string name="current_passcode">Kode akses sekarang</string>
+    <string name="vault_setup">Atur brankas</string>
+    <string name="current_vault_passcode">Kode akses brankas saat ini</string>
+    <!-- Change vault passcode option. -->
+    <string name="change_passcode">Ubah kode sandi</string>
+    <!-- Vault timeout. -->
+    <string name="timeout">Batar Waktu</string>
+    <!-- Description of the "Timeout" settings option. -->
+    <string name="timeout_description">Waktu yang dibutuhkan untuk menutup brankas setelah dibuka.</string>
+    <string name="vault_timeout">Batas waktu brankas</string>
+    <string name="invalid_passcode">Kode akses tidak valid</string>
+    <string name="passcode_length_message">Kode akses harus berisi setidaknya 6 angka</string>
+    <string name="passcode_empty_message">Kode akses tidak boleh kosong</string>
+    <string name="passcode_doesnt_match">Kode akses tidak cocok dengan kode yang sekarang</string>
+    <string name="vault_passcode_has_changed">Kode akses brankans telah diperbarui.</string>
+    <string name="enable_vault_message">Untuk mengaktifkan berankas, berikan kode sandi.</string>
+    <string name="vault_passcode_message">Kode akses brankas tidak dapat diubah jika Anda kehilangannya, pastikan untuk menyimpannya di tempat yang aman.</string>
+    <string name="use_bio">Gunakan biometrik</string>
+    <string name="validate">Mengsahkan</string>
+    <string name="vault">Brankas</string>
+    <!-- An option to disable the vault in vault settings. -->
+    <string name="disable_vault">Nonaktifkan brankas</string>
+    <!-- A message shown when "Disable vault" is being clicked. -->
+    <string name="vault_is_disabled">Brankas telah dinonaktifkan.</string>
+    <string name="vault_is_enabled">Brankas telah diaktifkan.</string>
+    <!-- An option to disable the vault in vault settings. -->
+    <string name="disable">Nonaktifkan</string>
+    <!-- A confirmation message shown when disabling the vault in vault settings. -->
+    <string name="disable_vault_confirmation">Apakah anda yakin ingin menonaktifkan brankas?</string>
+    <!-- A description message shown when disabling the vault in vault settings. -->
+    <string name="disable_vault_description">Tindakan ini tidak dapat diurungkan dan akan menonaktifkan brankas dan memindahkan semua map di luar brankas.</string>
+    <string name="vault_is_open">Brankas terbuka</string>
+    <string name="immediately">Segera</string>
+    <string name="on_app_close">Pada saat aplikasi ditutup</string>
+    <string name="after_1_hour">Setelah 1 jam</string>
+    <string name="after_4_hours">Setelah 4 jam</string>
+    <string name="after_12_hours">Setelah 12 jam</string>
+    <string name="close_vault">Tutup brankas</string>
+    <!-- Enabling biometric authentication for the app. -->
+    <string name="bio_auth">Aktifkan autentikasi biometrik</string>
+    <!-- Description of the "Enable biometric authentication" settings option. -->
+    <string name="bio_auth_description">Menentukan apakah mengizinkan mengakses brankas menggunakan metode autentikasi biometrik, seperti Pengenalan Wajah atau Sidik Jari.</string>
+    <string name="use_passcode">Gunakan kode akses</string>
+    <!-- Note -->
+    <string name="all">Semua</string>
+    <string name="set_reminder">Atur pengingat</string>
+    <string name="update_reminder">Perbarui pengingat</string>
+    <string name="archive_is_empty">Arsip kosong.</string>
+    <!-- Notes count in Reading Mode with indicator of the current selected displayed note.
+     Such as "2/11 Notes".
+    -->
+    <plurals name="reading_mode_notes_count">
+        <item quantity="other">%1$d / %2$d Catatan</item>
+    </plurals>
+    <plurals name="notes_count">
+        <item quantity="other">%d Catatan</item>
+    </plurals>
+    <!-- Filtered notes count is shown when a label is selected, or text is searched.
+         Such as "30 Notes • 5 Filtered".
+     -->
+    <plurals name="notes_filtered_count">
+        <item quantity="other">%1$d Catatan • %2$d Tersaring</item>
+    </plurals>
+    <!-- Selected notes count is shown when a note or multiple notes are selected.
+         Such as "30 Notes • 5 Selected".
+     -->
+    <plurals name="notes_selected_count">
+        <item quantity="other">%1$d Catatan • %2$d Terpilih</item>
+    </plurals>
+    <!--  Filtered notes count is shown when a label is selected, or text is searched. Selected notes count is shown when a note or multiple notes are selected.
+          Such as, "30 Notes • 3 Filtered • 8 Selected".
+     -->
+    <plurals name="notes_filtered_selected_count">
+        <item quantity="other">%1$d Catatan • %2$d Tersaring • %3$d Terpilih</item>
+    </plurals>
+    <plurals name="words_count">
+        <item quantity="other">%d Kata</item>
+    </plurals>
+    <!-- Selected words count is shown when text is selected in a note. -->
+    <plurals name="words_selected_count">
+        <item quantity="other">%1$d Kata • %2$d Terpilih</item>
+    </plurals>
+    <!-- Text displaying how many occurrences of a word has been found using "Find in note" feature. Such as "2/11 Found".
+        The First number is for the current displayed word, and the other number is the total count of words that have been found. -->
+    <plurals name="words_found_count">
+        <item quantity="other">%1$d Kata • %2$d / %3$d Ditemukan</item>
+    </plurals>
+    <string name="body">Isi</string>
+    <string name="title">Judul</string>
+    <!-- Note's editor, opposite of Reading Mode. -->
+    <string name="editor">Penyunting</string>
+    <string name="create_note">Buat catatan</string>
+    <plurals name="delete_note">
+        <item quantity="other">Hapus Catatan</item>
+    </plurals>
+    <string name="duplicate">Duplikasi</string>
+    <string name="undo">Undo</string>
+    <string name="undo_history">Urungkan hirtory</string>
+    <string name="redo">Redo</string>
+    <string name="redo_history">Mengembalikan history</string>
+    <plurals name="share_note">
+        <item quantity="other">Bagikan catatan</item>
+    </plurals>
+    <!-- Sorting for notes/folders -->
+    <string name="sorting">Penyortiran</string>
+    <!-- Ordering for sorting/grouping of notes/folders -->
+    <string name="ordering">Penyortiran</string>
+    <string name="notes_view">Tampilan catatan</string>
+    <!-- Dialog for how folders sorted. -->
+    <string name="folders_view">Tampilan folder</string>
+    <!-- Grouping for notes/folders -->
+    <string name="grouping">Pengelompokan</string>
+    <string name="save_to_noto">Simpan ke Noto</string>
+    <!-- When selecting text, and then doing "Save to Noto", this message is shown in the notification. -->
+    <string name="note_is_saved">Catatan telah disimpan ke %s.</string>
+    <string name="no_notes_found">Tidak ada catatan ditemukan.</string>
+    <!-- Text displayed when there are no notes found when search is applied, and labels are selected. -->
+    <string name="no_relevant_notes_found">Catatan relevan tidak ditemukan.</string>
+    <!-- Text displayed when there are no notes found in the Recent view. -->
+    <string name="no_recent_notes_found">Catatan terbaru tidak ditemukan.</string>
+    <!-- Text displayed when there are no notes found in the Archived view. -->
+    <string name="no_archived_notes_found">Arsip catatan tidak ditemukan.</string>
+    <!-- Text displayed when there are no notes found in the Scheduled view. -->
+    <string name="no_scheduled_notes_found">Catatan terjadwal tidak ditemukan.</string>
+    <!-- Text displayed when there are no notes found when search is applied. -->
+    <string name="no_notes_found_search">Tidak ditemukan catatan yang berisi istilah pencarian.</string>
+    <!-- Text displayed when there are no notes found when labels are selected. -->
+    <string name="no_notes_found_labels">Tidak ditemukan catatan berisi label yang dipilih.</string>
+    <!-- Text displayed when folder is empty, and containing 0 notes. Replacement for "No notes found". -->
+    <string name="folder_is_empty">Folder ini kosong.</string>
+    <string name="notes">Catatan</string>
+    <!-- The count of the selected notes that have been merged. -->
+    <string name="notes_are_merged">%d Catatan telah digabungkan menjadi catatan baru.</string>
+    <plurals name="note_is_archived">
+        <item quantity="other">%d Catatan telah diarsipkan.</item>
+    </plurals>
+    <plurals name="note_is_unarchived">
+        <item quantity="other">%d Catatan dikeluarkan dari arsip.</item>
+    </plurals>
+    <!-- The count of the selected notes that have been pinned. -->
+    <plurals name="note_is_pinned">
+        <item quantity="other">%d　Catatan telah disematkan.</item>
+    </plurals>
+    <!-- The count of the selected notes that have been unpinned. -->
+    <plurals name="note_is_unpinned">
+        <item quantity="other">%d　Penyemat catatan telah dilepas.</item>
+    </plurals>
+    <string name="cancel_reminder">Batalkan pengingat</string>
+    <string name="note_is_unarchived">Catatan telah dikeluarkan dari arsip.</string>
+    <string name="reminder">Pengingat</string>
+    <string name="reminder_date">Tanggal pengingat</string>
+    <string name="reminder_time">Waktu pengingat</string>
+    <string name="reminder_is_set">Pengingat telah disetel untuk dijalankan pada %1$s pada %2$s.</string>
+    <string name="reminder_is_cancelled">Pengingat telah dibatalkan.</string>
+    <string name="reminders">Pengingat</string>
+    <string name="new_note_reminder">Pengingat baru</string>
+    <string name="copy">Salin</string>
+    <string name="copy_to">Salin ke…</string>
+    <!-- Text displayed when copying notes between folders along with a progress indicator. -->
+    <string name="copying_notes">Menyalin catatan ke %s</string>
+    <!-- The count of the selected notes that have been copied to a folder. -->
+    <plurals name="note_is_copied">
+        <item quantity="other">%d　Catatan telah disalin ke %s.</item>
+    </plurals>
+    <!-- The count of the selected notes that have been copied to clipboard. -->
+    <plurals name="note_copied_to_clipboard">
+        <item quantity="other">%d　Catatan telah di salin ke papan klip.</item>
+    </plurals>
+    <string name="text_copied">Teks telah disalin ke papan klip.</string>
+    <plurals name="delete_note_confirmation">
+        <item quantity="other">Apakah kamu yakin ingin menghapus catatan ini?</item>
+    </plurals>
+    <string name="share_with">Bagikan dengan…</string>
+    <string name="add_note_reminder">Tambah pengingat</string>
+    <plurals name="delete_note_description">
+        <item quantity="other">Tindakan ini tidak dapat diurungkan dan akan menghapus catatan dan pengingatnya secara permanen.</item>
+    </plurals>
+    <string name="reading_mode">Mode Baca</string>
+    <string name="edit_note_reminder">Sunting pengingat</string>
+    <string name="note_options">Pengaturan catatan</string>
+    <!-- The count of the selected notes that have been deleted. -->
+    <plurals name="note_is_deleted">
+        <item quantity="other">%d　Catatan telah dihapus.</item>
+    </plurals>
+    <!-- The count of the selected notes that have been duplicated. -->
+    <plurals name="note_is_duplicated">
+        <item quantity="other">%d　Catatan telah digandakan.</item>
+    </plurals>
+    <string name="move_to">Pindahkan ke…</string>
+    <!-- Text displayed when moving notes between folders along with a progress indicator. -->
+    <string name="moving_notes">Memindah catatan ke %s</string>
+    <!-- The count of the selected notes that have been moved to a folder. -->
+    <plurals name="note_is_moved">
+        <item quantity="other">%d Catatan telah dipindahkan ke %s.</item>
+    </plurals>
+    <string name="note_preview_size">Ukuran pratinjau catatan</string>
+    <string name="show_note_creation_date">Tampilkan tanggal pembuatan catatan</string>
+    <!-- Whether to show notes count in "All Folders" view. -->
+    <string name="show_notes_count">Tampilkan jumlah catatan</string>
+    <!-- Description of the "Show notes count" settings option. -->
+    <string name="show_notes_count_description">Menentukan apakah akan menampilkan hitungan catatan dalam dialog map.</string>
+    <!-- Whether to exit app immediately without showing folders dialog -->
+    <string name="quick_exit">Keluar Cepat</string>
+    <!-- Description of the "Quick exit" settings option. -->
+    <string name="quick_exit_description">Menyetel apakah akan segera keluar dari aplikasi saat menekan tombol kembali.</string>
+    <!-- Whether to pass the search term to the note screen. -->
+    <string name="continuous_search">Lanjutkan pencarian</string>
+    <!-- Description of the "Continuous Search" settings option. -->
+    <string name="continuous_search_description">Apakah akan meneruskan istilah pencarian ke layar catatan.</string>
+    <!-- Whether to enable auto-scroll for notes in preview mode. -->
+    <string name="preview_auto_scroll">Pertinjau gulir otomatis</string>
+    <!-- Description of the "Preview auto-scroll" settings option. -->
+    <string name="preview_auto_scroll_description">Apakah akan mengaktifkan gulir otomatis untuk catatan dalam mode pratinjau.</string>
+    <string name="remember_scrolling_position">Ingat posisi gulir</string>
+    <!-- Description of the "Remember scrolling position" settings option. -->
+    <string name="remember_scrolling_position_description">Menentukan apakah akan menyimpan posisi scrolling di map, dan catatan.</string>
+    <string name="do_not_disturb">Jangan Ganggu</string>
+    <!-- Description of the "Do Not Disturb" settings option. -->
+    <string name="do_not_disturb_description">Menentukan apakah mengaktifkan mode Jangan Ganggu selama Mode Membaca.</string>
+    <!-- An option for Reading Mode settings to keep screen on while in Reading Mode. -->
+    <string name="keep_screen_on">Biarkan layar tetap menyala</string>
+    <!-- Description of the "Keep screen on" settings option. -->
+    <string name="keep_screen_on_description">Menentukan apakah akan mencegah layar mati selama Mode Membaca.</string>
+    <string name="full_screen_mode">Mode layar penuh</string>
+    <!-- Description of the "Go full screen" settings option. -->
+    <string name="full_screen_description">Menentukan apakah akan menyembunyikan status dan bilah navigasi selama Mode Membaca.</string>
+    <!-- An option for Reading Mode settings to set a custom screen brightness level while in Reading Mode. -->
+    <string name="screen_brightness_level">Tingkat kecerahan layar</string>
+    <!-- Description of the "Screen brightness level" settings option. -->
+    <string name="screen_brightness_level_description">Tingkat kecerahan layar selama Mode Membaca.</string>
+    <!-- "Screen brightness level" option. -->
+    <string name="min">Minimal</string>
+    <!-- "Screen brightness level" option. -->
+    <string name="very_low">Sangat rendah</string>
+    <!-- "Screen brightness level" option. -->
+    <string name="low">Rendah</string>
+    <!-- "Screen brightness level" option. -->
+    <string name="medium">Sedang</string>
+    <!-- "Screen brightness level" option. -->
+    <string name="high">Tinggi</string>
+    <!-- "Screen brightness level" option. -->
+    <string name="very_high">Sangat tinggi</string>
+    <!-- "Screen brightness level" option. -->
+    <string name="max">Maksimal</string>
+    <!--  Reading Mode progress  -->
+    <string name="progress">Kemajuan</string>
+    <string name="show">Tampilkan</string>
+    <string name="hide">Sembunyikan</string>
+    <string name="permission_not_granted">Izin belum diberikan</string>
+    <string name="current">Saat ini</string>
+    <!-- Label -->
+    <string name="reorder_label">Susun ulang</string>
+    <string name="update_label">Perbarui label</string>
+    <string name="create_label">Buat tanda</string>
+    <string name="label">Tanda</string>
+    <string name="without_label">Tanpa tanda</string>
+    <string name="label_options">Pengaturan tanda</string>
+    <string name="delete_label">Hapus tanda</string>
+    <string name="new_label">Tanda baru</string>
+    <string name="edit_label">Sunting tanda</string>
+    <string name="labels_order">Urutan tanda</string>
+    <string name="delete_label_confirmation">Apakah kamu yakin ingin menghapus tanda ini?</string>
+    <string name="label_is_deleted">Tanda telah dihapus.</string>
+    <string name="delete_label_description">Tindakan ini tidak dapat diurungkan dan akan menghapus tanda dan menyingkirkan tanda dari catatan terkait secara permanen.</string>
+    <!-- Theme -->
+    <string name="theme">Tema</string>
+    <string name="system_dark_theme">Mengikuti sistem + Gelap</string>
+    <string name="system_black_theme">Mengikuti sistem + Hitam</string>
+    <string name="light_theme">Terang</string>
+    <string name="dark_theme">Gelap</string>
+    <string name="black_theme">Hitam</string>
+    <!-- Language -->
+    <string name="language">Bahasa</string>
+    <!-- A text next to the non-finished language. -->
+    <string name="not_finished">Belum Selesai</string>
+    <!-- An option in settings to invite users to translate Noto. -->
+    <string name="translate_noto">Terjemahkan Noto</string>
+    <!-- Description of the "Translate Noto" settings option. -->
+    <string name="translate_noto_description">Terjemahan telah selesai di Crowdin.</string>
+    <!-- Replacement for "System language" in settings. -->
+    <string name="follow_system">Mengikuti sistem</string>
+    <string name="english">Inggris</string>
+    <string name="turkish">Turki</string>
+    <string name="arabic">Arab</string>
+    <string name="indonesian">Indonesia</string>
+    <string name="russian">Rusia</string>
+    <string name="spanish">Spanyol</string>
+    <string name="french">Prancis</string>
+    <string name="german">Jerman</string>
+    <string name="italian">Italia</string>
+    <string name="tamil">Tamil</string>
+    <string name="czech">Ceko</string>
+    <string name="lithuanian">Lituania</string>
+    <string name="simplified_chinese">Cina (sederhana)</string>
+    <string name="portuguese">Portugis</string>
+    <string name="korean">Korean</string>
+    <!-- Icon -->
+    <string name="icon">Ikon</string>
+    <!-- Widget -->
+    <string name="create_widget">Buat widget</string>
+    <string name="update_widget">Perbarui widget</string>
+    <string name="new_notes_widget">Widget catatan baru</string>
+    <string name="edit_notes_widget">Widget sunting catatan</string>
+    <string name="new_folders_widget">Widget map baru</string>
+    <string name="edit_folders_widget">Sunting widget map</string>
+    <string name="new_folder_button">Tombol map baru</string>
+    <string name="new_note_button">Tombol catatan baru</string>
+    <string name="widget_header">Tajuk widget</string>
+    <string name="app_icon">Ikon aplikasi</string>
+    <string name="widget_radius">Radius widget</string>
+    <string name="edit_widget">Sunting widget</string>
+    <string name="edit_widget_button">Tombol sunting widget</string>
+    <string name="folders_notes_count">Jumlah catatan map</string>
+    <string name="loading_content">Memuat konten</string>
+    <!-- Releases -->
+    <string name="release_bug_fixes_and_design_improvements">Perbaikan bug dan peningkatan design.</string>
+    <string name="release_bug_fixes">Perbaikan bug.</string>
+    <string name="release_1_8_0_vault">Dukungan untuk brankas perpustakaan yang dilindungi kode akses.</string>
+    <string name="release_1_8_0_vault_timeout">Dukungan untuk opsi batas waktu brankas.</string>
+    <string name="release_1_8_0_vault_bio">Dukungan untuk autentikasi brankas biometrik pada perangkat yang didukung.</string>
+    <string name="release_1_8_0_language">Dukungan untuk bahasa Spanyol.</string>
+    <string name="release_1_8_0_reddit">Tambahkan tautan untuk komunitas <a href="https://www.reddit.com/r/notoapp">Reddit</a> yang baru.</string>
+    <string name="release_2_0_0_new_look">Tahun baru, tampilan baru!</string>
+    <string name="release_2_0_0_folders">Pustaka telah hilang. Selamat datang map!</string>
+    <string name="release_2_0_0_animations">Peningkatan animasi di seluruh aplikasi.</string>
+    <string name="release_2_0_0_nested_folders">Dukungan eksperimental untuk map di dalam map.</string>
+    <string name="release_2_0_0_swipe_folder">Dukungan eksperimental untuk menggeser secara horisontal untuk membuat map di dalam map saat penyortiran dilakukan secara manual.</string>
+    <string name="release_2_0_0_general">Menambahkan folder \"Umum\" secara asali untuk catatan umum.</string>
+    <string name="release_2_0_0_all_recent">Dukungan untuk melihat semua catatan dan catatan terbaru serta kemampuan untuk mencari melalui mereka.</string>
+    <string name="release_2_0_0_highlight_search">Sorot konten catatan saat menelusuri.</string>
+    <string name="release_2_0_0_collapsing_toolbar">Menerapkan bilah alat yang dapat diciutkan untuk kegunaan dan jangkauan tangan yang lebih baik.</string>
+    <string name="release_2_0_0_language">Dukungan untuk bahasa Prancis.</string>
+    <string name="release_2_0_0_swipe_bottom_app_bar">Dukungan menggesek ke atas \"bilah aplikasi bawah\" untuk melihat folder.</string>
+    <string name="release_2_0_0_navigation">Navigasikan ke brankas saat mengeklik notifikasi \'vault is open\'.</string>
+    <string name="release_2_0_0_settings_main_folder">Menambahkan opsi pengaturan untuk memilih tujuan map utama.</string>
+    <string name="release_2_0_0_settings_toolbar">Menambahkan opsi setelan untuk menciutkan bilah alat secara asali.</string>
+    <string name="release_2_0_0_shortcuts">Memperbaiki ikon pintasan statis di perangkat Android lama.</string>
+    <string name="release_2_1_0_undo_redo">Dukungan untuk membatalkan/mengulang dan melihat history.</string>
+    <string name="release_2_1_0_labels">Mendesain ulang label.</string>
+    <string name="release_2_1_0_app_bars">Mendesain ulang bilah aplikasi bawah dan atas di semua tata letak.</string>
+    <string name="release_2_1_0_menu">Mendesain ulang banyak menu.</string>
+    <string name="release_2_1_0_new_folder">Mendesain ulang baru/mengedit tata letak folder.</string>
+    <string name="release_2_1_0_grouping_order">Tambahkan urutan pengelompokan untuk catatan.</string>
+    <string name="release_2_1_0_drag_elevation">Tambahkan elevasi saat menyeret label atau catatan.</string>
+    <string name="release_2_1_0_preview">Sertakan pratinjau dalam menu folder, catatan, dan label.</string>
+    <string name="release_2_1_0_dates">Format tanggal dengan cara yang lebih baik.</string>
+    <string name="release_2_1_0_highlight">Ubah warna sorotan di catatan.</string>
+    <string name="release_2_1_0_navigation">Navigasikan ke tata letak folder sebelum keluar dari aplikasi.</string>
+    <string name="release_2_1_0_material_you">Dukungan untuk Material You (Material 3).</string>
+    <string name="release_2_1_0_splash_screen">Mendesain ulang layar pembuka.</string>
+    <string name="release_2_1_0_reading_mode">Peningkatan Mode Membaca.</string>
+    <string name="release_2_1_0_scroll_position">Mendukung mengingat posisi gulir untuk folder dan catatan.</string>
+    <string name="release_2_1_0_disable_animations">Nonaktifkan animasi untuk label dan warna folder.</string>
+    <string name="release_2_1_0_import_data">Perbaiki pengimporan data.</string>
+    <string name="release_2_1_0_vault_crash">Memperbaiki bug saat membuka vault di Android 11 dan yang lebih baru.</string>
+    <string name="release_2_1_0_undo_redo_swipe">Terapkan gerakan menggesek untuk undo/redo.</string>
+    <string name="release_2_1_0_label_filtering">Mendukung label pemfilteran secara inklusif atau eksklusif.</string>
+    <string name="release_2_1_0_app_icon">Mendesain ulang ikon aplikasi.</string>
+    <string name="release_2_1_0_change_app_icon">Mendukung perubahan ikon aplikasi.</string>
+    <string name="release_2_1_0_language">Mendukung bahasa Jerman.</string>
+    <string name="release_2_1_4_shortcuts">Memperbaiki pintasan yang tidak berfungsi saat menggunakan ikon yang berbeda.</string>
+    <string name="release_2_1_4_labels">Label yang dipilih sekarang muncul pertama kali di tata letak catatan.</string>
+    <string name="release_2_2_0_languages">Mendukung bahasa Ceko dan Italia.</string>
+    <string name="release_2_2_0_multi_selection">Mendukung multi-pilihan untuk catatan.</string>
+    <string name="release_2_2_0_reading_mode">Mendukung opsi untuk membuka catatan dalam Mode Membaca secara default.</string>
+    <string name="release_2_2_0_settings">Layar setelan didesain ulang.</string>
+    <string name="release_2_2_0_paging">Menerapkan dukungan paging untuk catatan dalam Mode Membaca.</string>
+    <string name="release_2_2_0_app_speed">Peningkatan kecepatan peluncuran aplikasi.</string>
+    <string name="release_2_2_0_import_json">Memperbaiki pengimporan file JSON.</string>
+    <string name="release_2_2_0_black_theme">Memperbaiki warna tema hitam di Android 12 dan perangkat yang lebih baru.</string>
+    <string name="release_2_2_1_languages">Mendukung bahasa Lituania dan Tionghoa Sederhana.</string>
+    <string name="release_2_2_1_design">Peningkatan desain di sana-sini.</string>
+    <string name="release_2_2_1_undo_redo">Memfaktorkan ulang fungsi undo/redo agar lebih efektif.</string>
+    <string name="release_2_2_1_filtered_view">Tampilan yang didukung Diarsipkan &amp; Catatan terjadwal.</string>
+    <string name="release_2_2_1_quick_exit">Mendukung setelan untuk Keluar Cepat (keluar dari aplikasi tanpa membuka menu utama).</string>
+    <string name="release_2_2_1_quick_note_tile">Mengimplementasikan cara yang lebih cepat untuk membuat catatan saat berada di aplikasi lain menggunakan petak Catatan Cepat di pusat notifikasi.</string>
+    <string name="release_2_2_1_system_app_language">Perubahan bahasa aplikasi terintegrasi melalui Setelan Sistem untuk Android 13 dan yang lebih baru.</string>
+    <string name="release_2_3_0_new_languages">Mendukung Rusia &amp; Portugis.</string>
+    <string name="release_2_3_0_reminder">Mendesign ulang Pengingat, Tanggal &amp; Pemilih waktu agar cocok dengan tema Noto.</string>
+    <string name="release_2_3_0_selection">Merevisi cara pemilihan catatan &amp; menyeret dapat dilakukan dengan hanya menggunakan klik panjang.</string>
+    <string name="release_2_3_0_find_in_note">Mendukung fungsi Temukan di Catatan, dan pengguliran otomatis ke teks yang dicari di catatan.</string>
+    <string name="release_2_3_0_archive">Mendukung pemilihan beberapa catatan &amp; tindakan cepat untuk layar Arsip.</string>
+    <string name="release_2_3_0_sorting">Entitas yang disortir sehubungan dengan huruf diakritik \"tanda tambahan\" bahasa.</string>
+    <string name="release_2_3_0_reading_mode">Menampilkan penghitung, dan indikator kemajuan saat beberapa catatan dibuka dalam Mode Membaca.</string>
+    <string name="release_2_3_0_whats_new">Mendesain ulang layar &amp; Dialog Apa yang Baru.</string>
+    <string name="release_2_3_0_report_issues">Mendukung pelaporan masalah melalui email di Pengaturan.</string>
+    <string name="release_2_3_0_quick_note">Memperbaiki beberapa dialog yang dibuka saat membuat Catatan Cepat.</string>
+    <string name="release_2_3_1_languages">Supported Korean.</string>
+    <string name="release_2_3_1_auto_scroll">Improved auto-scroll when writing notes.</string>
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_label"
+        style="@style/LabelItem"
+        android:stateListAnimator="@animator/elevation_animator"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_margin="@dimen/spacing_small"
+        android:paddingHorizontal="@dimen/spacing_normal"
+        android:paddingVertical="@dimen/spacing_small"
+        tools:text="Label" />
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content" />
+
+    <ImageButton
+        android:id="@+id/ib_drag"
+        android:src="@drawable/ic_round_drag_handle_24"
+        android:background="@android:color/transparent"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:padding="@dimen/spacing_small"
+        android:contentDescription="@string/drag"
+        app:tint="?attr/notoSecondaryColor" />
+
+</LinearLayout>
