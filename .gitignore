@@ -34,3 +34,6 @@ docker-compose.override.yml
 .vscode/
 *.iws
 *.ipr
+
+# Claude
+.claude/
