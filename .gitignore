@@ -26,8 +26,8 @@ target/
 # Env
 .env
 *.env.local
-work.log/
-plan.md/
+work.log
+plan.md
 
 # Docker
 docker-compose.override.yml
