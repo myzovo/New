@@ -56,8 +56,8 @@ interface NotoApiService {
 // API客户端单例
 object ApiClient {
 
-    // TODO: 替换为你的后端服务器地址
-    private const val BASE_URL = "http://10.0.2.2:8080"  // Android模拟器访问本机
+    // 真机用局域网IP，模拟器用10.0.2.2
+    private const val BASE_URL = "http://192.168.43.229:8080"
 
     private val retrofit: Retrofit = Retrofit.Builder()
         .baseUrl(BASE_URL)
