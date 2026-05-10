@@ -53,8 +53,22 @@ public class OcrService {
     }
 
     private String parseOcrResult(String json) {
+        if (json == null || json.isEmpty()) {
+            return "";
+        }
+
         JSONObject jsonObject = JSON.parseObject(json);
+
+        // 百度OCR返回错误时包含error_code
+        if (jsonObject.containsKey("error_code")) {
+            String errorMsg = jsonObject.getString("error_msg");
+            throw new RuntimeException("百度OCR错误: " + errorMsg);
+        }
+
         JSONArray wordsResult = jsonObject.getJSONArray("words_result");
+        if (wordsResult == null || wordsResult.isEmpty()) {
+            return "";
+        }
 
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < wordsResult.size(); i++) {

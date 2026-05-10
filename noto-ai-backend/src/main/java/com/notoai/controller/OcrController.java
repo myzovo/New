@@ -19,6 +19,13 @@ public class OcrController {
     @PostMapping("/recognize")
     public ResponseEntity<OcrResponse> recognize(@RequestParam("image") MultipartFile image) {
         try {
+            if (image.isEmpty()) {
+                OcrResponse response = new OcrResponse();
+                response.setSuccess(false);
+                response.setMessage("请上传图片文件");
+                return ResponseEntity.badRequest().body(response);
+            }
+
             String text = ocrService.recognizeText(image);
 
             OcrResponse response = new OcrResponse();
