@@ -26,11 +26,11 @@
 
 | 模块 | 代码 | 可运行 | 已测试 |
 |------|------|--------|--------|
-| 后端服务代码 | ✅ 全部完成 | ✅ 端口8080正常运行（PID 59196） | ✅ 笔记保存+对话通过，OCR 错误处理修复 |
+| 后端服务代码 | ✅ 全部完成 | ✅ 端口8080正常运行 | ✅ 笔记保存+对话通过，OCR 错误处理修复 |
 | Supabase 数据库 | ✅ 迁移脚本已有 | ✅ 表/函数/扩展均存在 | ✅ 向量写入+检索通过（相似度0.56） |
-| App OCR功能 | ✅ 代码已完成 | ❌ 未编译运行 | ❌ |
-| App 聊天功能 | ✅ 代码已完成 | ❌ 未编译运行 | ❌ |
-| 端到端联调 | — | ❌ | ❌ |
+| App OCR功能 | ✅ 代码已完成 | ✅ 已部署真机 | ⚠️ 报错已修复，待重新测试 |
+| App 聊天功能 | ✅ 代码已完成 | ✅ 已部署真机 | ⚠️ 报错已修复，待重新测试 |
+| 端到端联调 | — | ⚠️ 网络问题已修复 | ❌ 待重新验证 |
 
 ---
 
@@ -47,11 +47,13 @@
 ## 阶段二：App端代码开发 ✅ 已完成
 
 Noto App 已完成改造，包括：
-- `NotoApiService.kt` — Retrofit 接口定义 + ApiClient（指向 10.0.2.2:8080）
+- `NotoApiService.kt` — Retrofit 接口定义 + ApiClient（指向 192.168.43.229:8080）
 - `NoteFragment.kt` — OCR 按钮、拍照/相册选择、图片上传、结果回填
 - `ChatFragment.kt` — 完整聊天 UI、消息列表、AI 问答
 - `nav_graph.xml` — ChatFragment 已注册导航
 - `build.gradle.kts` — Retrofit/OkHttp 依赖已添加
+- `network_security_config.xml` — 允许 HTTP 明文通信（真机调试）
+- `AndroidManifest.xml` — 添加 networkSecurityConfig 引用
 - 新增布局：`fragment_chat.xml`、`item_chat_message.xml`
 
 ---
@@ -108,20 +110,18 @@ POST /api/chat/ask {"question":"what notes do I have?"}
 
 ## 阶段五：App 编译与端到端联调 ⏳ 当前进行中
 
-### 5.1 App 编译检查结果（sub agent 已评估）
-项目状态：**可编译（debug 构建）**
-- Gradle: 8.3（腾讯镜像下载）
-- compileSdk: 34, minSdk: 21, targetSdk: 34
-- Kotlin: 1.9.0, AGP: 8.1.0
-- Retrofit 2.9.0 + OkHttp 4.12.0 已添加
-- `sdk.dir=F:\Android` 已配置
-- `release-candidate` 构建类型需签名配置（debug 构建不受影响）
+### 5.1 App 编译与部署 ✅ 已完成
+- [x] Android Studio 编译成功
+- [x] 已部署到真机（手机通过 USB 连接）
+- [x] App 可正常打开，AI 功能入口可见
 
-### 5.2 待执行
-- [ ] Android Studio 打开 Noto 项目，执行 debug 构建
-- [ ] 解决可能的编译错误
+### 5.2 网络连接修复 ✅ 已完成
+- [x] 问题：`CLEARTEXT communication to 10.0.2.2 not permitted`
+- [x] 原因：10.0.2.2 是模拟器专用地址 + Android 9+ 默认禁止 HTTP 明文
+- [x] 修复：创建 `network_security_config.xml`，更新 BASE_URL 为 `192.168.43.229:8080`
 
-### 5.3 端到端测试（需后端运行中 + 模拟器/真机）
+### 5.3 端到端测试（后端运行中 + 真机）
+- [ ] 重新 Run App 到手机
 - [ ] OCR：拍照 → 上传 → 编辑器显示识别文字
 - [ ] 笔记保存：编辑 → 保存 → 后端日志显示收到请求
 - [ ] AI 对话：点击 AI 按钮 → 提问 → 显示回答 + 来源笔记
@@ -148,8 +148,9 @@ POST /api/chat/ask {"question":"what notes do I have?"}
 1. ✅ 后端启动验证
 2. ✅ Supabase 表/函数确认
 3. ✅ curl 测试三个 API 接口（笔记+对话通过，OCR 修复后通过）
-4. Android Studio 编译 App          ← 下一步
-5. 模拟器端到端测试
+4. ✅ Android Studio 编译 App + 部署真机
+5. ✅ 修复网络连接问题（CLEARTEXT + IP 地址）
+6. 真机端到端功能测试              ← 下一步
 ```
 
 ---
@@ -160,7 +161,8 @@ POST /api/chat/ask {"question":"what notes do I have?"}
 |------|----------|------|
 | 后端启动失败 | ✅ 已解决 | .env 加载 + DB URL 修复后正常启动 |
 | Supabase 表不存在 | ✅ 已确认 | 表/函数/扩展均存在 |
-| App 编译错误 | ⚠️ 待验证 | Gradle 8.3 + SDK 34 + Retrofit 依赖齐全，需 Android Studio 实际编译 |
+| App 编译错误 | ✅ 已解决 | Android Studio 编译成功，已部署真机 |
+| 真机网络连接 | ✅ 已解决 | network_security_config + 局域网 IP 配置完成 |
 | API Key 过期/无效 | ⚠️ 部分验证 | 笔记+对话 API 正常，OCR 需真实图片验证 |
 | Windows 终端编码 | ⚠️ 已知 | curl 测试中文 JSON 需注意 UTF-8 编码，App 端 Retrofit 自动处理 |
 | Gradle 下载慢 | ⚠️ 已知 | wrapper 使用腾讯镜像，国内正常，国外可能超时 |

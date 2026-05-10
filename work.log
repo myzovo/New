@@ -152,3 +152,17 @@
 **结果：** PID 59196 启动后无 PostgreSQL 或 EMBEDDING_API_KEY 错误，仅有一次非 multipart 请求的运行时错误
 **修改的文件：** 无
 **后续建议：** 无
+
+### 2026-05-10 15:10 网络修复（主 agent）
+**任务：** 修复真机连接后端的网络问题（CLEARTEXT not permitted）
+**结果：**
+- 发现两个问题：10.0.2.2 是模拟器专用地址，Android 9+ 默认禁止 HTTP 明文通信
+- 获取到电脑 WiFi IP：192.168.43.229
+- 创建 network_security_config.xml 允许 HTTP 通信
+- 更新 NotoApiService.kt BASE_URL 为 192.168.43.229:8080
+- 更新 AndroidManifest.xml 引用 networkSecurityConfig
+**修改的文件：**
+- Noto/app/src/main/res/xml/network_security_config.xml（新建）
+- Noto/app/src/main/java/com/noto/app/ai/NotoApiService.kt
+- Noto/app/src/main/AndroidManifest.xml
+**后续建议：** 重新 Run 到手机，测试 AI 功能
